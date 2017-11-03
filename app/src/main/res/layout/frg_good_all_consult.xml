@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgLayout"
+    android:orientation="vertical">
+
+    <include layout="@layout/c_divide_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ty_80px"
+        android:background="@color/bgLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin_left_right"
+            android:text="全部咨询"
+            android:textColor="@color/text_green"
+            android:textSize="@dimen/text_mid" />
+
+        <RelativeLayout
+            android:id="@+id/good_all_consult_add_ask"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/common_margin_left_right">
+
+            <ImageView
+                android:id="@+id/compar_good_icon"
+                android:layout_width="@dimen/ty_40px"
+                android:layout_height="@dimen/ty_40px"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/ty_12px"
+                android:src="@drawable/ic_consultation" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/c_divide_line" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.markmao.pulltorefresh.widget.XListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"></com.markmao.pulltorefresh.widget.XListView>
+
+        <com.t1_network.taiyi.widget.TipView
+            android:id="@+id/tip_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/ty_104px"
+            android:visibility="gone"></com.t1_network.taiyi.widget.TipView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

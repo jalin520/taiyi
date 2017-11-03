@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.walink.pulltorefresh.library.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:taiyi="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pull_to_refresh_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgRoot">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_frg_user_info_title"/>
+
+
+            <include
+                layout="@layout/c_divide_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/c_divide_line_horizontal_height"
+                android:layout_marginTop="@dimen/common_margin" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bgLayout"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/frg_user_info_layout_order_padding_bottom"
+                android:paddingLeft="@dimen/common_margin_left_right"
+                android:paddingRight="@dimen/common_margin_left_right"
+                android:paddingTop="@dimen/frg_user_info_layout_order_padding_top"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:id="@+id/frg_user_info_layout_wait_pay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/frg_user_info_image_order_icon"
+                            android:layout_height="@dimen/frg_user_info_image_order_icon"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/frg_user_info_image_order_icon_margin_bottom"
+                            android:src="@drawable/ic_wait_pay" />
+
+                        <TextView
+                            android:id="@+id/frg_user_info_text_num_wait_pay"
+                            android:layout_width="15.94dp"
+                            android:layout_height="15.94dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/bg_num_tip_red"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/text_little"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/frg_user_info_text_wait_pay"
+                        android:textColor="@color/textLight"
+                        android:textSize="@dimen/text_mid" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/frg_user_info_layout_wait_receive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/frg_user_info_image_order_icon"
+
+                            android:layout_height="@dimen/frg_user_info_image_order_icon"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/frg_user_info_image_order_icon_margin_bottom"
+                            android:src="@drawable/ic_wait_receive" />
+
+                        <TextView
+                            android:id="@+id/frg_user_info_text_num_wait_receive"
+                            android:layout_width="15.94dp"
+                            android:layout_height="15.94dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/bg_num_tip_red"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/text_little"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/frg_user_info_text_wait_receive"
+                        android:textColor="@color/textLight"
+                        android:textSize="@dimen/text_mid" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/frg_user_info_layout_wait_commit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/frg_user_info_image_order_icon"
+                            android:layout_height="@dimen/frg_user_info_image_order_icon"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/frg_user_info_image_order_icon_margin_bottom"
+                            android:src="@drawable/ic_wait_commit" />
+
+                        <TextView
+                            android:id="@+id/frg_user_info_text_num_wait_comment"
+                            android:layout_width="15.94dp"
+                            android:layout_height="15.94dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/bg_num_tip_red"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/text_little"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/frg_user_info_text_wait_commit"
+                        android:textColor="@color/textLight"
+                        android:textSize="@dimen/text_mid" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/frg_user_info_layout_wait_return"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/frg_user_info_image_order_icon"
+                            android:layout_height="@dimen/frg_user_info_image_order_icon"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/frg_user_info_image_order_icon_margin_bottom"
+                            android:src="@drawable/ic_return" />
+
+                        <TextView
+                            android:id="@+id/frg_user_info_text_num_return"
+                            android:layout_width="15.94dp"
+                            android:layout_height="15.94dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/bg_num_tip_red"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/text_little"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/frg_user_info_text_wait_return"
+                        android:textColor="@color/textLight"
+                        android:textSize="@dimen/text_mid" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <include layout="@layout/frg_user_info_option" />
+
+
+            <RelativeLayout
+                android:id="@+id/frg_user_info_layout_add_realth_record"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/frg_user_info_layout_add_realth_record_height"
+                android:layout_marginBottom="@dimen/common_margin"
+                android:layout_marginLeft="@dimen/common_margin_left_right"
+                android:layout_marginRight="@dimen/common_margin_left_right"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@color/bgLayout"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/frg_user_info_layout_add_realth_record_icon"
+                    android:layout_width="@dimen/frg_user_info_layout_add_realth_record_height"
+                    android:layout_height="@dimen/frg_user_info_layout_add_realth_record_height"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/colorPrimary">
+
+                    <ImageView
+                        android:layout_width="@dimen/frg_user_info_image_add_realth_record"
+                        android:layout_height="@dimen/frg_user_info_image_add_realth_record"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_add_realth_record" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_left_right"
+                    android:layout_toRightOf="@+id/frg_user_info_layout_add_realth_record_icon"
+                    android:text="@string/frg_user_info_text_add_realth_record_tip"
+                    android:textSize="@dimen/text_small" />
+
+                <ImageView
+                    android:id="@+id/c_setting_view_image_tip"
+                    android:layout_width="12dp"
+                    android:layout_height="16.59dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/ic_arrow_right" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</cn.walink.pulltorefresh.library.PullToRefreshScrollView>
+

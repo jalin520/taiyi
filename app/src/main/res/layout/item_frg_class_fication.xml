@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <include layout="@layout/c_divide_line"/>
+
+    <RelativeLayout
+        android:id="@+id/frg_classfication_rl_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_large_height"
+        android:background="@color/bgLayout"
+        android:paddingLeft="@dimen/act_content_image_height"
+        android:paddingRight="@dimen/act_content_image_height">
+
+
+        <TextView
+            android:id="@+id/item_classfication_text_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_host_search_tip_padding_right"
+            android:text=""
+            android:textColor="@color/class_fication_color_btn"
+            android:textSize="@dimen/text_less_mid"/>
+
+        <ImageView
+            android:id="@+id/item_classfication_image_icon"
+            android:layout_width="@dimen/item_classfication_width_icon"
+            android:layout_height="@dimen/item_classfication_height_icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/class_fication_image_btn"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/c_divide_line"/>
+
+    <GridLayout
+        android:id="@+id/frg_classfication_gl_disease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/common_gray_more_light"
+        android:columnCount="3"
+        android:paddingBottom="@dimen/item_my_token_text_padding"
+        android:paddingLeft="@dimen/item_consignee_address_rootlayout_padding_top"
+        android:paddingRight="@dimen/item_consignee_address_rootlayout_padding_top"
+        android:paddingTop="@dimen/item_my_token_text_padding">
+
+    </GridLayout>
+</LinearLayout>

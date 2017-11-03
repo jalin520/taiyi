@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:taiyi="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              taiyi:layout_behavior="@string/appbar_scrolling_view_behavior"
+              tools:context="com.t1_network.taiyi.controller.activity.SettingAct">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgRoot">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bgRoot"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/act_setting_user_info_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin_top_bottom">
+
+                <com.t1_network.taiyi.widget.SettintView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/act_setting_user_info_icon_height"
+                    android:background="@color/bg_layout"
+                    taiyi:show_top_line_full="true"
+                    taiyi:text="@string/act_setting_user_info_icon"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/frg_user_info_text_login_or_register_iv_user_icon"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="@dimen/act_setting_user_info_icon"
+                    android:layout_height="@dimen/act_setting_user_info_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/act_setting_user_info_margin_right"
+                    android:src="@drawable/ic_user_image"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.t1_network.taiyi.widget.SettintView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/act_setting_user_info_item_height"
+                    taiyi:show_top_line_full="true"
+                    taiyi:text="@string/act_setting_user_info_nickname"/>
+
+                <EditText
+                    android:id="@+id/act_setting_user_info_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/act_setting_user_info_margin_right"
+                    android:background="@null"
+                    android:hint="昵称"
+                    android:singleLine="true"
+                    android:textColor="@color/text_gray_deep"
+                    android:textColorHint="@color/text_gray_deep"
+                    android:textSize="@dimen/text_mid"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/act_setting_user_info_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.t1_network.taiyi.widget.SettintView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/act_setting_user_info_item_height"
+                    taiyi:show_bottom_line_full="true"
+                    taiyi:show_top_line_wrap="true"
+                    taiyi:text="@string/act_setting_user_info_sex"/>
+
+                <TextView
+                    android:id="@+id/act_setting_user_info_tv_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/act_setting_user_info_margin_right"
+                    android:text="男"
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="@dimen/text_mid"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/act_setting_user_info_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.t1_network.taiyi.widget.SettintView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/act_setting_user_info_item_height"
+                    taiyi:show_bottom_line_full="true"
+                    taiyi:show_top_line_wrap="true"
+                    taiyi:text="@string/act_setting_user_info_age"/>
+
+                <TextView
+                    android:id="@+id/act_setting_user_info_tv_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/act_setting_user_info_margin_right"
+                    android:text="20001212"
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="@dimen/text_mid"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

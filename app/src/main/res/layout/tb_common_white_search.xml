@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:showDividers="none"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/bg_layout"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingLeft="@dimen/act_search_search_bar_padding_left_and_right"
+            android:paddingRight="@dimen/act_search_search_bar_padding_left_and_right"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/act_search_search_bar_height"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/bg_search_box_with_border"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <ImageView
+                    android:id="@+id/act_search_search_icon"
+                    android:layout_width="@dimen/act_search_search_icon"
+                    android:layout_height="@dimen/act_search_search_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/act_search_search_icon_padding_left"
+                    android:layout_marginRight="@dimen/act_search_search_icon_padding_right"
+                    android:src="@drawable/ic_search_gray"/>
+
+                <EditText
+                    android:id="@+id/act_search_edit_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/act_search_search_icon"
+                    android:background="@null"
+                    android:hint="@string/act_search_search_tint"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_gray_deep"
+                    android:textSize="@dimen/text_small"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/act_search_tv_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/act_search_cancel"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_small"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>
+
+

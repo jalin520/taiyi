@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:taiyi="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.t1_network.taiyi.controller.activity.OrderTradeSuccessAct"
+    tools:showIn="@layout/activity_trade_success">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/act_trade_success_height"
+        android:background="@color/common_green">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/act_trade_success_ll_margin_top"
+            android:layout_marginLeft="@dimen/act_trade_success_ll_margin_left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交易成功！"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_big_large"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/act_trade_success_ll_tv_margin_top"
+                android:text="感谢您对我们的信赖！"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_small"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/frg_home_good_gl_adv1_margin_case"
+                android:text="如有任何疑问,请及时联系我们,"
+                android:textColor="@color/text_white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/frg_home_good_gl_adv1_margin_case"
+                android:text="我们将为您提供最优质的售后服务。"
+                android:textColor="@color/text_white"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/act_trade_success_ll_image_width"
+            android:layout_height="@dimen/act_trade_success_ll_image_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/act_trade_success_ll_image_margin"
+            android:layout_marginTop="@dimen/act_trade_success_ll_image_margin"
+            android:src="@drawable/ic_trade_success"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/act_trade_success_ll_input_height"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_layout"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/act_trade_success_tv_input_evaluate"
+                android:layout_width="@dimen/act_trade_success_tv_input_evaluate_width"
+                android:layout_height="@dimen/act_trade_success_tv_input_evaluate_height"
+                android:background="@drawable/btn_in_compar_full_info"
+                android:gravity="center"
+                android:text="立即评价"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_big"/>
+
+            <TextView
+                android:id="@+id/act_trade_success_tv_input_order"
+                android:layout_width="@dimen/act_trade_success_tv_input_evaluate_width"
+                android:layout_height="@dimen/act_trade_success_tv_input_evaluate_height"
+                android:layout_marginLeft="@dimen/act_trade_success_tv_input_order_margin_left"
+                android:background="@drawable/btn_in_order_list_full"
+                android:gravity="center"
+                android:text="订单详情"
+                android:textColor="@color/text_green"
+                android:textSize="@dimen/text_big"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/c_divide_line"/>
+
+    <com.t1_network.taiyi.widget.SupposeYouWantView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/frg_shop_cart_layout_suppose_you_want"
+        android:layout_marginTop="@dimen/common_margin_top_bottom"
+        taiyi:SupposeYouWantViewTitle="@string/frg_shop_cart_text_suppose_you_want">
+
+    </com.t1_network.taiyi.widget.SupposeYouWantView>
+
+
+</LinearLayout>

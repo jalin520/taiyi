@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgLayout"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/common_margin_left_right"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.t1_network.taiyi.controller.activity.MyAdviceAct"
+    tools:showIn="@layout/activity_my_advice">
+
+    <include layout="@layout/item_my_advice_item_title_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/common_margin_top_bottom"
+        android:paddingLeft="@dimen/common_margin_left_right"
+        android:paddingRight="@dimen/common_margin_left_right"
+        android:paddingTop="@dimen/common_margin_top_bottom">
+
+        <ImageView
+            android:id="@+id/item_my_advice_iv_icon"
+            android:layout_width="@dimen/common_margin_top_bottom"
+            android:layout_height="@dimen/common_margin_top_bottom"
+            android:src="@drawable/ic_answer_icon"/>
+
+        <TextView
+            android:textColor="@color/text_gray_deep"
+            android:id="@+id/item_my_advice_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin_left_right"
+            android:text="问题"
+            android:textSize="@dimen/text_mid"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/c_divide_line_horizontal_height"
+        android:layout_marginLeft="@dimen/common_margin_left_right"
+        android:layout_marginRight="@dimen/common_margin_left_right"
+        android:background="@color/bg_divide_line">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/common_margin_top_bottom"
+        android:paddingLeft="@dimen/common_margin_left_right"
+        android:paddingRight="@dimen/common_margin_left_right"
+        android:paddingTop="@dimen/common_margin_top_bottom">
+
+        <ImageView
+            android:layout_width="@dimen/common_margin_top_bottom"
+            android:layout_height="@dimen/common_margin_top_bottom"
+            android:src="@drawable/ic_ask_icon"/>
+
+        <TextView
+            android:id="@+id/item_my_advice_tv_ask"
+            android:textColor="@color/text_gray_deep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin_left_right"
+            android:text="回答"
+            android:textSize="@dimen/text_mid"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/c_divide_line_horizontal_height"
+        android:background="@color/bg_divide_line">
+
+    </View>
+
+</LinearLayout>

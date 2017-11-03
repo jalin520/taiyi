@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="c_loading">
+        <item name="android:indeterminateDrawable">@anim/c_loading</item>
+
+        <item name="android:indeterminate">true</item>
+    </style>
+
+</resources>

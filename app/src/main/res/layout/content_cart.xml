@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:taiyi="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.t1_network.taiyi.controller.activity.CartAct"
+    tools:showIn="@layout/act_cart">
+
+
+    <cn.walink.pulltorefresh.library.PullToRefreshScrollView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_to_refresh_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ptr:ptrAnimationStyle="flip">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/frg_shop_cart_layout_good_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/frg_shop_cart_layout_good_out_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/frg_shop_cart_layout_no_good_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_layout"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/frg_shop_cart_image_no_good"
+                        android:layout_height="@dimen/frg_shop_cart_image_no_good"
+                        android:layout_marginBottom="@dimen/frg_shop_cart_image_no_good_margin_padding_top_bottom"
+                        android:layout_marginTop="@dimen/frg_shop_cart_image_no_good_margin_padding_top_bottom"
+                        android:src="@drawable/default_no_good" />
+
+                </LinearLayout>
+
+                <com.t1_network.taiyi.widget.SupposeYouWantView
+                    android:id="@+id/frg_shop_cart_suppose_you_want"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frg_shop_cart_layout_suppose_you_want"
+                    android:layout_marginTop="@dimen/common_margin_top_bottom"
+                    taiyi:SupposeYouWantViewTitle="@string/frg_shop_cart_text_suppose_you_want"></com.t1_network.taiyi.widget.SupposeYouWantView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </cn.walink.pulltorefresh.library.PullToRefreshScrollView>
+
+    <RelativeLayout
+        android:id="@+id/frg_shop_cart_layout_count"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/frg_shop_cart_layout_refresh_margin_bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_layout"
+        android:visibility="gone">
+
+        <include layout="@layout/c_divide_line" />
+
+        <ImageView
+            android:id="@+id/frg_shop_cart_image_select"
+            android:layout_width="@dimen/frg_shop_cart_btn_select"
+            android:layout_height="@dimen/frg_shop_cart_btn_select"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin_left_right"
+            android:layout_marginRight="@dimen/common_margin_left_right"
+            android:src="@drawable/ic_select_selected" />
+
+        <TextView
+            android:id="@+id/frg_shop_cart_text_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/frg_shop_cart_image_select"
+            android:text="@string/frg_shop_cart_text_select_all"
+            android:textColor="@color/common_gray_deep"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/frg_shop_cart_text_total_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32dp"
+            android:layout_toRightOf="@+id/frg_shop_cart_text_select_all"
+            android:text="@string/frg_shop_cart_text_total_tip"
+            android:textColor="@color/text_orange"
+            android:textSize="@dimen/text_small" />
+
+        <Button
+            android:id="@+id/frg_shop_cart_layout_btn_submit"
+            android:layout_width="@dimen/frg_shop_cart_layout_btn_submit_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorPrimary"
+            android:text="@string/frg_shop_cart_layout_btn_submit"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_big" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

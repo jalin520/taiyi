@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgRoot"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/act_after_sale_detail"
+    tools:context="com.t1_network.taiyi.controller.activity.AfterSaleDetailAct">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/act_after_sale_detail_ll_add_root"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/after_sale_process"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/after_sale_detail_linearlayout_margin_top"
+                android:background="@color/bgLayout">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/after_sale_detail_process"
+                    android:layout_width="match_parent"
+                    android:layout_height="54.11dp"
+                    android:text="处理进度"
+                    android:textSize="@dimen/text_mid"
+                    android:textColor="@color/text_black"
+                    android:layout_marginLeft="@dimen/after_sale_detail_process_margin_left"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/after_sale_detail_line_divide"
+                    android:layout_marginLeft="@dimen/after_sale_detail_line_divide_margin_left"
+                    android:background="@color/bg_divide_line" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/after_sale_detail_process_ll_express"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bgRoot">
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/act_after_sale_detail_ll_title_root"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:background="@color/bg_layout"-->
+        <!--android:orientation="vertical"-->
+        <!--android:paddingLeft="@dimen/check_pending_id_margin_left"-->
+        <!--android:paddingRight="@dimen/check_pending_id_margin_left">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="61.18dp"-->
+            <!--android:background="@color/bgLayout"-->
+            <!-->-->
+
+            <!--<TextView-->
+
+                <!--android:id="@+id/after_sale_id"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+
+                <!--android:text="服务编号：982737383831"-->
+                <!--android:textColor="@color/text_gray_mid"-->
+                <!--android:textSize="@dimen/text_mid"/>-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/sale_return_success_query"-->
+                <!--android:layout_width="@dimen/check_pending_query_width"-->
+                <!--android:layout_height="@dimen/check_pending_query_height"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:background="@drawable/btn_in_after_sale_full"-->
+                <!--android:gravity="center">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/check_pending_query"-->
+                    <!--android:textColor="@color/text_orange"-->
+                    <!--android:textSize="@dimen/text_mid"/>-->
+            <!--</LinearLayout>-->
+
+
+        <!--</RelativeLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/check_pending_line_divide"-->
+            <!--android:background="@color/bg_divide_line"-->
+            <!--/>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/bgLayout"-->
+            <!-->-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/after_sale_title"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/check_pending_title_margin_bottom"-->
+                <!--android:layout_marginTop="@dimen/check_pending_title_margin_top"-->
+                <!--android:maxLines="2"-->
+                <!--android:text="鱼跃 制氧机 YU300 鱼跃 制氧机 YU300 鱼跃 制氧机 YU300 鱼跃 制氧机 YU300 鱼跃 制氧机 YU300"-->
+                <!--android:textColor="@color/text_black"-->
+                <!--android:textSize="@dimen/text_mid"/>-->
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/after_sale_state"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/after_sale_title"-->
+                <!--android:text="@string/check_pending_state"-->
+                <!--android:textColor="@color/text_gray_deep"-->
+                <!--android:textSize="@dimen/text_mid"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/after_sale_amount"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignBottom="@id/after_sale_state"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:text="共2件"-->
+                <!--android:textColor="@color/text_gray_mid"-->
+                <!--android:textSize="@dimen/text_mid"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/after_sale_time"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/after_sale_amount"-->
+                <!--android:layout_marginBottom="@dimen/check_pending_time_margin_bottom"-->
+                <!--android:layout_marginTop="@dimen/check_pending_time_margin_top"-->
+                <!--android:text="申请时间：2015-10-22 20:30:12"-->
+                <!--android:textColor="@color/text_gray_mid"-->
+                <!--android:textSize="@dimen/text_mid"/>-->
+
+        <!--</RelativeLayout>-->
+
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/check_pending_line_divide"-->
+            <!--android:background="@color/bg_divide_line"-->
+            <!--/>-->
+
+
+    <!--</LinearLayout>-->
+
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/after_sale_detail_addView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/after_sale_detail_addView_margin_top">-->
+    <!--</RelativeLayout>-->
+
+
+
+
+
+</LinearLayout>

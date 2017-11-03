@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_appraise_good_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgLayout"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/fab_margin"
+    android:paddingRight="@dimen/fab_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_my_token_padding_top">
+
+        <TextView
+            android:id="@+id/item_good_all_consult_tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/good_appraise_phone"
+            android:textColor="@color/text_gray_mid"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/item_good_all_consult_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/good_appraise_tv_time"
+            android:textColor="@color/text_gray_mid"
+            android:textSize="@dimen/text_small" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_mid"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/good_all_consult_ask_iv"
+                android:layout_width="@dimen/text_mid"
+                android:layout_height="@dimen/text_mid"
+                android:src="@drawable/ic_ask" />
+
+            <TextView
+                android:id="@+id/item_good_all_consult_tv_ask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="保修期是多久.?"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_mid" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_mid"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/good_all_consult_answer_iv"
+                android:layout_width="@dimen/text_mid"
+                android:layout_height="@dimen/text_mid"
+                android:src="@drawable/ic_answer" />
+
+            <TextView
+                android:id="@+id/item_good_all_consult_tv_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="您好!  我们的商品保修一年,  感谢您对我们的信任! 祝您身体健康."
+                android:textColor="@color/text_gray_mid"
+                android:textSize="@dimen/text_mid" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/text_mid"
+        android:background="@color/bg_divide_line" />
+
+</LinearLayout>

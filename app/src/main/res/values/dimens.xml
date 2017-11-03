@@ -1,0 +1,819 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="title_max_width">150dp</dimen>
+    <!--按钮-->
+    <dimen name="btn_small_height">29.63dp</dimen>
+    <dimen name="btn_mid_height">35.56dp</dimen>
+    <dimen name="btn_big_height">35.29dp</dimen>
+    <dimen name="btn_large_height">47.41dp</dimen>
+    <dimen name="btn_large_width">94.11dp</dimen>
+    <dimen name="btn_big_large_width">130dp</dimen>
+
+
+    <dimen name="c_divide_line_horizontal_height">0.33dp</dimen>
+    <dimen name="c_divide_line_vertical_width">0.33dp</dimen>
+
+    <dimen name="toolbar_btn_back_height">17.78dp</dimen>
+    <dimen name="toolbar_btn_back_padding_left_and_right">8.85dp</dimen>
+
+    <dimen name="common_margin_top_1">12dp</dimen>
+    <dimen name="common_margin_bottom_1">12dp</dimen>
+
+    <dimen name="common_margin_left_right">11.75dp</dimen>
+    <dimen name="common_margin_top_bottom">17.64dp</dimen>
+    <dimen name="common_margin">7.05dp</dimen>
+    <dimen name="common_margin_big">11.75dp</dimen>
+    <dimen name="common_tool_bar_btn_back">50dp</dimen>
+
+    <!-- setting-->
+    <dimen name="c_setting_view_item_height">47.41dp</dimen>
+    <dimen name="c_setting_view_item_common_margin">12dp</dimen>
+    <dimen name="c_setting_view_item_icon_width_height">17.78dp</dimen>
+    <dimen name="c_setting_view_item_icon_margin_right">10.72dp</dimen>
+    <dimen name="c_setting_view_item_icon_height">16.59dp</dimen>
+
+
+    <!--个人中心-->
+    <dimen name="frg_user_info_layout_user_info_height">189.63dp</dimen>
+    <dimen name="frg_user_info_image_msg_padding_top">13dp</dimen>
+    <dimen name="frg_user_info_image_msg_padding_right">23.7dp</dimen>
+    <dimen name="frg_user_info_image_msg">23.7dp</dimen>
+    <dimen name="frg_user_info_text_login_or_register_height">35.56dp</dimen>
+    <dimen name="frg_user_info_text_login_or_register_width">130.37dp</dimen>
+    <dimen name="frg_user_info_text_login_or_register_margin_top">36.52dp</dimen>
+    <dimen name="frg_user_info_text_login_or_register_margin_top2">18.52dp</dimen>
+    <dimen name="frg_user_info_layout_num_tip_padding_left_right">17.78dp</dimen>
+    <dimen name="frg_user_info_layout_num_tip_padding_top_bottom">8.04dp</dimen>
+    <dimen name="frg_user_info_text_collect_padding_top">8dp</dimen>
+    <dimen name="frg_user_info_image_footprints_width">21.33dp</dimen>
+    <dimen name="frg_user_info_image_footprints_height">23.7dp</dimen>
+    <dimen name="frg_user_info_layout_order">88.89dp</dimen>
+    <dimen name="frg_user_info_layout_order_padding_top">17.78dp</dimen>
+    <dimen name="frg_user_info_layout_order_padding_bottom">15.41dp</dimen>
+    <dimen name="frg_user_info_image_order_icon">33.19dp</dimen>
+    <dimen name="frg_user_info_image_order_icon_margin_bottom">9.48dp</dimen>
+    <dimen name="frg_user_info_layout_add_realth_record_height">50.96dp</dimen>
+    <dimen name="frg_user_info_image_add_realth_record">30.82dp</dimen>
+    <dimen name="frg_user_info_icon_image">70dp</dimen>
+
+    <!--我的代币-->
+    <dimen name="act_token_layout_total_height">168.89dp</dimen>
+    <dimen name="act_token_text_token_num_margin_top">15.4dp</dimen>
+    <dimen name="act_token_text_token_num_margin_left">35.3dp</dimen>
+    <dimen name="act_token_layout_transaction_detail_height">50.59dp</dimen>
+    <dimen name="act_token_layout_title_height">80.59dp</dimen>
+    <dimen name="act_token_text_transaction_detail_margin_left">11.77dp</dimen>
+    <dimen name="act_token_text_transaction_detail_margin_right">5.88dp</dimen>
+    <dimen name="act_token_text_title_margin_bottom">15.29dp</dimen>
+
+    <dimen name="item_my_token_height">80dp</dimen>
+    <dimen name="item_my_token_padding_right">16.47dp</dimen>
+    <dimen name="item_my_token_padding_top">18.82dp</dimen>
+    <dimen name="item_my_token_padding_bottom">20dp</dimen>
+    <dimen name="item_my_token_text_padding">5.88dp</dimen>
+
+    <!--兑换代币-->
+    <dimen name="act_exchange_token_layout_exchange">99.56dp</dimen>
+    <dimen name="act_exchange_token_btn_exchange">129.41dp</dimen>
+    <dimen name="act_exchange_token_btn_exchange_margin">16.5dp</dimen>
+    <dimen name="act_exchange_token_btn_exchange_height">41.17dp</dimen>
+    <dimen name="act_exchange_token_btn_exchange_width">211.76dp</dimen>
+    <dimen name="act_exchange_token_edit_exchange_margin">150.6dp</dimen>
+
+    <!-- 收货地址 -->
+    <dimen name="item_consignee_address_rootlayout_padding_top">11.76dp</dimen>
+    <dimen name="item_consignee_address_relativelayout_padding_top">18.82dp</dimen>
+    <dimen name="item_consignee_address_relativelayout_padding_bottom">18.82dp</dimen>
+    <dimen name="item_consignee_address_relativelayout_padding_left">16.47dp</dimen>
+    <dimen name="item_consignee_address_relativelayout_padding_right">16.47dp</dimen>
+    <dimen name="item_consignee_address_text_phone_margin_left">18.82dp</dimen>
+    <dimen name="item_consignee_address_btn_moren_height">16.47dp</dimen>
+    <dimen name="item_consignee_address_btn_moren_width">30.59dp</dimen>
+    <dimen name="item_consignee_address_btn_moren_margin_left">16.47dp</dimen>
+    <dimen name="item_consignee_address_text_address_margin_top">27.06dp</dimen>
+    <dimen name="item_consignee_address_text_address_margin_right">61.18dp</dimen>
+    <dimen name="item_consignee_address_image_edit_height">28.24dp</dimen>
+    <dimen name="item_consignee_address_image_edit_width">28.24dp</dimen>
+    <dimen name="item_consignee_address_image_edit_margin_left">16.47dp</dimen>
+    <dimen name="item_consignee_address_view_line_divide_width">1dp</dimen>
+    <dimen name="item_consignee_address_view_line_divide_height">55.29dp</dimen>
+
+    <!--搜索页-->
+
+    <dimen name="act_search_search_bar_height">29.45dp</dimen>
+    <dimen name="act_search_search_bar_width">290.6dp</dimen>
+    <dimen name="act_search_search_bar_padding_left_and_right">18.8dp</dimen>
+    <dimen name="act_search_search_icon_padding_right">16.47dp</dimen>
+    <dimen name="act_search_search_icon_padding_left">8dp</dimen>
+    <dimen name="act_search_search_icon">16.47dp</dimen>
+
+    <dimen name="act_search_image_hot_search">23.53dp</dimen>
+    <dimen name="act_search_image_hot_search_margin_right">10.59dp</dimen>
+    <dimen name="act_search_layout_hot_search_padding_left_and_right">18.8dp</dimen>
+    <dimen name="act_search_layout_hot_search_tip_padding_left_and_right">25.88dp</dimen>
+
+    <dimen name="item_hot_search_tip_height">30.59dp</dimen>
+    <dimen name="item_hot_search_tip_raidus">15.3dp</dimen>
+    <dimen name="item_host_search_tip_padding_top_and_bottom">4.7dp</dimen>
+    <dimen name="item_host_search_tip_padding_right">9.4dp</dimen>
+
+    <dimen name="act_search_line_between_host_and_last_padding">18.82dp</dimen>
+    <dimen name="act_search_line_between_host_and_last_padding_top">18.82dp</dimen>
+    <dimen name="act_search_layout_delete_last_search_padding_top">16.47dp</dimen>
+    <dimen name="act_search_image_delete">18.82dp</dimen>
+    <dimen name="act_search_image_delete_margin_right">7.06dp</dimen>
+
+    <!-- 支付方式 -->
+    <dimen name="pay_act_layout_pay_padding_top">18.82dp</dimen>
+    <dimen name="pay_act_text_pay_way_padding_left">11.18dp</dimen>
+    <dimen name="pay_act_line_divide">0.5dp</dimen>
+    <dimen name="pay_act_line_divide_margin_top">18.82dp</dimen>
+    <dimen name="pay_act_line_divide_margin_bottom">18.82dp</dimen>
+    <dimen name="pay_act_line_divide_margin_left">11.18dp</dimen>
+    <dimen name="pay_act_relativelayout_ali_padding_top">14.12dp</dimen>
+    <dimen name="pay_act_relativelayout_ali_padding_left">11.18dp</dimen>
+    <dimen name="pay_act_image_ali_pay_height">37.65dp</dimen>
+    <dimen name="pay_act_image_ali_pay_width">37.65dp</dimen>
+    <dimen name="pay_act_text_ali_pay_margin_left">10.59dp</dimen>
+    <dimen name="pay_act_image_select_ali_height">23.53dp</dimen>
+    <dimen name="pay_act_image_select_ali_width">23.53dp</dimen>
+    <dimen name="pay_act_image_select_ali_margin_right">27.06dp</dimen>
+    <dimen name="pay_act_relativelayout_wechat_padding_left">11.18dp</dimen>
+    <dimen name="pay_act_image_wechat_pay_height">37.65dp</dimen>
+    <dimen name="pay_act_image_wechat_pay_width">37.65dp</dimen>
+    <dimen name="pay_act_text_wechat_pay_margin_left">10.59dp</dimen>
+    <dimen name="pay_act_image_select_wechat_height">23.53dp</dimen>
+    <dimen name="pay_act_image_select_wechat_width">23.53dp</dimen>
+    <dimen name="pay_act_image_select_wechat_margin_right">27.06dp</dimen>
+    <dimen name="pay_act_relativelayout_baiduWallet_padding_left">11.18dp</dimen>
+    <dimen name="pay_act_image_baiduWallet_pay_height">37.65dp</dimen>
+    <dimen name="pay_act_image_baiduWallet_pay_width">37.65dp</dimen>
+    <dimen name="pay_act_text_baiduWallet_pay_margin_left">10.59dp</dimen>
+    <dimen name="pay_act_image_select_baiduWallet_height">23.53dp</dimen>
+    <dimen name="pay_act_image_select_baiduWallet_width">23.53dp</dimen>
+    <dimen name="pay_act_image_select_baiduWallet_margin_right">27.06dp</dimen>
+    <dimen name="pay_act_relativelayout_JDWallet_padding_left">11.18dp</dimen>
+    <dimen name="pay_act_image_JDWallet_pay_height">37.65dp</dimen>
+    <dimen name="pay_act_image_JDWallet_pay_width">37.65dp</dimen>
+    <dimen name="pay_act_text_JDWallet_pay_margin_left">10.59dp</dimen>
+    <dimen name="pay_act_image_select_JDWallet_height">23.53dp</dimen>
+    <dimen name="pay_act_image_select_JDWallet_width">23.53dp</dimen>
+    <dimen name="pay_act_image_select_JDWallet_margin_right">27.06dp</dimen>
+    <dimen name="pay_act_relativelayout_quick_pay_padding_left">11.18dp</dimen>
+    <dimen name="pay_act_image_quick_pay_height">37.65dp</dimen>
+    <dimen name="pay_act_image_quick_pay_width">37.65dp</dimen>
+    <dimen name="pay_act_text_quick_pay_margin_left">10.59dp</dimen>
+    <dimen name="pay_act_image_select_quick_height">23.53dp</dimen>
+    <dimen name="pay_act_image_select_quick_width">23.53dp</dimen>
+    <dimen name="pay_act_image_select_quick_margin_right">27.06dp</dimen>
+    <dimen name="pay_act_relativelayout_union_pay_padding_left">11.18dp</dimen>
+    <dimen name="pay_act_image_union_pay_height">37.65dp</dimen>
+    <dimen name="pay_act_image_union_pay_width">37.65dp</dimen>
+    <dimen name="pay_act_text_union_pay_margin_left">10.59dp</dimen>
+    <dimen name="pay_act_image_select_union_height">23.53dp</dimen>
+    <dimen name="pay_act_image_select_union_width">23.53dp</dimen>
+    <dimen name="pay_act_image_select_union_margin_right">27.06dp</dimen>
+    <dimen name="pay_act_relativelayout_union_margin_bottom">18.82dp</dimen>
+    <dimen name="pay_act_btn_pay_height">52.94dp</dimen>
+    <dimen name="pay_act_btn_pay_width">131.76dp</dimen>
+    <dimen name="pay_act_btn_pay_margin_right">14.12dp</dimen>
+    <dimen name="pay_act_btn_pay_margin_top">18.82dp</dimen>
+    <dimen name="pay_act_btn_pay_margin_bottom">18.82dp</dimen>
+
+    <!--订单详情-->
+    <dimen name="item_good_in_shoppintcart_text_price_margin_top">10dp</dimen>
+    <dimen name="item_good_in_invoice_height">47.05dp</dimen>
+    <dimen name="item_good_in_invoice_height_item_margin_left">14dp</dimen>
+    <dimen name="item_good_in_invoice_height_item_margin_right">14dp</dimen>
+    <dimen name="item_good_in_invoice_height_item_margin_top">16dp</dimen>
+    <dimen name="item_good_in_invoice_item_margin_top">17.64dp</dimen>
+    <dimen name="item_good_in_invoice_item_total_margin_top">52.94dp</dimen>
+    <dimen name="item_good_in_invoice_item_commit_margin_top">58.82dp</dimen>
+    <dimen name="item_good_in_invoice_item_commit_button_margin_top">94.11dp</dimen>
+    <dimen name="item_good_in_invoice_item_commit_margin_left">12dp</dimen>
+    <dimen name="item_good_in_invoice_address_height">90dp</dimen>
+    <dimen name="item_good_in_invoice_address_icon_width">41.17dp</dimen>
+    <dimen name="item_good_in_invoice_address_icon_width_height">17dp</dimen>
+    <dimen name="item_good_in_invoice_address_text_padding">8dp</dimen>
+    <dimen name="item_good_in_invoice_address_text_top">9.41dp</dimen>
+    <dimen name="item_good_in_invoice_address_input_height">62.35dp</dimen>
+
+
+    <!--订单列表-->
+    <dimen name="item_order_wait_pay_layout_order_status_height">46.22dp</dimen>
+    <dimen name="item_order_wait_pay_layout_good_info_height">109.04dp</dimen>
+    <dimen name="item_order_wait_pay_layout_good_info_padding_top_bottom">8.59dp</dimen>
+    <dimen name="item_order_wait_pay_layout_good_height">120dp</dimen>
+    <dimen name="item_order_wait_pay_image_good">75.85dp</dimen>
+    <dimen name="item_order_wait_pay_image_good_padding_right">14.22dp</dimen>
+    <dimen name="item_order_wait_pay_image_arrow">16.59dp</dimen>
+    <dimen name="item_good_list_title_height">25.88dp</dimen>
+    <dimen name="item_good_list_title_margin_left">20dp</dimen>
+    <dimen name="item_good_list_title_margin_top_small">6dp</dimen>
+    <dimen name="item_good_list_title_margin_top">12dp</dimen>
+    <dimen name="item_good_list_title_margin_bottom">7.05dp</dimen>
+    <dimen name="item_good_list_title_margin">14dp</dimen>
+    <dimen name="item_good_list_order_freight_margin_right">11.76dp</dimen>
+    <dimen name="item_good_list_order_freight_margin_right_return">7.76dp</dimen>
+    <dimen name="item_good_in_order_height">65.88dp</dimen>
+    <dimen name="item_good_in_order_icon_margin_top">12dp</dimen>
+    <dimen name="item_good_in_order_icon_ll_et_width">75.29dp</dimen>
+    <dimen name="item_good_in_order_icon_ll_et_height">25.88dp</dimen>
+    <dimen name="item_good_in_order_name_margin_right">20dp</dimen>
+    <dimen name="item_good_in_order_name_margin_top">8dp</dimen>
+    <dimen name="item_good_in_order_is_seven_margin_top">6dp</dimen>
+    <dimen name="item_good_in_order_amount_margin_top">10dp</dimen>
+
+
+    <!--搜索 -->
+    <dimen name="item_good_list_title_search_rv_item_height">47.50dp</dimen>
+    <dimen name="item_good_list_title_search_rv_item_padding">11.76dp</dimen>
+    <dimen name="item_good_list_title_search_rv_item_view_line">0.33dp</dimen>
+
+    <!-- 退货申请 -->
+    <dimen name="return_sale_image_good_height">75.29dp</dimen>
+    <dimen name="return_sale_image_good_width">75.29dp</dimen>
+    <dimen name="return_sale_image_good_margin_bottom">18.82dp</dimen>
+    <dimen name="return_sale_image_good_margin_top">18.82dp</dimen>
+    <dimen name="return_sale_image_good_margin_left">14.12dp</dimen>
+    <dimen name="return_sale_image_good_margin_right">14.12dp</dimen>
+    <dimen name="return_sale_text_good_num_margin_right">18.82dp</dimen>
+    <dimen name="return_sale_relativelayout_service_height">114.12dp</dimen>
+    <dimen name="return_sale_relativelayout_service_margin_top">18.82dp</dimen>
+    <dimen name="return_sale_service_type_margin_top">18.82dp</dimen>
+    <dimen name="return_sale_service_type_margin_bottom">18.82dp</dimen>
+    <dimen name="return_sale_service_type_margin_left">14.12dp</dimen>
+
+    <dimen name="return_sale_service_type_1_height">31.76dp</dimen>
+    <dimen name="return_sale_service_type_1_width">107.25dp</dimen>
+    <dimen name="return_sale_service_type_1_margin_left">14.12dp</dimen>
+    <dimen name="return_sale_service_type_2_height">31.76dp</dimen>
+    <dimen name="return_sale_service_type_2_width">106.47dp</dimen>
+    <dimen name="return_sale_service_type_2_margin_left">14.12dp</dimen>
+
+
+    <dimen name="return_sale_relativelayout_amount_margin_top">18.82dp</dimen>
+    <dimen name="return_sale_text_amount_margin_left">14.12dp</dimen>
+    <dimen name="return_sale_text_amount_margin_top">18.82dp</dimen>
+    <dimen name="return_sale_text_amount_margin_bottom">18.82dp</dimen>
+    <dimen name="return_sale_text_amout_tip_margin_left">14.12dp</dimen>
+    <dimen name="return_sale_text_amout_tip_margin_top">18.82dp</dimen>
+    <dimen name="return_sale_text_amout_tip_margin_bottom">18.82dp</dimen>
+
+    <dimen name="return_sale_relativelayout_question_height">118.82dp</dimen>
+    <dimen name="return_sale_relativelayout_question_margin_top">18.82dp</dimen>
+    <dimen name="return_sale_text_question_margin_left">14.12dp</dimen>
+    <dimen name="return_sale_text_question_margin_top">14.12dp</dimen>
+    <dimen name="return_sale_text_question_margin_botttom">14.12dp</dimen>
+    <dimen name="return_sale_edittext_question_height">61.63dp</dimen>
+    <dimen name="return_sale_edittext_question_margin_left">14.12dp</dimen>
+    <dimen name="return_sale_edittext_question_margin_right">14.12dp</dimen>
+    <dimen name="return_sale_edittext_question_padding_left">9.41dp</dimen>
+    <dimen name="return_sale_edittext_question_padding_right">9.41dp</dimen>
+    <dimen name="return_sale_edittext_question_padding_top">7.06dp</dimen>
+    <dimen name="return_sale_edittext_question_padding_bottom">7.06dp</dimen>
+
+    <dimen name="return_sale_relativelayout_certificate_height">158.82dp</dimen>
+    <dimen name="return_sale_relativelayout_certificate_margin_left">18.82dp</dimen>
+    <dimen name="return_sale_text_certificate_margin_left">14.12dp</dimen>
+    <dimen name="return_sale_text_certificate_margin_top">14.12dp</dimen>
+    <dimen name="return_sale_text_certificate_margin_bottom">16.47dp</dimen>
+
+    <dimen name="return_sale_linearlayout_certificates_right">14.12dp</dimen>
+    <dimen name="return_sale_linearlayout_certificates_bottom">14.12dp</dimen>
+    <dimen name="return_sale_image_add_certificates_left">14.12dp</dimen>
+    <dimen name="return_sale_text_certificate_tip_margin_left">14.12dp</dimen>
+    <dimen name="return_sale_text_certificate_tip_margin_bottom">14.12dp</dimen>
+
+
+    <dimen name="return_sale_btn_submit_width">221.18dp</dimen>
+    <dimen name="return_sale_btn_submit_margin_top">28.24dp</dimen>
+    <dimen name="return_sale_btn_submit_margin_bottom">28.24dp</dimen>
+
+    <!--数字选择组件-->
+    <dimen name="c_num_picker_common_width">40.3dp</dimen>
+    <dimen name="c_num_picker_common_height">33.19dp</dimen>
+    <dimen name="c_num_picker_num_width">42.67dp</dimen>
+
+    <!--商品列表 begin-->
+    <dimen name="act_good_list_text_contrast_padding_right">15.29dp</dimen>
+    <dimen name="act_good_list_layout_fitter_height">43.53dp</dimen>
+    <dimen name="act_good_list_layout_fitter_line">15.29dp</dimen>
+    <dimen name="act_good_list_search_rl_width">250dp</dimen>
+    <dimen name="act_good_list_search_rl_height">25dp</dimen>
+    <dimen name="act_good_list_title_image_margin_icon">20dp</dimen>
+    <dimen name="act_good_list_title_image_margin">10dp</dimen>
+    <dimen name="act_good_list_title_text_margin_left">5dp</dimen>
+    <dimen name="act_good_list_ll_all_sort_width">108.24dp</dimen>
+    <dimen name="act_good_list_ll_all_sort_padding">5.88dp</dimen>
+    <dimen name="act_good_list_ll_all_sort_image_height">9.4dp</dimen>
+    <dimen name="act_good_list_ll_all_width">100.24dp</dimen>
+    <dimen name="act_good_list_ll_all_title_width">50.58dp</dimen>
+    <dimen name="act_good_list_context_height">440.18dp</dimen>
+    <dimen name="act_good_list_context_bottom">11.76dp</dimen>
+    <dimen name="act_good_list_item_rl_icon">364.7dp</dimen>
+    <dimen name="act_good_list_item_rl_icon_image_width">32dp</dimen>
+    <dimen name="act_good_list_item_rl_icon_image_margin_left">11.76dp</dimen>
+    <dimen name="act_good_list_item_rl_icon_image_margin_top">16.47dp</dimen>
+    <dimen name="act_good_list_item_rl_icon_image_button">8dp</dimen>
+    <dimen name="act_good_list_item_rl_icon_text_top">10.58dp</dimen>
+    <dimen name="act_good_list_item_rl_ll_bottom_height">75dp</dimen>
+    <dimen name="act_good_list_item_rl_ll_bottom_score_width">54dp</dimen>
+    <dimen name="act_good_list_item_rl_ll_bottom_score_size">42dp</dimen>
+    <dimen name="act_good_list_item_rl_ll_bottom_score_margin">25dp</dimen>
+    <dimen name="act_good_list_root">57.64dp</dimen>
+
+    <!--确认订单-->
+    <dimen name="act_comfirm_order_layout_please_select_address_no_address_height">85dp</dimen>
+    <dimen name="act_comfirm_order_layout_please_select_address_margin_top">16dp</dimen>
+    <dimen name="act_comfirm_order_layout_please_select_address_margin_right">48dp</dimen>
+    <dimen name="act_comfirm_order_tv_invoice">47.05dp</dimen>
+    <dimen name="act_comfirm_order_layout_height">57.64dp</dimen>
+    <dimen name="act_comfirm_order_act_btn_sumit_order_width">94.11dp</dimen>
+    <dimen name="act_comfirm_order_act_btn_sumit_order_height">35.29dp</dimen>
+    <dimen name="act_comfirm_order_height">105.88dp</dimen>
+    <!--商品详情 begin-->
+
+    <dimen name="act_good_detail_image_height">360dp</dimen>
+    <dimen name="act_good_detail_image_margin_bottom">18.82dp</dimen>
+    <dimen name="act_good_detail_text_tip">52.94dp</dimen>
+    <dimen name="act_good_detail_text_page_circle">28.125dp</dimen>
+    <dimen name="act_good_detail_text_page_circle_radius">14.0625dp</dimen>
+    <dimen name="act_good_detail_text_page_circle_margin_right">28.24dp</dimen>
+    <dimen name="act_good_detail_text_page_circle_margin_bottom">18.82dp</dimen>
+    <dimen name="act_good_detail_text_price_padding_left_right_top">12.94dp</dimen>
+    <dimen name="act_good_detail_text_good_name_padding_right_and_right">28.24dp</dimen>
+    <dimen name="act_good_detail_btn_add_to_constract">21.18dp</dimen>
+    <dimen name="act_good_detail_common_padding">15.29dp</dimen>
+
+    <dimen name="act_good_detail_layout_num_padding_top">28.24dp</dimen>
+    <dimen name="act_good_detail_layout_num_padding_bottom">18.82dp</dimen>
+
+    <dimen name="act_good_detail_score_circle_margin_top">18.8dp</dimen>
+    <dimen name="act_good_detail_score_circle">42dp</dimen>
+    <dimen name="act_good_detail_score_height">58.8dp</dimen>
+
+    <dimen name="act_good_detail_layout_num_box_del">35.29dp</dimen>
+    <dimen name="act_good_detail_layout_num_box_height">29.41dp</dimen>
+    <dimen name="act_good_detail_text_num_box">35.29dp</dimen>
+    <dimen name="act_good_detail_layout_num_box_add">35.29dp</dimen>
+    <dimen name="act_good_detail_layout_num_box_margin_left">10.59dp</dimen>
+    <dimen name="act_good_detail_text_sale_margin_left">25.88dp</dimen>
+    <dimen name="act_good_detail_item_info_tv_title_line">88dp</dimen>
+
+    <dimen name="act_good_detail_text_apply_margin_bottom">56.47dp</dimen>
+
+    <dimen name="act_good_detail_line_shop_info">50dp</dimen>
+    <dimen name="act_good_detail_layout_shop_info_padding">5.88dp</dimen>
+    <dimen name="act_good_detail_layout_shop_info_item_height">47.62dp</dimen>
+
+
+    <dimen name="act_good_detail_layout_icon_padding">21.59dp</dimen>
+    <dimen name="act_good_detail_layout_icon_padding_mid">7.06dp</dimen>
+    <dimen name="act_good_detail_layout_icon_padding_bottom">23.53dp</dimen>
+    <dimen name="act_good_detail_layout_icon">42.35dp</dimen>
+
+    <dimen name="act_good_detail_common_bg_height">11.77dp</dimen>
+
+    <dimen name="act_good_detail_data_image_height">288.24dp</dimen>
+
+
+    <dimen name="act_good_detail_shopcart_num_tip">15.94dp</dimen>
+    <dimen name="act_good_detail_shopcart_num_tip_radius">7.65dp</dimen>
+
+
+    <dimen name="act_good_detail_operator_bar_height">57.65dp</dimen>
+    <dimen name="act_good_detail_operator_bar_icon">27.06dp</dimen>
+    <dimen name="act_good_detail_operator_bar_line_height">35.29dp</dimen>
+
+    <dimen name="act_good_detail_tool_bar_icon">24.7dp</dimen>
+    <dimen name="act_good_detail_tool_bar_icon_margin_left">21.18dp</dimen>
+
+
+    <!--待修改格式-->
+    <dimen name="act_title_back_bottom">10dp</dimen>
+    <dimen name="act_title_top">60.8dp</dimen>
+    <dimen name="act_title_margin_top">40dp</dimen>
+    <dimen name="act_title_line_bottom">1.78dp</dimen>
+    <dimen name="act_title_line_top">5.88dp</dimen>
+    <dimen name="act_content_margin">30dp</dimen>
+    <dimen name="act_content_padding_top">82dp</dimen>
+    <dimen name="act_content_view_line_height">0.5dp</dimen>
+    <dimen name="act_content_share_width">300dp</dimen>
+    <dimen name="act_content_image_height">17.64dp</dimen>
+    <dimen name="act_register_tv_send_verify_code_width">94.12dp</dimen>
+
+    <dimen name="frg_register_return_title_bottom_padding">5.88dp</dimen>
+    <dimen name="frg_register_return_margin2">15.29dp</dimen>
+    <dimen name="frg_register_return_margin">12.94dp</dimen>
+    <dimen name="frg_register_title_width">45.88dp</dimen>
+    <dimen name="frg_register_et_width">247.06dp</dimen>
+    <dimen name="frg_register_verify_width">152.94dp</dimen>
+    <dimen name="frg_register_password_width">196.48dp</dimen>
+    <dimen name="frg_register_tv_show_password_width">50.58dp</dimen>
+    <dimen name="frg_register_tv_margin_tip">15.4dp</dimen>
+    <dimen name="frg_register_ll_shear_width_icon">45.6dp</dimen>
+    <dimen name="frg_register_ll_shear_image_width_icon">25.88dp</dimen>
+    <dimen name="frg_register_ll_shear_tv">8.24sp</dimen>
+    <dimen name="frg_register_et_height">52dp</dimen>
+    <dimen name="frg_register_tv_btn_padding">5dp</dimen>
+    <dimen name="frg_register_tv_btn_width">40dp</dimen>
+    <dimen name="frg_register_input_margin_top">32dp</dimen>
+    <dimen name="frg_register_ll_shear_margin_top">8dp</dimen>
+    <dimen name="frg_register_ll_shear_image_height_icon">20dp</dimen>
+
+
+    <!-- 售后服务-待审核 -->
+    <dimen name="check_pass_root_linearLayout_padding_bottom">18.82dp</dimen>
+    <dimen name="check_pass_query_height">32.94dp</dimen>
+    <dimen name="check_pass_query_width">82.35dp</dimen>
+    <dimen name="check_pass_query_margin_top">18.82dp</dimen>
+    <dimen name="check_pass_query_margin_bottom">18.82dp</dimen>
+    <dimen name="check_pass_query_margin_right">14.12dp</dimen>
+
+    <dimen name="check_pass_line_divide_margin_left">14.12dp</dimen>
+    <dimen name="check_pass_line_divide">0.5dp</dimen>
+
+    <dimen name="check_pass_id_margin_left">14.12dp</dimen>
+    <dimen name="check_pass_title_margin_left">14.12dp</dimen>
+    <dimen name="check_pass_title_margin_right">14.12dp</dimen>
+    <dimen name="check_pass_title_margin_top">18.82dp</dimen>
+    <dimen name="check_pass_title_margin_bottom">18.82dp</dimen>
+
+    <dimen name="check_pass_state_margin_left">14.12dp</dimen>
+    <dimen name="check_pass_amount_margin_right">14.12dp</dimen>
+    <dimen name="check_pass_time_margin_top">16.47dp</dimen>
+    <dimen name="check_pass_time_margin_bottom">16.47dp</dimen>
+    <dimen name="check_pass_time_margin_left">14.12dp</dimen>
+    <dimen name="check_pass_relativelayout_padding_top">23.53dp</dimen>
+    <dimen name="check_pass_relativelayout_padding_bottom">16.47dp</dimen>
+    <dimen name="check_pass_cancel_margin_right">14.12dp</dimen>
+    <dimen name="check_pass_cancel_height">38.82dp</dimen>
+    <dimen name="check_pass_cancel_width">91.76dp</dimen>
+
+
+    <!-- 售后服务-待核验 -->
+    <dimen name="varification_pending_root_linearLayout_padding_bottom">18.82dp</dimen>
+    <dimen name="varification_pending_query_height">32.94dp</dimen>
+    <dimen name="varification_pending_query_width">82.35dp</dimen>
+    <dimen name="varification_pending_query_margin_top">18.82dp</dimen>
+    <dimen name="varification_pending_margin_bottom">18.82dp</dimen>
+    <dimen name="varification_pending_query_margin_right">14.12dp</dimen>
+
+    <dimen name="varification_pending_line_divide_margin_left">14.12dp</dimen>
+    <dimen name="varification_pending_line_divide">0.5dp</dimen>
+
+    <dimen name="varification_pending_id_margin_left">14.12dp</dimen>
+    <dimen name="varification_pending_title_margin_left">14.12dp</dimen>
+    <dimen name="varification_pending_title_margin_right">14.12dp</dimen>
+    <dimen name="varification_pending_title_margin_top">18.82dp</dimen>
+    <dimen name="varification_pending_title_margin_bottom">18.82dp</dimen>
+
+    <dimen name="varification_pending_state_margin_left">14.12dp</dimen>
+    <dimen name="varification_pending_amount_margin_right">14.12dp</dimen>
+    <dimen name="varification_pending_time_margin_top">16.47dp</dimen>
+    <dimen name="varification_pending_time_margin_bottom">16.47dp</dimen>
+    <dimen name="varification_pending_time_margin_left">14.12dp</dimen>
+    <dimen name="varification_pending_relativelayout_padding_top">23.53dp</dimen>
+    <dimen name="varification_pending_relativelayout_padding_bottom">16.47dp</dimen>
+    <dimen name="varification_pending_cancel_margin_right">14.12dp</dimen>
+    <dimen name="varification_pending_cancel_height">38.82dp</dimen>
+    <dimen name="varification_pending_cancel_width">91.76dp</dimen>
+
+
+    <!-- 售后服务-退货成功 -->
+    <dimen name="sale_return_success_root_linearLayout_padding_bottom">18.82dp</dimen>
+    <dimen name="sale_return_success_query_height">32.94dp</dimen>
+    <dimen name="sale_return_success_query_width">82.35dp</dimen>
+    <dimen name="sale_return_success_query_margin_top">18.82dp</dimen>
+    <dimen name="sale_return_success_margin_bottom">18.82dp</dimen>
+    <dimen name="sale_return_success_query_margin_right">14.12dp</dimen>
+
+    <dimen name="sale_return_success_line_divide_margin_left">14.12dp</dimen>
+    <dimen name="sale_return_success_line_divide">0.5dp</dimen>
+
+    <dimen name="sale_return_success_id_margin_left">14.12dp</dimen>
+    <dimen name="sale_return_success_title_margin_left">14.12dp</dimen>
+    <dimen name="sale_return_success_title_margin_right">14.12dp</dimen>
+    <dimen name="sale_return_success_title_margin_top">18.82dp</dimen>
+    <dimen name="sale_return_success_title_margin_bottom">18.82dp</dimen>
+
+    <dimen name="sale_return_success_state_margin_left">14.12dp</dimen>
+    <dimen name="sale_return_success_amount_margin_right">14.12dp</dimen>
+    <dimen name="sale_return_success_time_margin_top">16.47dp</dimen>
+    <dimen name="sale_return_success_time_margin_bottom">16.47dp</dimen>
+    <dimen name="sale_return_success_time_margin_left">14.12dp</dimen>
+    <dimen name="sale_return_success_relativelayout_padding_top">23.53dp</dimen>
+    <dimen name="sale_return_success_relativelayout_padding_bottom">16.47dp</dimen>
+    <dimen name="sale_return_success_cancel_margin_right">14.12dp</dimen>
+    <dimen name="sale_return_success_cancel_height">38.82dp</dimen>
+    <dimen name="sale_return_success_cancel_width">91.76dp</dimen>
+
+    <!-- 售后服务详情-快递进度 -->
+    <dimen name="after_sale_process_relativelayout_height">103.53dp</dimen>
+    <dimen name="after_sale_process_state_margin_top">18.82dp</dimen>
+    <dimen name="after_sale_process_state_margin_left">35.29dp</dimen>
+    <dimen name="after_sale_process_views_width">35.29dp</dimen>
+    <dimen name="after_sale_process_time_margin_top">18.82dp</dimen>
+
+    <dimen name="after_sale_process_line_divide_margin_left">35.29dp</dimen>
+    <dimen name="after_sale_process_line_divide">0.5dp</dimen>
+
+    <!-- 售后服务详情 -->
+    <dimen name="after_sale_detail_linearlayout_padding_bottom">18.82dp</dimen>
+    <dimen name="after_sale_detail_id_margin_left">14.12dp</dimen>
+    <dimen name="after_sale_detail_query_height">32.94dp</dimen>
+    <dimen name="after_sale_detail_query_width">82.35dp</dimen>
+    <dimen name="after_sale_detail_query_margin_top">18.82dp</dimen>
+    <dimen name="after_sale_detail_query_margin_bottom">18.82dp</dimen>
+    <dimen name="after_sale_detail_quety_margin_right">14.12dp</dimen>
+
+    <dimen name="after_sale_detail_line_divide_margin_left">14.12dp</dimen>
+    <dimen name="after_sale_detail_line_divide">0.5dp</dimen>
+
+    <dimen name="after_sale_detail_title_margin_right">14.12dp</dimen>
+    <dimen name="after_sale_detail_title_margin_left">14.12dp</dimen>
+    <dimen name="after_sale_detail_title_margin_top">18.82dp</dimen>
+    <dimen name="after_sale_detail_title_margin_bottom">18.82dp</dimen>
+    <dimen name="after_sale_detail_state_margin_left">14.12dp</dimen>
+    <dimen name="after_sale_detail_amount_margin_right">14.12dp</dimen>
+    <dimen name="after_sale_time_margin_left">14.12dp</dimen>
+    <dimen name="after_sale_time_margin_top">16.47dp</dimen>
+    <dimen name="after_sale_time_margin_bottom">16.47dp</dimen>
+    <dimen name="after_sale_detail_addView_margin_top">-16.47dp</dimen>
+
+    <dimen name="after_sale_detail_linearlayout_margin_top">8dp</dimen>
+    <dimen name="after_sale_detail_process_margin_left">14.12dp</dimen>
+    <dimen name="after_sale_detail_process_margin_top">18.82dp</dimen>
+    <dimen name="after_sale_detail_process_margin_bottom">18.82dp</dimen>
+    <item name="check_pending_button_id" type="id"></item>
+    <item name="check_pending_edit_button_id" type="id"></item>
+    <item name="after_sale_process_first_circle_id" type="id"></item>
+    <item name="after_sale_process_circle_id" type="id"></item>
+    <item name="after_sale_process_last_circle_id" type="id"></item>
+
+    <!-- 售后服务-待支付 -->
+    <dimen name="check_pending_query_height">32.94dp</dimen>
+    <dimen name="check_pending_query_width">82.35dp</dimen>
+    <dimen name="check_pending_cancel_height">38.82dp</dimen>
+    <dimen name="check_pending_cancel_width">91.76dp</dimen>
+    <dimen name="check_pending_edit_imformation_height">35.29dp</dimen>
+    <dimen name="check_pending_edit_imformation_width">117.64dp</dimen>
+    <dimen name="check_pending_address_height">38.82dp</dimen>
+    <dimen name="check_pending_address_width">116.47dp</dimen>
+    <dimen name="check_pending_relativelayout_padding_top">23.53dp</dimen>
+    <dimen name="check_pending_relativelayout_padding_bottom">16.47dp</dimen>
+    <dimen name="check_pending_line_divide">0.5dp</dimen>
+    <dimen name="check_pending_id_margin_left">14.12dp</dimen>
+    <dimen name="check_pending_root_linearLayout_padding_bottom">18.82dp</dimen>
+    <dimen name="check_pending_title_margin_left">14.12dp</dimen>
+    <dimen name="check_pending_title_margin_right">14.12dp</dimen>
+    <dimen name="check_pending_state_margin_left">14.12dp</dimen>
+    <dimen name="check_pending_amount_margin_right">14.12dp</dimen>
+    <dimen name="check_pending_time_margin_left">14.12dp</dimen>
+    <dimen name="check_pending_line_divide_margin_left">14.12dp</dimen>
+    <dimen name="check_pending_cancel_margin_right">14.12dp</dimen>
+    <dimen name="check_pending_edit_imformation_margin_right">14.12dp</dimen>
+    <dimen name="check_pending_address_margin_right">14.12dp</dimen>
+    <dimen name="check_pending_time_margin_top">16.47dp</dimen>
+    <dimen name="check_pending_time_margin_bottom">16.47dp</dimen>
+    <dimen name="check_pending_query_margin_top">18.82dp</dimen>
+    <dimen name="check_pending_query_margin_bottom">18.82dp</dimen>
+    <dimen name="check_pending_title_margin_top">18.82dp</dimen>
+    <dimen name="check_pending_title_margin_bottom">18.82dp</dimen>
+    <dimen name="check_pending_query_margin_right">8.12dp</dimen>
+
+
+    <dimen name="detail_backdrop_height">256dp</dimen>
+
+    <dimen name="card_margin4">8dp</dimen>
+    <dimen name="card_margin">11.76dp</dimen>
+
+    <dimen name="card_margin1">10dp</dimen>
+    <dimen name="card_margin2">25dp</dimen>
+    <dimen name="card_margin3">0dp</dimen>
+    <dimen name="card_margin_right">7.05dp</dimen>
+    <dimen name="card_margin_left">23.52dp</dimen>
+    <dimen name="card_margin_left_large">20dp</dimen>
+    <dimen name="list_item_avatar_size">40dp</dimen>
+
+    <!--评价-->
+    <dimen name="Evaluate_top">55dp</dimen>
+    <dimen name="btn_evaluate_top">180dp</dimen>
+    <dimen name="evaluate_margin_left">5dp</dimen>
+    <dimen name="evaluate_image_height">200dp</dimen>
+    <dimen name="evaluate_image_width">350dp</dimen>
+    <dimen name="evaluate_image_margin_botton">80.53dp</dimen>
+    <dimen name="evaluate_image_icon_width_height">76.47dp</dimen>
+    <dimen name="evaluate_title_text_name_margin_top">2dp</dimen>
+    <dimen name="evaluate_title_text_name_margin_left">17.64dp</dimen>
+    <dimen name="evaluate_add_iv_padding_bottom">23.53dp</dimen>
+    <dimen name="evaluate_add_icon_width_height">76.47dp</dimen>
+    <dimen name="evaluate_add_icon_content_width_height">47.05dp</dimen>
+    <dimen name="evaluate_add_icon_content_icon_width">38dp</dimen>
+    <dimen name="evaluate_add_icon_content_icon_height">40dp</dimen>
+    <dimen name="evaluate_add_padding_bottom">15.53dp</dimen>
+
+    <!--购物车-->
+    <dimen name="frg_shoppingcart_recycle_view_margin_bottom">50dp</dimen>
+    <dimen name="frg_shoppintcart_layout_settlement_height">50dp</dimen>
+    <dimen name="frg_shoppintcart_image_height">88dp</dimen>
+    <dimen name="frg_shoppintcart_image_width">88dp</dimen>
+
+    <!--对比 -->
+    <dimen name="compar_padding_top">29dp</dimen>
+    <dimen name="compar_margin">11.76dp</dimen>
+    <dimen name="compar_padding">18dp</dimen>
+    <dimen name="compar_image_height">105.88dp</dimen>
+    <dimen name="compar_image_width">105.88dp</dimen>
+    <dimen name="compar_image_margin_top">5.88dp</dimen>
+    <dimen name="compar_text_margin_top">10.6dp</dimen>
+    <dimen name="compar_recycler_margin_bottom">70dp</dimen>
+    <dimen name="compar_input_button_height">70dp</dimen>
+    <dimen name="compar_input_width">314.18dp</dimen>
+    <dimen name="compar_input_height">47.05dp</dimen>
+    <dimen name="compar_input_add_cart_width">88.24dp</dimen>
+    <dimen name="compar_input_add_cart_height">28.24dp</dimen>
+    <dimen name="compar_input_add_cart_margin_bottom">17.64dp</dimen>
+    <dimen name="compar_item_heigth">110dp</dimen>
+    <dimen name="compar_title_icon_width_height">24.71dp</dimen>
+    <dimen name="compar_title_text_count_width_height">15.94dp</dimen>
+    <dimen name="compar_title_text_count_margin_right">-10dp</dimen>
+    <dimen name="compar_title_margin_top">8dp</dimen>
+
+    <!-- 商品评价 -->
+    <dimen name="item_appraise_line_view">16.47dp</dimen>
+    <dimen name="good_appraise_margin">16dp</dimen>
+    <dimen name="good_appraise_height">34.11dp</dimen>
+    <dimen name="item_appraise_iv_width">80dp</dimen>
+
+
+    <!-- 分类-->
+    <dimen name="item_classfication_width_icon">16.47dp</dimen>
+    <dimen name="item_classfication_height_icon">11.76dp</dimen>
+    <dimen name="frg_class_fiction_image_width">25.88dp</dimen>
+    <dimen name="frg_class_fiction_title_padding">17.64dp</dimen>
+    <dimen name="frg_class_fiction_item_btn_width">88.26dp</dimen>
+    <dimen name="frg_class_fiction_item_btn_height">30dp</dimen>
+    <dimen name="frg_class_fiction_item_btn_padding">5.88dp</dimen>
+    <dimen name="frg_class_fiction_item_btn_margin">10dp</dimen>
+
+    <!--购物车-->
+    <dimen name="frg_shop_cart_layout_refresh_margin_bottom">53.33dp</dimen>
+    <dimen name="frg_shop_cart_layout_btn_submit_width">124.44dp</dimen>
+    <dimen name="frg_shop_cart_btn_select">23.7dp</dimen>
+
+    <!--购物车 正常item -->
+    <dimen name="item_shop_cart_good_normal_image_select">23.7dp</dimen>
+    <dimen name="item_shop_cart_good_normal_image_good">88.89dp</dimen>
+    <dimen name="item_shop_cart_good_normal_image_good_margin_right">17.78dp</dimen>
+    <dimen name="item_shop_cart_good_normal_layout_info_margin_top">28.44dp</dimen>
+    <dimen name="item_shop_cart_good_normal_height">144.6dp</dimen>
+
+    <!--购物车 item -->
+    <dimen name="item_shop_cart_good_out_time_image_good_margin_right">13.04dp</dimen>
+    <dimen name="item_shop_cart_good_out_time_image_good_margin_left">26.07dp</dimen>
+    <dimen name="item_shop_cart_good_out_time_image_good_margin_top">23.70dp</dimen>
+    <dimen name="item_shop_cart_good_out_time_image_good">65.19dp</dimen>
+    <dimen name="item_shop_cart_good_out_time_text_name_margin_bottom">7.11dp</dimen>
+    <dimen name="item_shop_cart_good_out_time_text_name_margin_right">99.56dp</dimen>
+    <dimen name="item_shop_cart_good_out_time_text_price_margin_bottom">30.82dp</dimen>
+    <dimen name="item_shop_cart_good_out_time_btn_find_like_radius">17.56dp</dimen>
+    <dimen name="item_shop_cart_good_out_time_btn_find_like_margin_bottom">17.78dp</dimen>
+
+    <dimen name="frg_shop_cart_layout_suppose_you_want">201.49dp</dimen>
+    <dimen name="frg_shop_cart_text_suppose_you_want">40.3dp</dimen>
+
+    <dimen name="frg_shop_cart_image_no_good_margin_padding_top_bottom">61.63dp</dimen>
+
+    <dimen name="frg_shop_cart_btn_margin_padding_bottom">18.96dp</dimen>
+    <dimen name="frg_shop_cart_image_no_good">118.52dp</dimen>
+
+
+    <dimen name="item_good_shop_cart_view_suppose_you_want_image_good">85.33dp</dimen>
+    <dimen name="item_good_shop_cart_view_suppose_you_want_image_good_margin_bottom">5.93dp</dimen>
+    <dimen name="item_good_shop_cart_view_suppose_you_want_text_name_margin_bottom">8.89dp</dimen>
+
+
+    <!--地址编辑-->
+    <dimen name="act_address_edit_layout_height">58.07dp</dimen>
+    <dimen name="act_address_layout_province_city_district_padding">16dp</dimen>
+    <dimen name="act_address_layout_province_city_district_icon_width_height">14dp</dimen>
+    <dimen name="act_address_edit_switch_default_address_width">60dp</dimen>
+    <dimen name="act_address_edit_switch_default_address_height">28dp</dimen>
+
+
+    <!-- 首页-->
+    <dimen name="frg_home_good_content_carousel">229.41dp</dimen>
+    <dimen name="frg_home_good_content_carousel_banner_point">15dp</dimen>
+    <dimen name="frg_home_good_content_carousel_banner_point_mid">4dp</dimen>
+    <dimen name="frg_home_good_gl_adv1_margin">-5dp</dimen>
+    <dimen name="frg_home_good_gl_adv1_margin_case">5dp</dimen>
+    <dimen name="home_dotLayout_point">25dp</dimen>
+    <dimen name="home_dotLayout_point_padding">8dp</dimen>
+    <dimen name="home_dotLayout_adv_width">352dp</dimen>
+    <dimen name="home_dotLayout_adv_height">192.94dp</dimen>
+    <dimen name="home_dotLayout_adv_margin_top">17.65dp</dimen>
+    <dimen name="home_dotLayout_adv_height_small">96.47dp</dimen>
+    <dimen name="home_dotLayout_adv_height_big">237.29dp</dimen>
+    <dimen name="home_dotLayout_adv_height_more">264.71dp</dimen>
+    <dimen name="home_dotLayout_adv_height_min">164.7dp</dimen>
+    <dimen name="home_dotLayout_adv_margin_bottom">27.65dp</dimen>
+    <dimen name="home_dotLayout_title_height">45.76dp</dimen>
+    <dimen name="item_frg_home_good_rv_icon_height">105.88dp</dimen>
+    <dimen name="item_frg_home_good_rv_icon_width">105.88dp</dimen>
+    <dimen name="item_frg_home_good_rv_height">48dp</dimen>
+    <dimen name="item_frg_home_good_rv_root_width">105.88dp</dimen>
+    <dimen name="item_frg_home_good_rv_root_margin_left">10dp</dimen>
+    <dimen name="item_frg_home_good_rv_root_ll_height">160dp</dimen>
+    <dimen name="frg_home_title_width">260dp</dimen>
+
+    <!-- 收藏 -->
+
+    <dimen name="item_collect_rv_item_root_height">169.41dp</dimen>
+    <dimen name="item_collect_rv_item_root_padding_left">17.64dp</dimen>
+    <dimen name="item_collect_rv_item_root_padding_right">15.29dp</dimen>
+    <dimen name="item_collect_rv_margin_top">17.64dp</dimen>
+    <dimen name="item_collect_rv_icon_image_width">131.76dp</dimen>
+    <dimen name="item_collect_rv_icon_image_height">131.76dp</dimen>
+    <dimen name="item_collect_rv_content_height">140dp</dimen>
+    <dimen name="item_collect_rv_content_margin_left">23.52dp</dimen>
+    <dimen name="item_collect_rv_content_price_margin_top">12.47dp</dimen>
+    <dimen name="item_collect_rv_content_price_margin_left">8dp</dimen>
+    <dimen name="item_collect_rv_content_price_add_comparison_margin_left">21.71dp</dimen>
+    <dimen name="item_collect_rv_content_price_add_comparison_tv_width">70.58dp</dimen>
+    <dimen name="item_collect_rv_content_price_add_comparison_tv_height">21.17dp</dimen>
+    <dimen name="item_collect_rv_content_line_margin_top">21.17dp</dimen>
+
+    <!-- 意见反馈-->
+    <dimen name="act_suggest_root_margin_left">11.76dp</dimen>
+    <dimen name="act_suggest_root_margin_right">11.76dp</dimen>
+    <dimen name="act_suggest_et_content_height">151.94dp</dimen>
+    <dimen name="act_suggest_et_content_margin_top">7.05dp</dimen>
+    <dimen name="act_suggest_et_content_margin">5dp</dimen>
+    <dimen name="act_suggest_et_contact_margin">11.76dp</dimen>
+    <dimen name="act_suggest_et_name_height">52.94dp</dimen>
+    <dimen name="act_suggest_et_name_margin">8dp</dimen>
+    <dimen name="act_suggest_et_name_margin_top">7.05dp</dimen>
+    <dimen name="act_suggest_et_all_margin_">8dp</dimen>
+
+    <!-- 地址-->
+    <dimen name="act_deliver_goods_root_margin_bottom">60dp</dimen>
+    <dimen name="act_deliver_goods_content_height">57.64dp</dimen>
+    <dimen name="act_deliver_goods_padding_left">14dp</dimen>
+    <dimen name="act_deliver_goods_image_width">12dp</dimen>
+    <dimen name="act_deliver_goods_image_height">16.59dp</dimen>
+    <dimen name="act_deliver_goods_bottom_margin_top">25dp</dimen>
+    <dimen name="act_deliver_goods_bottom_cancel_width">164.7dp</dimen>
+    <dimen name="act_deliver_goods_bottom_cancel_height">42.35dp</dimen>
+
+    <!-- 查看物流--> 快递信息 -->
+    <dimen name="act_express_info_content_item_height">125dp</dimen>
+    <dimen name="act_express_info_content_item_left_height">40dp</dimen>
+    <dimen name="act_express_info_content_item_express_view_top">25dp</dimen>
+    <dimen name="act_express_info_content_item_express_view_below">90dp</dimen>
+    <dimen name="act_express_info_content_item_margin">11.76dp</dimen>
+    <dimen name="act_express_info_content_item_icon_width_height">76.47dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="act_express_info_content_item_title_padding_left">14dp</dimen>
+
+    <!-- 发表咨询 -->
+    <dimen name="act_input_consult_root_margin_left">11.76dp</dimen>
+    <dimen name="act_input_consult_root_margin_right">11.76dp</dimen>
+    <dimen name="act_input_consult_et_content_height">151.94dp</dimen>
+    <dimen name="act_input_consult_et_name_margin_top">7.05dp</dimen>
+    <dimen name="act_input_consult_et_all_margin_">8dp</dimen>
+
+
+    <!--分享-->
+    <dimen name="act_share_iv_finish_width">27.06dp</dimen>
+    <dimen name="act_share_iv_finish_height">27.06dp</dimen>
+    <dimen name="act_share_icon_width_height">70.58dp</dimen>
+    <dimen name="act_share_iv_width_height">38.82dp</dimen>
+    <dimen name="act_share_icon_margin_right">29.41dp</dimen>
+
+    <!--    211.76dp
+ -->
+
+    <dimen name="act_trade_success_height">211.76dp</dimen>
+    <dimen name="act_trade_success_ll_margin_top">33.11dp</dimen>
+    <dimen name="act_trade_success_ll_margin_left">39dp</dimen>
+    <dimen name="act_trade_success_ll_tv_margin_top">15.29dp</dimen>
+    <dimen name="act_trade_success_ll_image_width">117.64dp</dimen>
+    <dimen name="act_trade_success_ll_image_height">100dp</dimen>
+    <dimen name="act_trade_success_ll_image_margin">35.29dp</dimen>
+    <dimen name="act_trade_success_ll_input_height">94.11dp</dimen>
+    <dimen name="act_trade_success_tv_input_evaluate_width">129.41dp</dimen>
+    <dimen name="act_trade_success_tv_input_evaluate_height">35.29dp</dimen>
+    <dimen name="act_trade_success_tv_input_order_margin_left">33dp</dimen>
+
+    <!-- 修改个人信息-->
+    <dimen name="act_setting_user_info_icon_height">82.35dp</dimen>
+    <dimen name="act_setting_user_info_margin_right">30dp</dimen>
+    <dimen name="act_setting_user_info_icon">65dp</dimen>
+    <dimen name="act_setting_user_info_item_height">52.94dp</dimen>
+
+</resources>

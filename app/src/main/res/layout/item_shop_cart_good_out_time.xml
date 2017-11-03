@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_root"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/common_margin_left_right">
+
+
+    <ImageView
+        android:id="@+id/item_shop_cart_good_out_time_image_good"
+        android:layout_width="@dimen/item_shop_cart_good_out_time_image_good"
+        android:layout_height="@dimen/item_shop_cart_good_out_time_image_good"
+
+        android:layout_marginLeft="@dimen/item_shop_cart_good_out_time_image_good_margin_left"
+        android:layout_marginRight="@dimen/item_shop_cart_good_out_time_image_good_margin_right"
+        android:layout_marginTop="@dimen/item_shop_cart_good_out_time_image_good_margin_top"
+        android:src="@drawable/test_good" />
+
+    <TextView
+        android:id="@+id/item_shop_cart_good_out_time_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/item_shop_cart_good_out_time_text_name_margin_bottom"
+        android:layout_marginRight="@dimen/item_shop_cart_good_out_time_text_name_margin_right"
+        android:layout_marginTop="@dimen/item_shop_cart_good_out_time_image_good_margin_top"
+        android:layout_toRightOf="@+id/item_shop_cart_good_out_time_image_good"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="欧姆龙电子血压计血压仪器HEN-7052家用上臂全自动式测量血压仪器血压仪器"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_less_mid" />
+
+    <TextView
+        android:id="@+id/item_shop_cart_good_out_time_text_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_shop_cart_good_out_time_text_name"
+        android:layout_marginRight="@dimen/item_shop_cart_good_out_time_text_name_margin_right"
+        android:layout_toRightOf="@+id/item_shop_cart_good_out_time_image_good"
+        android:singleLine="true"
+        android:text="该货品没有库存"
+        android:textColor="@color/text_green"
+        android:textSize="@dimen/text_less_mid" />
+
+
+    <TextView
+        android:id="@+id/item_shop_cart_good_out_time_text_market_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/item_shop_cart_good_out_time_text_name_margin_bottom"
+        android:layout_marginTop="@dimen/item_shop_cart_good_out_time_image_good_margin_top"
+        android:text="￥132.00"
+        android:textColor="@color/text_gray_mid"
+        android:textSize="@dimen/text_less_mid" />
+
+    <TextView
+        android:id="@+id/item_shop_cart_good_out_time_text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/item_shop_cart_good_out_time_text_market_price"
+        android:layout_marginBottom="@dimen/item_shop_cart_good_out_time_text_price_margin_bottom"
+        android:text="￥132.00"
+        android:textColor="@color/text_gray_mid"
+        android:textSize="@dimen/text_big" />
+
+    <TextView
+        android:textColor="@color/text_black"
+        android:gravity="center"
+        android:id="@+id/item_shop_cart_good_out_time_btn_find_like"
+        android:layout_width="@dimen/item_shop_cart_good_out_time_text_name_margin_right"
+        android:layout_height="@dimen/btn_small_height"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/item_shop_cart_good_out_time_text_price"
+        android:layout_marginBottom="@dimen/item_shop_cart_good_out_time_btn_find_like_margin_bottom"
+        android:background="@drawable/bg_btn_find_like"
+        android:text="@string/item_shop_cart_good_out_time_btn_find_like"
+        android:textSize="@dimen/text_small" />
+
+    <include
+        android:layout_marginLeft="@dimen/common_margin_left_right"
+        layout="@layout/c_divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/c_divide_line_horizontal_height"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

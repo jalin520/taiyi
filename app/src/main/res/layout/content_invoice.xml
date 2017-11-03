@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.t1_network.taiyi.controller.activity.InvoiceAct"
+    tools:showIn="@layout/act_invoice">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/act_invoice_ll_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="400dp">
+
+            <LinearLayout
+                android:id="@+id/act_invoice_ll_title_invoice"
+                android:layout_width="match_parent"
+                android:layout_height="75.88dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/act_invoice_ll_no_invoice"
+                    android:layout_width="105.88dp"
+                    android:layout_height="35.29dp"
+                    android:background="@drawable/invoice_input_selector_item"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/act_invoice_ll_tv_no_invoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="不需要发票"
+                        android:textColor="@drawable/invoice_input_selector_text_color_item"
+                        android:textSize="@dimen/text_mid"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/act_invoice_ll_email_invoice"
+                    android:layout_width="105.88dp"
+                    android:layout_height="35.29dp"
+                    android:layout_marginLeft="11.76dp"
+                    android:background="@drawable/invoice_input_selector_item"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/act_invoice_ll_tv_email_invoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="电子发票"
+                        android:textColor="@drawable/invoice_input_selector_text_color_item"
+                        android:textSize="@dimen/text_mid"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/act_invoice_ll_invoice"
+                    android:layout_width="105.88dp"
+                    android:layout_height="35.29dp"
+                    android:layout_marginLeft="11.76dp"
+                    android:background="@drawable/invoice_input_selector_item"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/act_invoice_ll_tv_invoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="纸质发票"
+                        android:textColor="@drawable/invoice_input_selector_text_color_item"
+                        android:textSize="@dimen/text_mid"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/c_divide_line"/>
+
+            <LinearLayout
+                android:id="@+id/act_invoice_ll_input_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/act_invoice_ll_personal_invoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/act_invoice_iv_personal_invoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_check"/>
+
+                        <TextView
+                            android:id="@+id/act_invoice_tv_personal_invoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="个人发票"
+                            android:textColor="@color/text_gray_deep"
+                            android:textSize="@dimen/text_mid"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/act_invoice_ll_company_invoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="24dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/act_invoice_iv_company_invoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_check"/>
+
+                        <TextView
+                            android:id="@+id/act_invoice_tv_company_invoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="单位发票"
+                            android:textColor="@color/text_gray_deep"
+                            android:textSize="@dimen/text_mid"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44.44dp"
+                    android:background="@drawable/btn_in_collect_info"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/act_invoice_et_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="请填写发票抬头信息"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/text_gray_mid"
+
+                        android:textColorHint="@color/text_gray_mid"
+                        android:textSize="@dimen/text_mid"/>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/act_invoice_ll_et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="44.44dp"
+                    android:layout_marginTop="11.76dp"
+                    android:background="@drawable/btn_in_collect_info"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/act_invoice_et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="44.44dp"
+                        android:background="@null"
+                        android:hint="请输入电子发票接受邮箱"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/text_gray_mid"
+
+                        android:textColorHint="@color/text_gray_mid"
+                        android:textSize="@dimen/text_mid"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44.44dp"
+                    android:layout_marginTop="11.76dp"
+                    android:background="@drawable/btn_in_collect_info"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/act_invoice_et_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="这里可以填写您需要的备注和信息"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/text_gray_mid"
+                        android:textColorHint="@color/text_gray_mid"
+                        android:textSize="@dimen/text_mid"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

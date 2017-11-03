@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+                android:background="@color/bg_root"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.t1_network.taiyi.controller.activity.SystemMessageAct"
+    tools:showIn="@layout/act_system_message">
+
+
+    <com.markmao.pulltorefresh.widget.XListView
+        android:paddingTop="@dimen/common_margin_left_right"
+        android:id="@+id/xListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgRoot"
+        android:divider="@null"
+        android:paddingLeft="@dimen/common_margin_left_right"
+        android:paddingRight="@dimen/common_margin_left_right" />
+
+    <com.t1_network.taiyi.widget.TipView
+        android:id="@+id/tip_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"></com.t1_network.taiyi.widget.TipView>
+
+
+</RelativeLayout>

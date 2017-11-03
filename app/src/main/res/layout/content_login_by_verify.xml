@@ -1,0 +1,235 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="com.t1_network.taiyi.controller.fragment.LoginFrg">
+
+
+    <RelativeLayout
+        android:id="@+id/act_register_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:paddingTop="@dimen/act_title_top">
+
+
+        <LinearLayout
+            android:id="@+id/act_login_verify_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/act_login_verify_title"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_large" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/act_title_line_bottom"
+                    android:layout_marginTop="@dimen/act_title_line_top"
+                    android:background="@color/text_white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/act_login_verify_title"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/act_content_margin"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/act_content_padding_top">
+
+
+            <RelativeLayout
+
+                android:layout_width="@dimen/frg_register_et_width"
+                android:layout_height="@dimen/frg_register_et_height">
+
+
+                <EditText
+                    android:textColor="@color/bgLayout"
+                    android:id="@+id/act_login_et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="@string/feg_register_check_phone_edit_mobile_text"
+                    android:inputType="number"
+                    android:textColorHint="@color/btn_in_verify_full" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/act_content_view_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/text_white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/frg_register_et_width"
+                android:layout_height="@dimen/frg_register_et_height">
+
+
+                <EditText
+                    android:textColor="@color/bgLayout"
+                    android:id="@+id/act_login_et_verify_code"
+                    android:layout_width="@dimen/frg_register_verify_width"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="@string/frg_register_edit_verify_code_text"
+                    android:textColorHint="@color/btn_in_verify_full" />
+
+                <TextView
+                    android:id="@+id/act_register_tv_send_verify_code"
+                    android:layout_width="94.12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_in_verify_full_info"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="@dimen/frg_register_tv_btn_padding"
+                    android:text="@string/act_register_btn_git_verify_code"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_small" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/act_content_view_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/text_white" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/act_login_btn_login"
+                android:layout_width="@dimen/frg_register_et_width"
+                android:layout_height="@dimen/frg_register_tv_btn_width"
+                android:layout_marginTop="@dimen/frg_register_input_margin_top"
+                android:background="@drawable/btn_in_login_full_info"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/frg_login_btn"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_big" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/act_content_share_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/frg_register_title_width">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/act_login_by_shear_qq"
+                    android:layout_width="@dimen/frg_register_ll_shear_width_icon"
+                    android:layout_height="@dimen/frg_register_ll_shear_width_icon"
+                    android:background="@drawable/bg_shear"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/frg_register_ll_shear_image_width_icon"
+                        android:layout_height="@dimen/frg_register_ll_shear_image_height_icon"
+                        android:src="@drawable/ic_login_qq" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/frg_login_by_shear_qq_text"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/frg_register_ll_shear_tv" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/act_login_by_shear_wechat"
+                    android:layout_width="@dimen/frg_register_ll_shear_width_icon"
+                    android:layout_height="@dimen/frg_register_ll_shear_width_icon"
+                    android:background="@drawable/bg_shear"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="@dimen/frg_register_ll_shear_image_width_icon"
+                        android:layout_height="@dimen/frg_register_ll_shear_image_height_icon"
+                        android:src="@drawable/ic_login_wechat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/frg_login_by_shear_wechat_text"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/frg_register_ll_shear_tv" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/act_login_by_shear_sina"
+                    android:layout_width="@dimen/frg_register_ll_shear_width_icon"
+                    android:layout_height="@dimen/frg_register_ll_shear_width_icon"
+                    android:background="@drawable/bg_shear"
+
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="@dimen/frg_register_ll_shear_image_width_icon"
+                        android:layout_height="@dimen/frg_register_ll_shear_image_height_icon"
+                        android:src="@drawable/ic_login_sina" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/frg_login_by_shear_sina_text"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/frg_register_ll_shear_tv" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_appraise_good_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgLayout"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/good_appraise_height"
+        android:paddingLeft="@dimen/fab_margin"
+        android:paddingRight="@dimen/fab_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/good_appraise_phone"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/good_appraise_tv_time"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_divide_line" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RatingBar
+            android:id="@+id/act_good_appraise_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_big_height"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/good_appraise_margin"
+            android:max="5"
+            android:numStars="5"
+            android:progressDrawable="@drawable/bg_rating"
+            android:rating="3"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@+id/act_good_appraise_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/fab_margin"
+            android:paddingRight="@dimen/fab_margin"
+            android:text="@string/item_good_appraise_tv_value"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_small" />
+
+        <GridLayout
+            android:id="@+id/act_good_appraise_gl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/good_appraise_margin"
+            android:layout_marginTop="@dimen/good_appraise_margin"
+            android:columnCount="4"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/fab_margin"
+            android:paddingRight="@dimen/fab_margin">
+
+        </GridLayout>
+
+
+        <TextView
+            android:id="@+id/act_good_appraise_tv_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/fab_margin"
+            android:paddingRight="@dimen/fab_margin"
+            android:text=""
+            android:textColor="@color/btnUnEnable"
+            android:textSize="@dimen/text_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_my_token_padding_top" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_appraise_line_view"
+        android:background="@color/bg_root" />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/frg_shop_cart_layout_suppose_you_want"
+    android:background="@color/bg_layout"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/c_suppose_you_want_view_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/frg_shop_cart_text_suppose_you_want"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/common_margin_left_right"
+        android:textColor="@color/text_green"
+        android:textSize="@dimen/text_mid" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/c_suppose_you_want_view_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

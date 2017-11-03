@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/ty_440px"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:background="@color/bg_layout"
+              android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:paddingBottom="20dp"
+        android:paddingTop="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/c_alert_title"
+            android:textColor="@color/text_black"
+            android:layout_marginBottom="5dp"
+            android:textSize="@dimen/ty_28sp"
+            android:gravity="center"
+            android:text="提示"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:id="@+id/c_alert_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="喜欢医健优选吗,aa移动AppStore写个好评支持我们吧? Store写个好评支持我们吧? "
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/ty_28sp" />
+
+
+
+
+    </LinearLayout>
+
+
+
+    <include layout="@layout/c_divide_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ty_70px"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/c_alert_btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="确定"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/ty_28sp" />
+
+        <View
+            android:layout_width="@dimen/c_divide_line_vertical_width"
+            android:layout_height="@dimen/ty_70px"
+            android:background="@color/bg_divide_line" />
+
+        <Button
+            android:id="@+id/c_alert_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="取消"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/ty_28sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

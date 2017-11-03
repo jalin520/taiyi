@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_appraise_fl_iv"
+        android:layout_width="@dimen/item_appraise_iv_width"
+        android:layout_height="@dimen/item_appraise_iv_width"
+        android:layout_marginTop="@dimen/card_margin"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:taiyi="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    taiyi:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.t1_network.taiyi.controller.activity.SettingAct"
+    tools:showIn="@layout/act_setting">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgRoot">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bgRoot"
+            android:orientation="vertical">
+
+            <com.t1_network.taiyi.widget.SettintView
+                android:id="@+id/act_setting_update_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/c_setting_view_item_height"
+                android:layout_marginTop="@dimen/common_margin_top_bottom"
+                taiyi:show_top_line_full="true"
+                taiyi:text="@string/act_setting_view_modify_password" />
+
+            <!--<com.t1_network.taiyi.widget.SettintView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--taiyi:show_bottom_line_full="true"-->
+            <!--taiyi:show_top_line_wrap="true"-->
+            <!--taiyi:text="@string/act_setting_view_push_setting" />-->
+
+
+            <com.t1_network.taiyi.widget.SettintView
+                android:id="@+id/setting_use_policy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/c_setting_view_item_height"
+                android:layout_marginTop="@dimen/common_margin_top_bottom"
+                taiyi:show_top_line_full="true"
+                taiyi:text="使用条款" />
+
+            <com.t1_network.taiyi.widget.SettintView
+                android:id="@+id/setting_delivery_send"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/c_setting_view_item_height"
+                taiyi:show_top_line_wrap="true"
+                taiyi:text="发货配送" />
+
+            <com.t1_network.taiyi.widget.SettintView
+                android:id="@+id/setting_customer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/c_setting_view_item_height"
+                taiyi:show_bottom_line_full="true"
+                taiyi:show_top_line_wrap="true"
+                taiyi:text="售后服务" />
+
+            <include
+                layout="@layout/c_divide_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/c_divide_line_horizontal_height"
+                android:layout_marginTop="@dimen/common_margin_top_bottom" />
+
+            <RelativeLayout
+                android:id="@+id/setting_clean_rl_clean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bgLayout"
+                android:gravity="center"
+
+                android:padding="@dimen/common_margin_left_right">
+
+                <TextView
+                    android:id="@+id/setting_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="1dp"
+                    android:text="@string/act_setting_view_clear_cache"
+                    android:textColor="@color/text_gray_mid"
+                    android:textSize="@dimen/text_mid" />
+
+                <TextView
+                    android:id="@+id/setting_clean_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="0M"
+                    android:textColor="@color/text_orange"
+                    android:textSize="@dimen/text_mid" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_update_version_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bgLayout"
+                android:gravity="center"
+                android:paddingBottom="@dimen/common_margin_left_right"
+                android:paddingLeft="@dimen/common_margin_left_right"
+                android:paddingRight="@dimen/common_margin_left_right">
+
+                <include layout="@layout/c_divide_line" />
+
+                <TextView
+                    android:id="@+id/setting_update_version_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="1dp"
+                    android:paddingTop="@dimen/common_margin_left_right"
+                    android:text="版本更新"
+                    android:textColor="@color/text_gray_mid"
+                    android:textSize="@dimen/text_mid" />
+
+                <TextView
+                    android:id="@+id/setting_update_version_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingTop="@dimen/common_margin_left_right"
+                    android:text="v1.0"
+                    android:textColor="@color/text_orange"
+                    android:textSize="@dimen/text_mid" />
+            </RelativeLayout>
+
+            <include layout="@layout/c_divide_line" />
+
+
+            <LinearLayout
+                android:id="@+id/act_setting_layout_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include
+                    layout="@layout/c_divide_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/c_divide_line_horizontal_height"
+                    android:layout_marginTop="@dimen/common_margin_top_bottom" />
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bgLayout"
+                    android:padding="@dimen/common_margin_left_right">
+
+                    <TextView
+                        android:id="@+id/item_setting_text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/act_setting_view_logout"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_mid" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <include layout="@layout/c_divide_line" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

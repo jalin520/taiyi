@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgRoot"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.t1_network.taiyi.controller.activity.HealthRecord">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_mid"
+        android:background="@color/bgLayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_health_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="档案一"
+            android:textColor="@color/text_green"
+            android:textSize="@dimen/text_large" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_little"
+            android:background="@color/bgRoot"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/text_little">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="年龄"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_mid" />
+
+                <TextView
+                    android:id="@+id/item_health_select_tv_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_mid" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg_divide_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/text_little">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="身高"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_mid" />
+
+                <TextView
+                    android:id="@+id/item_health_select_tv_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="170cm"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_mid" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg_divide_line" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/text_little">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="体重"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_mid" />
+
+                <TextView
+                    android:id="@+id/item_health_select_tv_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="70kg"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_mid" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg_divide_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/text_little">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="病史"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_mid" />
+
+                <TextView
+                    android:id="@+id/item_health_select_tv_case"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="无"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_mid" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg_divide_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/bgLayout"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/item_health_update_btn"
+                    android:layout_width="@dimen/btn_big_large_width"
+                    android:layout_height="@dimen/btn_mid_height"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_btn_ripple_1"
+                    android:text="修改档案"
+                    android:textColor="@color/btnText_1"
+                    android:textSize="@dimen/text_mid" />
+
+                <Button
+                    android:id="@+id/item_health_select_btn"
+                    android:layout_width="@dimen/btn_big_large_width"
+                    android:layout_height="@dimen/btn_mid_height"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/item_health_update_btn"
+                    android:background="@drawable/bg_btn_ripple_1"
+                    android:text="查看档案"
+                    android:textColor="@color/btnText_1"
+                    android:textSize="@dimen/text_mid" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

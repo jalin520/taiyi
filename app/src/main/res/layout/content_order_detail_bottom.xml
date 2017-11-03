@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bgRoot"
+              android:orientation="vertical"
+
+    >
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_good_in_invoice_height"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@color/bgLayout">
+
+                <TextView
+                    android:id="@+id/order_detail_order_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_good_in_invoice_height_item_margin_left"
+                    android:layout_marginTop="@dimen/item_good_in_invoice_height_item_margin_top"
+                    android:text="订单号码"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_small"/>
+
+                <TextView
+                    android:id="@+id/order_detail_order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/item_good_in_invoice_height_item_margin_right"
+                    android:layout_marginTop="@dimen/item_good_in_invoice_height_item_margin_top"
+                    android:text=""
+                    android:textColor="@color/text_gray_mid"
+                    android:textSize="@dimen/text_small"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/item_good_in_invoice_height_item_margin_left"
+                    android:background="@color/bg_divide_line"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_good_in_invoice_height"
+                android:background="@color/bgLayout">
+
+                <TextView
+                    android:id="@+id/order_detail_order_time_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_good_in_invoice_height_item_margin_left"
+                    android:layout_marginTop="@dimen/item_good_in_invoice_height_item_margin_top"
+                    android:text="下单时间"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_small"/>
+
+                <TextView
+                    android:id="@+id/order_detail_order_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/item_good_in_invoice_height_item_margin_right"
+                    android:layout_marginTop="@dimen/item_good_in_invoice_height_item_margin_top"
+                    android:text=""
+                    android:textColor="@color/text_gray_mid"
+                    android:textSize="@dimen/text_small"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/item_good_in_invoice_height_item_margin_left"
+                    android:background="@color/bg_divide_line"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_good_in_invoice_height"
+                android:background="@color/bgLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_good_in_invoice_height_item_margin_left"
+                    android:layout_marginTop="@dimen/item_good_in_invoice_height_item_margin_top"
+                    android:text="发票信息"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_small"/>
+
+                <TextView
+                    android:id="@+id/order_detail_order_receipt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/item_good_in_invoice_height_item_margin_right"
+                    android:layout_marginTop="@dimen/item_good_in_invoice_height_item_margin_top"
+                    android:text="纸质发票; 个人;办公用品"
+                    android:textColor="@color/text_gray_mid"
+                    android:textSize="@dimen/text_small"/>
+
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg_divide_line"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@color/bgLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_good_in_invoice_height_item_margin_left"
+                    android:layout_marginTop="@dimen/item_good_in_invoice_item_margin_top"
+                    android:text="商品合计"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_small"/>
+
+                <TextView
+                    android:id="@+id/order_detail_good_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/item_good_in_invoice_height_item_margin_right"
+                    android:layout_marginTop="@dimen/item_good_in_invoice_item_margin_top"
+                    android:text="￥0.00"
+                    android:textColor="@color/text_green"
+                    android:textSize="@dimen/text_small"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/order_detail_good_money"
+                    android:layout_marginLeft="@dimen/item_good_in_invoice_height_item_margin_left"
+                    android:layout_marginTop="@dimen/item_good_in_invoice_item_margin_top"
+                    android:text="使用代币"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_small"/>
+
+                <TextView
+                    android:id="@+id/order_detail_token_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/order_detail_good_money"
+                    android:layout_marginRight="@dimen/item_good_in_invoice_height_item_margin_right"
+                    android:layout_marginTop="@dimen/item_good_in_invoice_item_margin_top"
+                    android:text="￥0.00"
+                    android:textColor="@color/text_green"
+                    android:textSize="@dimen/text_small"/>
+
+                <TextView
+                    android:id="@+id/order_detail_freight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/order_detail_token_money"
+                    android:layout_marginLeft="@dimen/item_good_in_invoice_height_item_margin_left"
+                    android:layout_marginTop="@dimen/item_good_in_invoice_item_margin_top"
+
+
+                    android:text="运费"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_small"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/order_detail_token_money"
+                    android:layout_marginRight="@dimen/item_good_in_invoice_height_item_margin_right"
+                    android:layout_marginTop="@dimen/item_good_in_invoice_item_margin_top"
+                    android:text="￥0.00"
+                    android:textColor="@color/text_green"
+                    android:textSize="@dimen/text_small"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@id/order_detail_freight"
+                    android:layout_marginLeft="@dimen/item_good_in_invoice_height_item_margin_left"
+                    android:layout_marginTop="@dimen/item_good_in_invoice_item_margin_top"
+                    android:background="@color/bg_divide_line"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_good_in_invoice_item_total_margin_top"
+                android:background="@color/bgLayout"
+                >
+
+                <TextView
+                    android:id="@+id/order_detail_total_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/common_margin_left_right"
+                    android:text="实付款：￥0.00"
+                    android:textColor="@color/text_gray_mid"
+                    android:textSize="@dimen/text_mid"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/item_order_all_list_receive_rl_input_comment"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_good_in_invoice_item_commit_margin_top"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@color/bgLayout"
+                >
+
+                <Button
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:id="@+id/order_detail_CommitForOrder"
+                    android:layout_width="@dimen/item_good_in_invoice_item_commit_button_margin_top"
+                    android:layout_height="@dimen/btn_big_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/item_good_in_invoice_height_item_margin_right"
+                    android:background="@drawable/bg_btn_ripple_1"
+                    android:text="去评价"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_small"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/item_order_all_list_receive_rl_input"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_good_in_invoice_item_commit_margin_top"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@color/bgLayout"
+                >
+
+                <Button
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:id="@+id/take_for_order"
+                    android:layout_width="@dimen/btn_large_width"
+                    android:layout_height="@dimen/btn_big_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/common_margin_left_right"
+                    android:background="@drawable/bg_btn_ripple_1"
+                    android:text="@string/act_order_list_btn_receive"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_mid"/>
+
+                <Button
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:id="@+id/select_logistics"
+                    android:layout_width="@dimen/btn_large_width"
+                    android:layout_height="@dimen/btn_big_height"
+                    android:layout_marginRight="14dp"
+                    android:layout_toLeftOf="@id/take_for_order"
+                    android:background="@drawable/bg_btn_ripple_3"
+                    android:text="@string/act_order_list_btn_look_logistics"
+                    android:textColor="@color/text_gray_mid"
+                    android:textSize="@dimen/text_mid"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/item_order_all_list_pay_rl_input"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_good_in_invoice_item_commit_margin_top"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@color/bgLayout"
+                >
+
+                <Button
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:id="@+id/item_order_wait_pay_btn_pay"
+                    android:layout_width="@dimen/btn_large_width"
+                    android:layout_height="@dimen/btn_big_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/common_margin_left_right"
+                    android:background="@drawable/bg_btn_ripple_1"
+                    android:text="@string/act_order_list_btn_pay"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_mid"/>
+
+                <Button
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:id="@+id/item_order_wait_pay_btn_cancel_order"
+                    android:layout_width="@dimen/btn_large_width"
+                    android:layout_height="@dimen/btn_big_height"
+                    android:layout_marginRight="14dp"
+                    android:layout_toLeftOf="@id/item_order_wait_pay_btn_pay"
+                    android:background="@drawable/bg_btn_ripple_3"
+                    android:text="@string/act_order_list_btn_cannel"
+                    android:textColor="@color/text_gray_mid"
+                    android:textSize="@dimen/text_mid"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

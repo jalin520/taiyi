@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/item_consignee_address_rootlayout_padding_top"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/consignee_address_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgLayout"
+        android:paddingTop="@dimen/item_consignee_address_relativelayout_padding_top"
+        android:paddingBottom="@dimen/item_consignee_address_relativelayout_padding_bottom"
+        android:paddingLeft="@dimen/item_consignee_address_relativelayout_padding_left"
+        android:paddingRight="@dimen/item_consignee_address_relativelayout_padding_right">
+        <TextView
+            android:id="@+id/consignee_address_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周杰伦"
+            android:textSize="@dimen/text_mid"
+            android:textColor="@color/text_gray_deep"/>
+        <TextView
+            android:id="@+id/consignee_address_text_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/consignee_address_text_name"
+            android:layout_marginLeft="@dimen/item_consignee_address_text_phone_margin_left"
+            android:text="136****5555"
+            android:textSize="@dimen/text_mid"
+            android:textColor="@color/text_gray_mid"/>
+
+
+        <TextView
+            android:id="@+id/consignee_address_text_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_consignee_address_text_address_margin_top"
+            android:layout_below="@id/consignee_address_text_name"
+            android:text="台北市民生东路二段149号"
+            android:layout_marginRight="@dimen/item_consignee_address_text_address_margin_right"
+            android:textSize="@dimen/text_mid"
+            android:textColor="@color/text_gray_mid"/>
+        <ImageView
+            android:id="@+id/consignee_address_image_edit"
+            android:layout_width="@dimen/item_consignee_address_image_edit_width"
+            android:layout_height="@dimen/item_consignee_address_image_edit_height"
+            android:background="@drawable/ic_address_edit"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_consignee_address_image_edit_margin_left"/>
+        <View
+            android:layout_width="@dimen/item_consignee_address_view_line_divide_width"
+            android:layout_height="@dimen/item_consignee_address_view_line_divide_height"
+            android:background="@color/bg_divide_line"
+            android:layout_toLeftOf="@id/consignee_address_image_edit"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+</LinearLayout>

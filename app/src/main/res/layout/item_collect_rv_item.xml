@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_collect_rv_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_collect_rv_item_root_height"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/common_margin_left_right"
+        android:layout_marginRight="@dimen/common_margin_left_right"
+        android:layout_marginTop="@dimen/item_collect_rv_margin_top"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/item_collect_rv_item_icon"
+            android:layout_width="@dimen/item_collect_rv_icon_image_width"
+            android:layout_height="@dimen/item_collect_rv_icon_image_width" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_collect_rv_content_margin_left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_collect_rv_content_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="@string/item_collect_rv_content_tv_title_text"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="@dimen/text_small" />
+
+
+            <LinearLayout xmlns:taiyi="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/act_good_list_item_rl_ll_bottom_height"
+                android:layout_marginTop="-5dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/act_good_list_item_rl_ll_bottom_score_width"
+                    android:layout_height="match_parent">
+
+                    <com.t1_network.taiyi.widget.ScoreView
+                        android:id="@+id/item_collect_rv_content_score"
+                        android:layout_width="@dimen/act_good_list_item_rl_ll_bottom_score_size"
+                        android:layout_height="@dimen/act_good_list_item_rl_ll_bottom_score_size"
+                        android:layout_centerInParent="true"
+                        taiyi:circle_height="@dimen/act_good_list_item_rl_ll_bottom_score_size"
+                        taiyi:circle_score="96"
+                        taiyi:circle_width="@dimen/act_good_list_item_rl_ll_bottom_score_size" />
+
+                    <TextView
+                        android:id="@+id/item_collect_rv_content_text_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="96"
+                        android:textColor="@color/text_green"
+                        android:textSize="@dimen/text_mid" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/item_collect_rv_content_score"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/act_good_detail_text_pro_score"
+                        android:textColor="@color/text_green"
+                        android:textSize="@dimen/text_less_little" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/act_good_list_item_rl_ll_bottom_score_width"
+                    android:layout_height="match_parent">
+
+                    <com.t1_network.taiyi.widget.ScoreView
+                        android:id="@+id/item_collect_rv_content_score_opearte"
+                        android:layout_width="@dimen/act_good_list_item_rl_ll_bottom_score_size"
+                        android:layout_height="@dimen/act_good_list_item_rl_ll_bottom_score_size"
+                        android:layout_centerInParent="true"
+                        taiyi:circle_height="@dimen/act_good_list_item_rl_ll_bottom_score_size"
+                        taiyi:circle_score="96"
+                        taiyi:circle_width="@dimen/act_good_list_item_rl_ll_bottom_score_size" />
+
+                    <TextView
+                        android:id="@+id/item_collect_rv_content_score_opearte_text_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="96"
+                        android:textColor="@color/text_green"
+                        android:textSize="@dimen/text_mid" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/item_collect_rv_content_score_opearte"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/act_good_detail_text_operator"
+                        android:textColor="@color/text_green"
+                        android:textSize="@dimen/text_less_little" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/act_good_list_item_rl_ll_bottom_score_width"
+                    android:layout_height="match_parent">
+
+                    <com.t1_network.taiyi.widget.ScoreView
+                        android:id="@+id/item_collect_rv_content_score_property"
+                        android:layout_width="@dimen/act_good_list_item_rl_ll_bottom_score_size"
+                        android:layout_height="@dimen/act_good_list_item_rl_ll_bottom_score_size"
+                        android:layout_centerInParent="true"
+                        taiyi:circle_height="@dimen/act_good_list_item_rl_ll_bottom_score_size"
+                        taiyi:circle_score="96"
+                        taiyi:circle_width="@dimen/act_good_list_item_rl_ll_bottom_score_size" />
+
+                    <TextView
+                        android:id="@+id/item_collect_rv_content_score_property_text_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="96"
+                        android:textColor="@color/text_green"
+                        android:textSize="@dimen/text_mid" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/item_collect_rv_content_score_property"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/act_good_list_score_property_text"
+                        android:textColor="@color/text_green"
+                        android:textSize="@dimen/text_less_little" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_collect_rv_content_price_margin_top">
+
+                <TextView
+                    android:id="@+id/item_collect_rv_item_original"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="￥189"
+                    android:textColor="@color/text_orange"
+                    android:textSize="@dimen/text_big" />
+
+
+                <LinearLayout
+                    android:id="@+id/item_collect_rv_item_ll_add_compare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_in_collect_info">
+
+                    <TextView
+                        android:layout_width="@dimen/item_collect_rv_content_price_add_comparison_tv_width"
+                        android:layout_height="@dimen/item_collect_rv_content_price_add_comparison_tv_height"
+                        android:gravity="center"
+                        android:text="加入对比"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_little" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.33dp"
+        android:layout_marginTop="@dimen/item_collect_rv_content_line_margin_top"
+        android:background="@color/bg_divide_line" />
+
+
+</LinearLayout>

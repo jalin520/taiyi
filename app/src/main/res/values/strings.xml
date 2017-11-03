@@ -1,0 +1,430 @@
+<resources>
+    <string name="app_name">&#160;&#160;&#160;医健优选&#160;&#160;&#160;</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="default_toolbar_title"></string>
+
+    <string name="money">￥%1$s</string>
+    <string name="count">x %1$s</string>
+
+    <!--MainActivity-->
+    <string name="frg_home_title">主页</string>
+    <string name="frg_classfication_title">分类</string>
+    <string name="frg_home_title_search">搜索</string>
+
+    <string name="frg_user_info_title">我的</string>
+
+    <!--个人中心-->
+    <string name="frg_user_info_text_login_or_register">登录/注册</string>
+    <string name="frg_user_info_text_tip_collect">收藏</string>
+    <string name="frg_user_info_text_tip_token">代币</string>
+    <string name="frg_user_info_text_tip_footprints">足迹</string>
+
+    <string name="frg_user_info_text_wait_pay">待付款</string>
+    <string name="frg_user_info_text_wait_receive">待收货</string>
+    <string name="frg_user_info_text_wait_commit">待评价</string>
+    <string name="frg_user_info_text_wait_return">退换货</string>
+
+    <string name="frg_user_info_text_my_all_order">我的全部订单</string>
+    <string name="frg_user_info_text_my_health_record">我的健康档案</string>
+    <string name="frg_user_info_text_address">收货地址管理</string>
+    <string name="frg_user_info_text_compare">我的对比</string>
+    <string name="frg_user_info_text_customer">联系客服</string>
+    <string name="frg_user_info_text_suggest">意见反馈</string>
+    <string name="frg_user_info_text_about_us">关于我们</string>
+    <string name="frg_user_info_text_setting">设置</string>
+    <string name="frg_user_info_text_add_realth_record_tip">添加健康档案，即可获取15代币！</string>
+
+    <!--我的代币-->
+    <string name="title_activity_token">我的代币</string>
+    <string name="act_token_text_pieces">代币余额</string>
+    <string name="act_token_text_trade_detail">交易明细</string>
+    <string name="act_token_text_exchange_token">兑换</string>
+
+    <!--兑换代币-->
+    <string name="title_activity_exchange_token">兑换代币</string>
+    <string name="act_exchange_token_hint_input_token">输入兑换码</string>
+    <string name="act_exchange_token_btn_exchange">立即兑换</string>
+
+    <!--设置-->
+    <string name="title_activity_setting">设置</string>
+    <string name="act_setting_view_modify_password">修改密码</string>
+    <string name="act_setting_view_push_setting">推送设置</string>
+    <string name="act_setting_view_about_us">关于我们</string>
+    <string name="act_setting_view_terms_of_use">使用条款</string>
+    <string name="act_setting_view_privacy_policy">隐私政策</string>
+    <string name="act_setting_view_clear_cache">清理缓存</string>
+    <string name="act_setting_view_logout">登出</string>
+    <string name="title_activity_msg_center">消息中心</string>
+
+    <!-- 收货地址 -->
+    <string name="title_activity_consignee_address">地址管理</string>
+    <string name="act_consignee_address_btn_default">默认</string>
+    <string name="act_consignee_address_menu_add">添加</string>
+    <string name="act_consignee_address_menu_save">保存</string>
+    <string name="title_activity_address_edit">收货地址</string>
+
+
+    <!--搜索-->
+    <string name="title_activity_search">搜索</string>
+    <string name="act_search_cancel">取消</string>
+    <string name="act_search_search_tint">搜索商品/病种分类/分类</string>
+    <string name="act_search_hot_search">热门搜索</string>
+    <string name="act_search_last_search">最近搜索</string>
+    <string name="act_search_text_delete_last_search">清除搜索历史</string>
+
+    <!--支付-->
+    <string name="title_activity_pay">支付方式</string>
+    <string name="pay_act_btn_pay">去支付</string>
+    <string name="pay_act_text_pay_way">支付方式</string>
+    <string name="pay_act_text_ali_pay">支付宝</string>
+    <string name="pay_act_text_wechat_pay">微信支付</string>
+    <string name="pay_act_text_baiduWallet_pay">百度钱包</string>
+    <string name="pay_act_text_JDWallet_pay">京东钱包</string>
+    <string name="pay_act_text_quick_pay">快捷支付</string>
+    <string name="pay_act_text_union_pay">银联支付</string>
+
+    <!--订单详情-->
+    <string name="title_activity_order_detail">订单详情</string>
+    <string name="act_order_detail_text_good_detail">商品详情</string>
+
+    <!--确认订单中的商品item-->
+    <string name="item_good_in_order_text_good_num">共%s件</string>
+    <string name="item_good_in_order_text_good_freight">小计：￥%1$s</string>
+    <string name="item_good_in_order_text_good_tip">此商品支持7天无条件退货</string>
+
+    <!--商品列表-->
+    <string name="title_activity_good_list">商品列表</string>
+    <string name="act_good_list_text_contrast">对比</string>
+    <string name="act_good_list_text_contrast_span">(%1$s)</string>
+    <string name="act_good_list_text_fitter_all">综合排序</string>
+    <string name="act_good_list_text_fitter_popularity">太一认证</string>
+    <string name="act_good_list_text_feature">特征筛选</string>
+    <string name="act_good_list_text_fitter_seal">销量</string>
+    <string name="act_good_list_text_fitter_fitter">筛选</string>
+
+    <!--订单列表-->
+    <string name="title_activity_order_list">订单列表</string>
+    <string name="act_good_list_text_order_id">订单号：%1$s</string>
+    <string name="act_good_list_text_total">总额:￥%1$s</string>
+    <string name="act_good_list_text_order_freight">共%1$s件商品 含运费 ￥%2$s</string>
+    <string name="act_good_list_text_time">时间：%1$s</string>
+    <string name="act_good_list_text_left_time">剩余付款时间:%1$s(逾期将取消)</string>
+
+    <!-- 退货申请 -->
+    <string name="title_activity_return_sale">退货申请</string>
+    <string name="return_sale_text_service_type">服务类型</string>
+    <string name="return_sale_btn_service_type_1">退货</string>
+    <string name="return_sale_btn_service_type_2">换货</string>
+    <string name="return_sale_text_amount">申请数量</string>
+    <string name="return_sale_text_amount_refund">退货金额:￥%1$s (价格:%2$s - 使用代币:%3$s)</string>
+    <string name="return_sale_text_amout_tip">您最多可提交数量为%s个</string>
+    <string name="return_sale_text_question">问题描述</string>
+    <string name="return_sale_edittext_question">请你在此描述详细问题...</string>
+    <string name="return_sale_text_certificate">上传凭证</string>
+    <string name="return_sale_text_certificate_tip">最多上传4张，每张不超过4M，支持JPG，PNG</string>
+    <string name="return_sale_btn_submit">提交</string>
+
+    <!--商品详情-->
+    <string name="title_activity_good_detail">商品详情</string>
+    <string name="act_good_detail_text_tip">全场\n包邮</string>
+    <string name="act_good_detail_text_market_price">市价：￥%1$s</string>
+    <string name="act_good_detail_text_price_mark">￥</string>
+    <string name="act_good_detail_btn_add_to_contract">加入对比</string>
+    <string name="act_good_detail_text_perference">性能得分</string>
+    <string name="act_good_detail_text_operator">易用性</string>
+    <string name="act_good_detail_text_pro_score">品牌实力</string>
+    <string name="act_good_detail_text_cost_perference">抽检得分</string>
+    <string name="act_good_detail_text_export_score">专家评分</string>
+    <string name="act_good_detail_text_apply">适用：</string>
+    <string name="act_good_detail_text_good_basic_info">商品基本信息</string>
+    <string name="act_good_detail_text_good_name">商品名称</string>
+    <string name="act_good_detail_text_good_common_name">通用名称</string>
+    <string name="act_good_detail_text_good_pro_enterprise">生产企业</string>
+    <string name="act_good_detail_text_good_register_num">批准文号</string>
+    <string name="act_good_detail_text_look_more">查看更多</string>
+    <string name="act_good_detail_text_taiyi_register">太一认证</string>
+    <string name="act_good_detail_text_iso_register">ISO认证</string>
+    <string name="act_good_detail_text_3c_register">3C认证</string>
+    <string name="act_good_detail_text_network_function">互联网功能</string>
+    <string name="act_good_detail_text_pull_to_get_good_info">继续拖动，查看商品详情</string>
+    <string name="act_good_detail_text_add_to_shopcart">加入购物车</string>
+    <string name="act_good_detail_text_favorite">收藏</string>
+    <string name="act_good_detail_text_comsuer">客服</string>
+    <string name="act_good_detail_text_constract">对比</string>
+    <string name="act_good_detail_layout_send_good">发货&amp;配送</string>
+    <string name="act_good_detail_layout_after_sale">售后服务</string>
+    <string name="act_good_detail_layout_privacy_prolicy">隐私政策</string>
+    <string name="act_good_detail_text_sales">销量：%1$s件</string>
+    <string name="act_good_detail_tip_add_to_cart_success">已添加至购物车</string>
+    <string name="act_good_detail_comment_text_reply">客服回复 : %1$s</string>
+
+
+    <!--登陆注册-->
+    <string name="title_activity_login_and_register">登陆注册</string>
+    <string name="act_login_and_register_text_back">返回</string>
+    <string name="frg_login_et_phone">请输入手机号码</string>
+    <string name="frg_login_et_pwd">请输入密码</string>
+    <string name="frg_login_btn">立即登录</string>
+    <string name="frg_login_tv_verify_text">动态验证码登录</string>
+    <string name="frg_login_by_shear_qq_text">QQ登录</string>
+    <string name="frg_login_by_shear_wechat_text">微信登录</string>
+    <string name="frg_login_by_shear_sina_text">新浪登录</string>
+    <string name="feg_register_check_phone_edit_mobile_text">请输入11位的手机号</string>
+    <string name="frg_register_edit_verify_code_text">输入验证码</string>
+    <string name="frg_register_btn_send_text">注册</string>
+    <string name="frg_register_et_width_text">注册即视为同意太一用户协议</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="act_login_verify_title">动态验证码登录</string>
+    <string name="act_register_btn_git_verify_code">获取验证码</string>
+    <string name="act_register_btn_send_show_password_code">显示</string>
+
+
+    <!--注册1/2-->
+    <string name="title_activity_register_check_phone">注册1/2</string>
+    <string name="act_register_check_phone_text_tip">请确保您的手机畅通，以接收验证短信。</string>
+    <string name="act_register_check_phone_edit_mobile">请输入手机号码</string>
+    <string name="act_register_check_phone_btn_next">下一步</string>
+
+    <!--注册2/2 begin-->
+    <string name="title_activity_register">注册2/2</string>
+    <string name="act_register_text_tip">验证码已发至：%1$s</string>
+    <string name="act_register_edit_mobile">手机号码</string>
+    <string name="act_register_edit_verify_code">验证码</string>
+    <string name="act_register_btn_send_verify_code">短信验证码</string>
+
+    <string name="act_register_btn_next">下一步</string>
+    <!--注册2/2 end-->
+
+    <!--忘记密码-->
+    <string name="title_activity_forget_pwd">忘记密码</string>
+    <string name="act_forget_pwd_title">找回密码</string>
+    <string name="act_forget_pwd_btn_ok">确认</string>
+    <string name="ftg_register_btn_git_pwd_code">忘记密码?</string>
+
+    <!-- 售后服务-待支付 -->
+    <string name="title_activity_after_sale">售后服务</string>
+    <string name="check_pending_query">进度查询</string>
+    <string name="check_pending_state">状态：填写发货单</string>
+    <string name="check_pending_cancel">取消申请</string>
+    <string name="check_pending_edit_imformation">填写发货信息</string>
+    <string name="check_pending_address">查看邮寄地址</string>
+    <string name="title_activity_after_sale_id">服务编号: %s</string>
+    <string name="title_activity_after_sale_quantity">X%s件</string>
+    <string name="title_activity_after_sale_audit_time">审批时间:%s</string>
+
+    <!-- 售后服务-待审核 -->
+    <string name="check_pass_query">进度查询</string>
+    <string name="check_pass_state">状态：</string>
+    <string name="check_pass_cancel">取消申请</string>
+
+    <!-- 售后服务-待核验 -->
+    <string name="verification_pending_query">进度查询</string>
+    <string name="verification_pending_state">状态：</string>
+    <string name="verification_pending_cancel">取消申请</string>
+
+    <!-- 售后服务-退货成功 -->
+    <string name="sale_return_success_query">进度查询</string>
+    <string name="sale_return_success_state">状态：</string>
+    <!--健康档案-->
+    <string name="title_activity_health_record">健康档案</string>
+    <string name="act_health_record_text_add">新增</string>
+
+
+    <!--订单评价-->
+    <string name="title_activity_evaluate">订单评价</string>
+    <string name="act_evaluate_tv_add">添加商品图片</string>
+
+
+    <!--确认订单-->
+    <string name="title_activity_order_comfirm">订单确认</string>
+    <string name="comfirm_order_act_text_consignee">收货人：%s</string>
+    <string name="comfirm_order_act_text_total">实收款：￥%s</string>
+    <string name="comfirm_order_act_text_please_select_address">请填写收货信息</string>
+    <string name="comfirm_order_act_btn_sumit_order">提交订单</string>
+    <string name="comfirm_order_act_text_all_money">合计：￥%1$s</string>
+    <string name="comfirm_order_act_text_all_money_span">￥%1$s</string>
+    <string name="comfirm_order_act_text_use_token_money">使用代币</string>
+    <string name="comfirm_order_act_text_token_money_info">本次最多可使用%1$s代币，您目前共有%2$s代币</string>
+    <string name="comfirm_order_act_text_good_info">商品信息</string>
+    <string name="comfirm_order_act_text_bill_tip">发票信息</string>
+    <string name="act_order_comfirm_text_good_count">共%1$s件商品 含运费￥%2$s</string>
+
+    <!--对比-->
+    <string name="title_activity_compare_good">对比</string>
+    <string name="item_shop_in_shoppintcart_text_good">￥0.00</string>
+    <string name="item_shop_in_shoppintcart_text_good_price">￥0.00</string>
+
+    <!--购物车-->
+    <string name="frg_shop_cart_title">购物车</string>
+    <string name="frg_shop_cart_layout_btn_submit">结算(%1$s)</string>
+    <string name="frg_shop_cart_text_select_all">全选</string>
+    <string name="frg_shop_cart_text_total_tip">合计: ￥%1$s</string>
+    <string name="frg_shop_cart_text_total_tip_span">合计: </string>
+    <string name="frg_shop_cart_text_money">￥</string>
+    <string name="frg_shop_cart_text_suppose_you_want">猜你想要</string>
+    <string name="item_shop_cart_good_out_time_btn_find_like">找相似</string>
+
+    <!--地址编辑-->
+    <string name="title_activity_address">地址管理</string>
+    <string name="act_address_edit_mobile">手机号码</string>
+    <string name="act_address_edit_name">收货人姓名</string>
+    <string name="act_address_edit_address">详细地址</string>
+    <string name="act_address_edit_text_set_message_notify">设为默认地址</string>
+    <string name="act_address_edit_text_district">所在地区</string>
+    <string name="act_address_edit_tip">设置地址标签:(如我的家，我的公司)</string>
+    <string name="act_address_edit_tip_del_success">删除地址成功</string>
+    <string name="act_address_edit_tip_update_success">更新地址成功</string>
+    <string name="act_address_edit_tip_add_success">添加地址成功</string>
+
+
+    <string name="title_activity_collect">收藏</string>
+    <string name="act_collect_text_compare">对比</string>
+
+    <string name="title_activity_foot_prints">足迹</string>
+    <string name="act_foot_prints_text_compare">对比</string>
+
+    <string name="title_activity_order_all">全部订单</string>
+
+
+    <string name="title_activity_customer">联系客服</string>
+    <string name="title_activity_suggest">意见反馈</string>
+    <string name="title_activity_suggest_content">请输入您的宝贵意见!</string>
+    <string name="title_activity_suggest_contact">联系方式不能为空!</string>
+    <string name="title_activity_suggest_name">请输入名字!</string>
+    <string name="title_activity_logistics_info">物流信息</string>
+    <string name="title_activity_system_message">系统消息</string>
+
+
+    <string name="act_order_list_btn_comment">去评价</string>
+    <string name="act_order_list_btn_cashback">去返现</string>
+    <string name="act_order_list_btn_return">退/换货</string>
+    <string name="act_order_list_btn_pay">去付款</string>
+    <string name="act_order_list_btn_cannel">取消订单</string>
+    <string name="act_order_list_btn_look_logistics">查看物流</string>
+    <string name="act_order_list_btn_receive">确认收货</string>
+
+    <string name="title_activity_login_by_verify">验证码登陆</string>
+    <string name="title_activity_after_sale_detail">售后详情</string>
+    <string name="title_activity_express_information">快递信息</string>
+    <string name="title_activity_express_company">快递公司:%s</string>
+    <string name="title_activity_express_company_number">货运单号:%s</string>
+    <string name="title_activity_compare_good_info">对比</string>
+
+
+    <string name="item_good_appraise_tv_value">搞活动很优惠,太一给送到家里很方便,不用去超市自己扛了,希望服务能一如既往的好</string>
+    <string name="good_appraise_tv_time">2015-10-10 10:55:55</string>
+    <string name="good_appraise_phone">130****5757</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="frg_class_fiction_title">医健优选</string>
+    <string name="frg_class_fiction_top1">EVERYDAY 家用日常</string>
+    <string name="frg_class_fiction_top2">BREATHING 呼吸相关</string>
+    <string name="frg_class_fiction_top3">CH DOCTOR 中医理疗</string>
+    <string name="frg_class_fiction_top4">SUPPORT 支撑</string>
+    <string name="frg_class_fiction_top5">NURSING 护理</string>
+
+    <!-- 商品列表-->
+    <string name="act_good_list_score_good_text">好评度</string>
+    <string name="act_good_list_score_opearte_text">易用性</string>
+    <string name="act_good_list_score_property_text">性能得分</string>
+    <string name="act_search_tv_name_text">电子上臂式</string>
+    <string name="act_search_tv_count_text">约12345件商品</string>
+    <string name="act_good_list_contrast_text">对比</string>
+    <string name="act_good_list_title_tv_text">欧姆龙血压计</string>
+    <string name="title_activity_select_province">省份</string>
+    <string name="title_activity_select_city">城市</string>
+    <string name="title_activity_select_district">区县</string>
+    <string name="title_activity_splash">医健优选</string>
+    <string name="item_frg_home_good_rv_text">海尔加湿器</string>
+    <string name="item_frg_home_good_rv_price">￥99.9</string>
+    <string name="item_collect_rv_content_tv_title_text">欧姆龙电子血压计HEM-7052家用上臂式自动测量血压======</string>
+    <string name="act_suggest_tv_title">意见反馈</string>
+    <string name="act_suggest_ll_input_text">提交</string>
+    <string name="act_suggest_et_contact_hint_text">请填写您的联系方式(手机号码或邮箱)</string>
+    <string name="act_suggest_et_name_hint_text">请填写您的姓名</string>
+    <string name="act_suggest_tv_contact">联系方式</string>
+    <string name="act_suggest_et_content_text">请输入您要返回的内容</string>
+    <string name="order_title_money_text">总额:</string>
+    <string name="order_freight_text">共%1$s件商品 含运费 ￥%2$s</string>
+    <string name="orderId_text">订单号：123456789</string>
+    <string name="order_money_text">￥1588.00</string>
+    <string name="order_state_text">待评价</string>
+    <string name="order_pay_state">待支付</string>
+    <string name="order_receive_state">待收货</string>
+    <string name="order_receive_state_delivery">待发货</string>
+    <string name="order_receive_state_cancel">已取消</string>
+    <string name="item_good_list_all_sort_text">综合排序</string>
+    <string name="item_good_list_price_sort_text">价格排序</string>
+    <string name="item_good_list_property_sort_text">性能排序</string>
+    <string name="item_good_list_good_sort_text">好评排序</string>
+    <string name="item_good_list_easy_sort_text">易用排序</string>
+    <string name="item_good_list_grade_sort_text">打分排序</string>
+    <!-- 清理缓存-->
+    <string name="act_clean_progress_tb_title">清理缓存</string>
+
+
+    <!--确认订单-->
+
+    <string name="item_good_in_order_text_voucher_tip">使用代币(本产品最多可使用%1$s代币)</string>
+    <string name="item_good_in_order_text_voucher">您有%1$s代币可以使用,已抵用%2$s代币</string>
+    <string name="title_activity_test">sssss</string>
+
+    <!--填写发货信息 -->
+    <string name="act_deliver_goods_tb_title">填写发货信息</string>
+
+    <!-- 发票信息 -->
+    <string name="act_title_activity_invoice">发票信息</string>
+    <!-- 分享界面-->
+    <string name="act_title_activity_share">分享界面</string>
+    <string name="title_activity_share_sdk_auto">ShareSdkAuto</string>
+    <string name="title_activity_share">ShareAct</string>
+    <string name="title_activity_clean_progress">清理缓存</string>
+    <string name="title_activity_input_consult">发表咨询</string>
+
+
+    <!-- 发表咨询页面 -->
+    <string name="act_input_consult_tv_title">发表咨询</string>
+    <string name="act_input_consult_ll_input_text">提交</string>
+    <string name="act_input_consult_et_content_text">请输入您要咨询的内容</string>
+    <string name="title_activity_web">WebAct</string>
+    <string name="title_activity_trade_success">交易成功</string>
+    <string name="title_activity_update_passwrod">修改密码</string>
+
+
+    <!--弹出框-->
+    <string name="c_alert_btn_ok">确定</string>
+    <string name="c_alert_btn_cancel">取消</string>
+    <string name="c_alert_title">提示</string>
+    <string name="c_alert_title_content">请登录后操作!</string>
+    <string name="c_alert_is_cancel_order">是否取消订单?</string>
+    <string name="c_alert_is_cancel_after">是否取消退货申请?</string>
+    <string name="c_alert_is_address_num">请输入快递单号</string>
+    <string name="c_alert_is_complete_order">是否确认收货?</string>
+    <string name="c_alert_is_compar_content">您是否确认删除?</string>
+    <string name="c_alert_is_remove_good">确定删除该商品?</string>
+    <string name="title_activity_cart">购物车</string>
+
+    <!-- 个人信息 -->
+    <string name="act_setting_user_info_icon">头像</string>
+    <string name="act_setting_user_info_nickname">昵称</string>
+    <string name="act_setting_user_info_phone">手机号码</string>
+    <string name="act_setting_user_info_sex">性别</string>
+    <string name="act_setting_user_info_age">年龄</string>
+
+
+
+    <!--其他-->
+    <string name="title_activity_capture">二维码/条码</string>
+    <string name="title_activity_inner_act_msg">站内信</string>
+    <string name="title_activity_my_advice">我的咨询</string>
+    <string name="title_activity_already_evaluated">客服回复</string>
+
+    <string name="title_activity_good_detail_act2">商品详情</string>
+
+    <string name="title_activity_already_user_info">个人信息</string>
+
+
+</resources>

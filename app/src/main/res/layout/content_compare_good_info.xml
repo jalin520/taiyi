@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/bg_root"
+             android:orientation="vertical"
+             app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    >
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_layout"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/compar_good_left_tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="商品名称"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_small"/>
+
+            <TextView
+                android:id="@+id/compar_good_right_tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="商品名称"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_small"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_divide_line"/>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_layout"
+            android:orientation="horizontal">
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/compar_good_left_iv_icon"
+                    android:layout_width="@dimen/compar_image_width"
+                    android:layout_height="@dimen/compar_image_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/compar_image_margin_top"
+                    android:src="@drawable/default_good"/>
+
+                <TextView
+                    android:id="@+id/compar_good_left_tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/compar_text_margin_top"
+                    android:text="￥ 0.00"
+                    android:textColor="@color/text_orange"
+                    android:textSize="@dimen/text_small"/>
+
+                <TextView
+                    android:id="@+id/compar_good_left_tv_add_cart"
+                    android:layout_width="@dimen/compar_input_add_cart_width"
+                    android:layout_height="@dimen/compar_input_add_cart_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/compar_input_add_cart_margin_bottom"
+                    android:layout_marginTop="@dimen/compar_image_margin_top"
+                    android:background="@drawable/btn_in_compar_info"
+                    android:gravity="center"
+                    android:text="加入购物车"
+                    android:textColor="@color/btnBgNormal_1"
+                    android:textSize="@dimen/text_small"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/compar_good_right_iv_icon"
+                    android:layout_width="@dimen/compar_image_width"
+                    android:layout_height="@dimen/compar_image_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/compar_image_margin_top"
+                    android:src="@drawable/default_good"/>
+
+                <TextView
+                    android:id="@+id/compar_good_right_tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/compar_text_margin_top"
+                    android:text="￥ 0.00"
+                    android:textColor="@color/text_orange"
+                    android:textSize="@dimen/text_small"/>
+
+                <TextView
+                    android:id="@+id/compar_good_right_tv_add_cart"
+                    android:layout_width="@dimen/compar_input_add_cart_width"
+                    android:layout_height="@dimen/compar_input_add_cart_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/compar_input_add_cart_margin_bottom"
+                    android:layout_marginTop="@dimen/compar_image_margin_top"
+                    android:background="@drawable/btn_in_compar_info"
+                    android:gravity="center"
+                    android:text="加入购物车"
+                    android:textColor="@color/btnBgNormal_1"
+                    android:textSize="@dimen/text_small"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/compar_good_right_ll_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="40dp">
+
+                <!--<com.t1_network.taiyi.widget.ComparInfoView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:mLeftName="欧姆龙电子血压计HEM-7052"-->
+                <!--app:mRightName="欧姆龙电子血压计HEM-7052"-->
+                <!--app:mTitle="商品名称" />-->
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

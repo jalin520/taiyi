@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:showDividers="none"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/bg_layout"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/bg_layout">
+
+            <RelativeLayout
+                android:id="@+id/tool_bar_btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/toolbar_btn_back_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/toolbar_btn_back_padding_left_and_right"
+                    android:layout_marginRight="@dimen/toolbar_btn_back_padding_left_and_right"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_back_gray" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/act_good_list_search_rl"
+                android:layout_width="@dimen/act_good_list_search_rl_width"
+                android:layout_height="@dimen/ty_64px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/card_margin3"
+                android:layout_toRightOf="@id/tool_bar_btn_back"
+                android:background="@drawable/btn_in_good_list_full_info">
+
+                <ImageView
+                    android:id="@+id/act_good_list_title_image"
+                    android:layout_width="@dimen/ty_36px"
+                    android:layout_height="@dimen/ty_36px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/act_good_list_title_image_margin"
+                    android:src="@drawable/ic_search_2x" />
+
+                <TextView
+                    android:id="@+id/act_good_list_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/act_good_list_title_text_margin_left"
+                    android:layout_toRightOf="@id/act_good_list_title_image"
+                    android:text="@string/act_good_list_title_tv_text"
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="@dimen/ty_28sp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/act_good_list_contrast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/common_margin_left_right"
+                android:text="@string/act_good_list_contrast_text"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="@dimen/text_mid" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>
+
+

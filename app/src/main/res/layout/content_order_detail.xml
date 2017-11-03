@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bgRoot"
+              android:orientation="vertical"
+              app:layout_behavior="@string/appbar_scrolling_view_behavior"
+              tools:context="com.t1_network.taiyi.controller.activity.OrderDetailAct"
+              tools:showIn="@layout/act_order_detail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_good_in_invoice_address_height"
+                android:background="@color/bgLayout"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/item_good_in_invoice_address_icon_width"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/order_detail_locate"
+                        android:layout_width="@dimen/item_good_in_invoice_address_icon_width_height"
+                        android:layout_height="@dimen/item_good_in_invoice_address_icon_width_height"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_order_detail_locate"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/order_detail_receiver_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收货人："
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_mid"/>
+
+                        <TextView
+                            android:id="@+id/order_detail_receiver_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/order_detail_receiver_name"
+                            android:layout_toRightOf="@id/order_detail_receiver_name"
+                            android:paddingLeft="@dimen/item_good_in_invoice_address_text_padding"
+                            android:text=""
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/text_mid"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/order_detail_receiver_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/item_good_in_invoice_address_text_top"
+                        android:text="地址"
+                        android:textColor="@color/text_gray_mid"
+                        android:textSize="@dimen/text_mid"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_layout">
+
+                <View
+                    android:id="@+id/item_good_in_order_view_line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginLeft="@dimen/common_margin_big"
+                    android:layout_marginRight="@dimen/common_margin_big"
+                    android:background="@color/bg_divide_line"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/order_detail_dilevery"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_good_in_invoice_address_height"
+                android:background="@color/bgLayout"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/item_good_in_invoice_address_icon_width"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/order_detail_express_icon"
+                        android:layout_width="@dimen/item_good_in_invoice_address_icon_width_height"
+                        android:layout_height="@dimen/item_good_in_invoice_address_icon_width_height"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_order_detail_express"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/order_detail_express_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="物流地址位置"
+                            android:textColor="@color/text_green"
+                            android:textSize="@dimen/text_mid"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/order_detail_express_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/item_good_in_invoice_address_text_top"
+                        android:text="物流送货时间"
+                        android:textColor="@color/text_gray_mid"
+                        android:textSize="@dimen/text_mid"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/item_order_wait_pay_image_arrow"
+                        android:layout_height="@dimen/item_order_wait_pay_image_arrow"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/common_margin_big"
+                        android:background="@drawable/ic_arrow_right"
+                        android:visibility="visible"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.05dp"
+                android:background="@color/bgLayout"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/comfirm_order_layout_good"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/comfirm_order_layout_good_content"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </LinearLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/item_good_in_invoice_item_total_margin_top">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/order_detail_subtotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="@dimen/common_margin_left_right"
+                                android:text="总额: ￥0.00"
+                                android:textSize="@dimen/text_mid"/>
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/content_order_detail_bottom"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

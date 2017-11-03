@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/common_green</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">@color/common_green</color>
+    <color name="clear">#00000000</color>
+
+    <color name="white">#ffffff</color>
+
+    <!--全局用色-->
+    <color name="common_green">#4aa328</color>
+    <color name="common_orange">#ff9800</color>
+    <color name="common_blue">#00b7ee</color>
+    <color name="common_black">#333333</color>
+    <color name="common_gray_deep">#777777</color>
+    <color name="common_gray_mid">#999999</color>
+    <color name="common_gray_light">#e6e6e6</color>
+    <color name="common_gray_more_light">#f4f4f4</color>
+    <color name="common_white">#ffffff</color>
+
+    <!--字体-->
+    <color name="text_green">@color/common_green</color>
+    <color name="text_orange">@color/common_orange</color>
+    <color name="text_blue">@color/common_blue</color>
+    <color name="text_black">@color/common_black</color>
+    <color name="text_gray_deep">@color/common_gray_deep</color>
+    <color name="text_gray_mid">@color/common_gray_mid</color>
+    <color name="text_white">@color/white</color>
+    <color name="text_red">#ff0000</color>
+    <color name="text_gray_small">#676767</color>
+    <color name="text_gray_small1">#444444</color>
+
+    <!--背景-->
+    <color name="bg_root">@color/common_gray_more_light</color>
+    <color name="bg_layout">@color/white</color>
+    <color name="bg_divide_line">#dddddd</color>
+
+    <color name="bgPageCircle">#50727272</color>
+    <color name="btn_in_verify_full">#88ffffff</color>
+    <color name="btn_in_login_full">#FF4AA628</color>
+    <color name="btn_in_login_full_normal">#774AA628</color>
+
+    <!--按钮颜色-->
+    <color name="btnUnEnable">#727272</color>
+
+    <color name="btnText_1">#ffffff</color>
+    <color name="btnBgNormal_1">@color/colorPrimary</color>
+    <color name="btnBgPressed_1">#3b8520</color>
+
+    <color name="btnText_2">#ffffff</color>
+    <color name="btnBgNormal_2">#ff9800</color>
+    <color name="btnBgPressed_2">#e58900</color>
+
+    <color name="btnText_3">#727272</color>
+    <color name="btnBgNormal_3">#ffffff</color>
+    <color name="btnBgPressed_3">#ffffff</color>
+    <color name="btnBorder_3">@color/btnText_3</color>
+
+
+    <!--字体颜色-->
+    <color name="bgRoot">#eeeced</color>
+    <color name="bgLayout">@color/white</color>
+    <color name="bgDeepRoot">#dddddd</color>
+
+    <color name="textLight">#999999</color>
+    <color name="textWhite">@color/white</color>
+    <color name="textBlack">#212121</color>
+    <color name="textGray">#a9a9a9</color>
+
+
+    <color name="btn_shape_color">#e6e6e6</color>
+    <color name="statusBarColor">#ffffff</color>
+
+    <!-- home头部颜色-->
+    <color name="frg_home_title_color">#bb4aa328</color>
+    <color name="frg_home_title_search">#bbffffff</color>
+
+
+    <color name="act_search_btn_bg">#44999999</color>
+
+    <!-- share_color -->
+    <color name="share_friend_green">#993cb034</color>
+    <color name="share_qzone_blue">#99238cbb</color>
+    <color name="share_weibo_red">#99d42a2a</color>
+    <color name="share_photo_orange">#99f7a426</color>
+    <color name="share_root_bg_layout">#eeffffff</color>
+
+
+
+</resources>

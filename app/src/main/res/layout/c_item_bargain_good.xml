@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_weight="1"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_frg_home_good_rv_root"
+        android:layout_width="@dimen/item_frg_home_good_rv_root_width"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/item_frg_home_good_rv_root_margin_left"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/item_bargin_good_image"
+                android:layout_width="@dimen/item_frg_home_good_rv_icon_width"
+                android:layout_height="@dimen/item_frg_home_good_rv_icon_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/rv_good_0" />
+
+            <LinearLayout
+                android:background="@color/bg_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_bargin_good_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="@string/item_frg_home_good_rv_text"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_little" />
+
+                <TextView
+                    android:id="@+id/item_bargin_good_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_frg_home_good_rv_price"
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="@dimen/text_small" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/frg_home_good_gl_adv1_margin"
+            android:layout_marginLeft="@dimen/frg_home_good_gl_adv1_margin"
+            android:layout_marginRight="@dimen/frg_home_good_gl_adv1_margin"
+            android:layout_marginTop="@dimen/frg_home_good_gl_adv1_margin"
+            android:background="@drawable/home_image_btn_in_info_item" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_pack_up_2x" android:state_pressed="true"/>
+    <item android:drawable="@drawable/ic_pack_down_2x"/>
+</selector>

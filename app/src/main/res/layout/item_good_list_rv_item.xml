@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgRoot"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/act_good_list_context_bottom">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_layout"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/item_good_list_rl_icon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/act_good_list_item_rl_icon"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/item_good_list_image_good"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_images_001_3x" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_good_item" />
+
+
+            <ImageView
+                android:id="@+id/act_good_list_item_rl_icon_image_heart"
+                android:layout_width="@dimen/act_good_list_item_rl_icon_image_width"
+                android:layout_height="@dimen/act_good_list_item_rl_icon_image_width"
+                android:layout_marginLeft="@dimen/act_good_list_item_rl_icon_image_margin_left"
+                android:layout_marginTop="@dimen/act_good_list_item_rl_icon_image_margin_top"
+                android:src="@drawable/ic_collection_icon_2x"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/act_good_list_item_rl_icon_image_contrast"
+                android:layout_width="@dimen/act_good_list_item_rl_icon_image_width"
+                android:layout_height="@dimen/act_good_list_item_rl_icon_image_width"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/act_good_list_item_rl_icon_image_margin_left"
+                android:layout_marginTop="@dimen/act_good_list_item_rl_icon_image_margin_top"
+                android:src="@drawable/ic_contrast_icon_2x"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/act_good_list_item_rl_icon_image_button"
+                android:layout_marginLeft="@dimen/act_good_list_item_rl_icon_image_margin_left"
+                android:layout_marginRight="@dimen/act_good_list_item_rl_icon_image_margin_left"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/bgLayout" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/item_good_list_text_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="80dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="鱼跃制氧机家用吸氧机家用鱼跃制氧机家用吸氧机家用鱼跃制氧机家用吸氧机家用"
+                        android:textColor="@color/bgLayout"
+                        android:textSize="@dimen/text_mid" />
+
+                    <TextView
+                        android:id="@+id/item_good_list_text_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text="￥199.00"
+                        android:textColor="@color/bgLayout"
+                        android:textSize="@dimen/text_mid" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout xmlns:taiyi="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/act_good_list_item_rl_ll_bottom_height"
+            android:background="@color/bg_layout"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="@dimen/act_good_list_item_rl_ll_bottom_score_width"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-10dp">
+
+                <com.t1_network.taiyi.widget.ScoreView
+                    android:id="@+id/act_good_list_score_good"
+                    android:layout_width="@dimen/act_good_list_item_rl_ll_bottom_score_size"
+                    android:layout_height="@dimen/act_good_list_item_rl_ll_bottom_score_size"
+                    android:layout_centerInParent="true"
+                    taiyi:circle_height="@dimen/act_good_list_item_rl_ll_bottom_score_size"
+                    taiyi:circle_score="96"
+                    taiyi:circle_width="@dimen/act_good_list_item_rl_ll_bottom_score_size" />
+
+                <TextView
+                    android:id="@+id/act_good_detail_text_pro_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:textColor="@color/text_green"
+                    android:textSize="@dimen/text_mid" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/act_good_list_score_good"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/act_good_detail_text_pro_score"
+                    android:textColor="@color/text_green"
+                    android:textSize="@dimen/text_less_little" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/act_good_list_item_rl_ll_bottom_score_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/act_good_list_item_rl_ll_bottom_score_margin"
+                android:layout_marginTop="-10dp">
+
+                <com.t1_network.taiyi.widget.ScoreView
+                    android:id="@+id/act_good_list_score_opearte"
+                    android:layout_width="@dimen/act_good_list_item_rl_ll_bottom_score_size"
+                    android:layout_height="@dimen/act_good_list_item_rl_ll_bottom_score_size"
+                    android:layout_centerInParent="true"
+                    taiyi:circle_height="@dimen/act_good_list_item_rl_ll_bottom_score_size"
+                    taiyi:circle_score="96"
+                    taiyi:circle_width="@dimen/act_good_list_item_rl_ll_bottom_score_size" />
+
+                <TextView
+                    android:id="@+id/act_good_detail_text_perference"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:textColor="@color/text_green"
+                    android:textSize="@dimen/text_mid" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/act_good_list_score_opearte"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/act_good_detail_text_perference"
+                    android:textColor="@color/text_green"
+                    android:textSize="@dimen/text_less_little" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/act_good_list_item_rl_ll_bottom_score_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/act_good_list_item_rl_ll_bottom_score_margin"
+                android:layout_marginTop="-10dp">
+
+                <com.t1_network.taiyi.widget.ScoreView
+                    android:id="@+id/act_good_list_score_property"
+                    android:layout_width="@dimen/act_good_list_item_rl_ll_bottom_score_size"
+                    android:layout_height="@dimen/act_good_list_item_rl_ll_bottom_score_size"
+                    android:layout_centerInParent="true"
+                    taiyi:circle_height="@dimen/act_good_list_item_rl_ll_bottom_score_size"
+                    taiyi:circle_score="96"
+                    taiyi:circle_width="@dimen/act_good_list_item_rl_ll_bottom_score_size" />
+
+                <TextView
+                    android:id="@+id/act_good_detail_text_operator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="96"
+                    android:textColor="@color/text_green"
+                    android:textSize="@dimen/text_mid" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/act_good_list_score_property"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/act_good_detail_text_operator"
+                    android:textColor="@color/text_green"
+                    android:textSize="@dimen/text_less_little" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/item_collect_rv_item_ll_add_compare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/act_good_list_item_rl_ll_bottom_score_margin"
+                android:background="@drawable/btn_in_good_list_info">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="27.6dp"
+                    android:gravity="center"
+                    android:text="加入对比"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_small" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

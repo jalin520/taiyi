@@ -1,0 +1,163 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="com.t1_network.taiyi.controller.fragment.LoginFrg">
+
+
+    <RelativeLayout
+        android:id="@+id/frg_register_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:paddingTop="@dimen/act_content_margin">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/act_title_top"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="@dimen/frg_register_et_width"
+                android:layout_height="@dimen/frg_register_et_height">
+
+                <EditText
+                    android:textColor="@color/bgLayout"
+                    android:id="@+id/feg_register_check_phone_edit_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="@string/feg_register_check_phone_edit_mobile_text"
+                    android:inputType="number"
+                    android:phoneNumber="true"
+                    android:textColorHint="@color/btn_in_verify_full" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/act_content_view_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/text_white" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="@dimen/frg_register_et_width"
+                android:layout_height="@dimen/frg_register_et_height">
+
+
+                <EditText
+                    android:textColor="@color/bgLayout"
+                    android:id="@+id/frg_register_edit_verify_code"
+                    android:layout_width="@dimen/frg_register_verify_width"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:inputType="text"
+                    android:hint="@string/frg_register_edit_verify_code_text"
+                    android:textColorHint="@color/btn_in_verify_full" />
+
+                <TextView
+                    android:id="@+id/frg_register_tv_send_verify_code"
+                    android:layout_width="@dimen/act_register_tv_send_verify_code_width"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_in_verify_full_info"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="@dimen/frg_register_tv_btn_padding"
+                    android:text="@string/act_register_btn_send_verify_code"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_small" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/act_content_view_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/text_white" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="@dimen/frg_register_et_width"
+                android:layout_height="@dimen/frg_register_et_height">
+
+                <EditText
+                    android:textColor="@color/bgLayout"
+                    android:id="@+id/frg_register_edit_password"
+                    android:layout_width="@dimen/frg_register_password_width"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="@string/frg_login_et_pwd"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/btn_in_verify_full" />
+
+                <TextView
+                    android:id="@+id/frg_register_tv_send_password_show"
+                    android:layout_width="@dimen/frg_register_tv_show_password_width"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_in_verify_full_info"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="@dimen/frg_register_tv_btn_padding"
+                    android:text="@string/act_register_btn_send_show_password_code"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_small" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/act_content_view_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/text_white" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/frg_register_btn_send"
+                android:layout_width="@dimen/frg_register_et_width"
+                android:layout_height="@dimen/frg_register_tv_btn_width"
+                android:layout_marginTop="@dimen/frg_register_input_margin_top"
+                android:background="@drawable/btn_in_login_full_info"
+                android:gravity="center"
+                android:text="@string/frg_register_btn_send_text"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_big" />
+
+            <LinearLayout
+                android:id="@+id/ftg_register_ll_btn_is_check"
+                android:layout_marginTop="@dimen/frg_register_tv_margin_tip"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="@dimen/frg_register_et_width"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ftg_register_iv_is_check_icon"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_check_image_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/frg_register_et_width_text"
+                    android:textColor="@color/btn_in_verify_full"
+                    android:textSize="@dimen/text_small" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

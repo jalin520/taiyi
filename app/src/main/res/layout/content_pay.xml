@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgRoot"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.t1_network.taiyi.controller.activity.PayAct"
+    tools:showIn="@layout/act_pay">
+
+
+    <ScrollView
+        android:id="@+id/pay_act_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/pay_act_layout_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bgLayout"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/pay_act_layout_pay_padding_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pay_act_text_pay_way_padding_left"
+                android:text="@string/pay_act_text_pay_way"
+                android:textColor="@color/text_gray_mid" />
+
+            <RelativeLayout
+                android:id="@+id/pay_act_layout_ali_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pay_act_relativelayout_ali_padding_top"
+                android:paddingLeft="@dimen/pay_act_relativelayout_ali_padding_left">
+
+                <ImageView
+                    android:id="@+id/pay_act_image_ali_pay"
+                    android:layout_width="@dimen/pay_act_image_ali_pay_width"
+                    android:layout_height="@dimen/pay_act_image_ali_pay_height"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_ali_pay" />
+
+                <TextView
+                    android:id="@+id/pay_act_text_ali_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/pay_act_text_ali_pay_margin_left"
+                    android:layout_toRightOf="@+id/pay_act_image_ali_pay"
+                    android:text="@string/pay_act_text_ali_pay"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_small" />
+
+
+                <ImageView
+                    android:id="@+id/pay_act_image_select_ali"
+                    android:layout_width="@dimen/pay_act_image_select_ali_width"
+                    android:layout_height="@dimen/pay_act_image_select_ali_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/pay_act_image_select_ali_margin_right"
+                    android:src="@drawable/ic_check_pay_select" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pay_act_line_divide"
+                android:layout_marginBottom="@dimen/pay_act_line_divide_margin_bottom"
+                android:layout_marginLeft="@dimen/pay_act_line_divide_margin_left"
+                android:layout_marginTop="@dimen/pay_act_line_divide_margin_top"
+                android:background="@color/bg_divide_line" />
+
+            <RelativeLayout
+                android:id="@+id/pay_act_layout_wechat_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pay_act_relativelayout_wechat_padding_left">
+
+                <ImageView
+                    android:id="@+id/pay_act_image_wechat_pay"
+                    android:layout_width="@dimen/pay_act_image_wechat_pay_height"
+                    android:layout_height="@dimen/pay_act_image_wechat_pay_width"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_wechat_pay" />
+
+                <TextView
+                    android:id="@+id/pay_act_text_wechat_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/pay_act_text_wechat_pay_margin_left"
+                    android:layout_toRightOf="@+id/pay_act_image_wechat_pay"
+                    android:text="@string/pay_act_text_wechat_pay"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_small" />
+
+
+                <ImageView
+                    android:id="@+id/pay_act_image_select_wechat"
+                    android:layout_width="@dimen/pay_act_image_select_wechat_width"
+                    android:layout_height="@dimen/pay_act_image_select_wechat_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/pay_act_image_select_wechat_margin_right"
+                    android:src="@drawable/ic_check_pay_normal" />
+            </RelativeLayout>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pay_act_line_divide"
+                    android:layout_marginBottom="@dimen/pay_act_line_divide_margin_bottom"
+                    android:layout_marginLeft="@dimen/pay_act_line_divide_margin_left"
+                    android:layout_marginTop="@dimen/pay_act_line_divide_margin_top"
+                    android:background="@color/bg_divide_line" />
+
+                <RelativeLayout
+                    android:id="@+id/pay_act_layout_baiduWallet_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/pay_act_relativelayout_baiduWallet_padding_left">
+
+                    <ImageView
+                        android:id="@+id/pay_act_image_baiduWallet_pay"
+                        android:layout_width="@dimen/pay_act_image_baiduWallet_pay_width"
+                        android:layout_height="@dimen/pay_act_image_baiduWallet_pay_height"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_baiduwallet_pay" />
+
+                    <TextView
+                        android:id="@+id/pay_act_text_baiduWallet_pay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/pay_act_text_baiduWallet_pay_margin_left"
+                        android:layout_toRightOf="@id/pay_act_image_baiduWallet_pay"
+                        android:text="@string/pay_act_text_baiduWallet_pay"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_small" />
+
+
+                    <ImageView
+                        android:id="@+id/pay_act_image_select_baiduWallet"
+                        android:layout_width="@dimen/pay_act_image_select_baiduWallet_width"
+                        android:layout_height="@dimen/pay_act_image_select_baiduWallet_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/pay_act_image_select_baiduWallet_margin_right"
+                        android:src="@drawable/ic_check_pay_normal" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pay_act_line_divide"
+                    android:layout_marginBottom="@dimen/pay_act_line_divide_margin_bottom"
+                    android:layout_marginLeft="@dimen/pay_act_line_divide_margin_left"
+                    android:layout_marginTop="@dimen/pay_act_line_divide_margin_top"
+                    android:background="@color/bg_divide_line" />
+
+                <RelativeLayout
+                    android:id="@+id/pay_act_layout_JDWallet_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/pay_act_relativelayout_JDWallet_padding_left"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/pay_act_image_JDWallet_pay"
+                        android:layout_width="@dimen/pay_act_image_JDWallet_pay_width"
+                        android:layout_height="@dimen/pay_act_image_JDWallet_pay_height"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_jdwallet_pay" />
+
+                    <TextView
+                        android:id="@+id/pay_act_text_JDWallet_pay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/pay_act_text_JDWallet_pay_margin_left"
+                        android:layout_toRightOf="@+id/pay_act_image_JDWallet_pay"
+                        android:text="@string/pay_act_text_JDWallet_pay"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_small" />
+
+
+                    <ImageView
+                        android:id="@+id/pay_act_image_select_JDWallet"
+                        android:layout_width="@dimen/pay_act_image_select_JDWallet_width"
+                        android:layout_height="@dimen/pay_act_image_select_JDWallet_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/pay_act_image_select_JDWallet_margin_right"
+                        android:src="@drawable/ic_check_pay_normal" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pay_act_line_divide"
+                    android:layout_marginBottom="@dimen/pay_act_line_divide_margin_bottom"
+                    android:layout_marginLeft="@dimen/pay_act_line_divide_margin_left"
+                    android:layout_marginTop="@dimen/pay_act_line_divide_margin_top"
+                    android:background="@color/bg_divide_line"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/pay_act_layout_quick_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/pay_act_relativelayout_quick_pay_padding_left"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/pay_act_image_quick_pay"
+                        android:layout_width="@dimen/pay_act_image_quick_pay_width"
+                        android:layout_height="@dimen/pay_act_image_quick_pay_height"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_quick_pay" />
+
+                    <TextView
+                        android:id="@+id/pay_act_text_quick_pay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/pay_act_text_quick_pay_margin_left"
+                        android:layout_toRightOf="@+id/pay_act_image_quick_pay"
+                        android:text="@string/pay_act_text_quick_pay"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_small" />
+
+
+                    <ImageView
+                        android:id="@+id/pay_act_image_select_quick"
+                        android:layout_width="@dimen/pay_act_image_select_quick_width"
+                        android:layout_height="@dimen/pay_act_image_select_quick_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/pay_act_image_select_quick_margin_right"
+                        android:src="@drawable/ic_check_pay_normal" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pay_act_line_divide"
+                android:layout_marginBottom="@dimen/pay_act_line_divide_margin_bottom"
+                android:layout_marginLeft="@dimen/pay_act_line_divide_margin_left"
+                android:layout_marginTop="@dimen/pay_act_line_divide_margin_top"
+                android:background="@color/bg_divide_line"
+                android:visibility="gone" />
+
+            <RelativeLayout
+
+                android:id="@+id/pay_act_layout_union_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pay_act_relativelayout_union_margin_bottom"
+                android:paddingLeft="@dimen/pay_act_relativelayout_union_pay_padding_left">
+
+                <ImageView
+                    android:id="@+id/pay_act_image_union_pay"
+                    android:layout_width="@dimen/pay_act_image_union_pay_width"
+                    android:layout_height="@dimen/pay_act_image_union_pay_height"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_union_pay" />
+
+                <TextView
+                    android:id="@+id/pay_act_text_union_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/pay_act_text_union_pay_margin_left"
+                    android:layout_toRightOf="@+id/pay_act_image_union_pay"
+                    android:text="@string/pay_act_text_union_pay"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_small" />
+
+
+                <ImageView
+                    android:id="@+id/pay_act_image_select_union"
+                    android:layout_width="@dimen/pay_act_image_select_union_width"
+                    android:layout_height="@dimen/pay_act_image_select_union_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/pay_act_image_select_union_margin_right"
+                    android:src="@drawable/ic_check_pay_normal" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pay_act_line_divide"
+                android:layout_marginLeft="@dimen/pay_act_line_divide_margin_left"
+                android:background="@color/bg_divide_line"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bgRoot">
+
+                <Button
+                    android:id="@+id/pay_act_btn_pay"
+                    android:layout_width="@dimen/pay_act_btn_pay_width"
+                    android:layout_height="@dimen/pay_act_btn_pay_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/pay_act_btn_pay_margin_bottom"
+                    android:layout_marginRight="@dimen/pay_act_btn_pay_margin_right"
+                    android:layout_marginTop="@dimen/pay_act_btn_pay_margin_top"
+                    android:background="@color/btnBgNormal_1"
+                    android:text="@string/pay_act_btn_pay"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_small" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

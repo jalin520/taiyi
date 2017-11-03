@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="ty_12px">7.111dp</dimen>
+    <dimen name="ty_20px">11.85dp</dimen>
+    <dimen name="ty_22px">13.03dp</dimen>
+    <dimen name="ty_28px">16.593dp</dimen>
+    <dimen name="ty_30px">17.78dp</dimen>
+    <dimen name="ty_32px">18.96dp</dimen>
+    <dimen name="ty_36px">21.33dp</dimen>
+    <dimen name="ty_40px">23.7dp</dimen>
+    <dimen name="ty_44px">26.1dp</dimen>
+    <dimen name="ty_64px">37.93dp</dimen>
+    <dimen name="ty_70px">41.48dp</dimen>
+    <dimen name="ty_80px">47.41dp</dimen>
+    <dimen name="ty_90px">53.33dp</dimen>
+    <dimen name="ty_104px">61.63dp</dimen>
+    <dimen name="ty_120px">71.11dp</dimen>
+
+    <dimen name="ty_170px">100.74dp</dimen>
+    <dimen name="ty_200px">118.52dp</dimen>
+    <dimen name="ty_240px">142.22dp</dimen>
+    <dimen name="ty_360px">213.33dp</dimen>
+    <dimen name="ty_440px">260.74dp</dimen>
+
+    <dimen name="ty_20sp">11.85sp</dimen>
+    <dimen name="ty_28sp">16.593sp</dimen>
+
+
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:showDividers="none"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ff0000"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/bgLayout">
+
+            <RelativeLayout
+                android:id="@+id/tool_bar_btn_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/toolbar_btn_back_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/toolbar_btn_back_padding_left_and_right"
+                    android:layout_marginRight="@dimen/toolbar_btn_back_padding_left_and_right"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_back_gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/act_good_detail_layout_cart"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="11.77dp">
+
+                <ImageView
+                    android:layout_width="24.71dp"
+                    android:layout_height="24.71dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/ic_shopcart_green" />
+
+                <TextView
+                    android:id="@+id/act_good_detail_text_cart_num"
+                    android:layout_width="15.94dp"
+                    android:layout_height="15.94dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_shop_cart_num_tip"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_little" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/act_good_detail_image_share_friend_circle"
+                android:layout_width="@dimen/act_good_detail_tool_bar_icon"
+                android:layout_height="@dimen/act_good_detail_tool_bar_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/act_good_detail_tool_bar_icon"
+                android:layout_toRightOf="@+id/tool_bar_btn_back"
+                android:src="@drawable/ic_share_friend_circle" />
+
+            <ImageView
+                android:id="@+id/act_good_detail_image_share_wechat"
+                android:layout_width="@dimen/act_good_detail_tool_bar_icon"
+                android:layout_height="@dimen/act_good_detail_tool_bar_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/act_good_detail_tool_bar_icon_margin_left"
+                android:layout_toRightOf="@+id/act_good_detail_image_share_friend_circle"
+                android:src="@drawable/ic_share_wehchat" />
+
+            <ImageView
+                android:id="@+id/act_good_detail_image_share_sina"
+                android:layout_width="@dimen/act_good_detail_tool_bar_icon"
+                android:layout_height="@dimen/act_good_detail_tool_bar_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/act_good_detail_tool_bar_icon_margin_left"
+                android:layout_toRightOf="@+id/act_good_detail_image_share_wechat"
+                android:src="@drawable/ic_share_sina" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>
+
+

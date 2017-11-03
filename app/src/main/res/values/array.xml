@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>综合排序</item>
+        <item>价格排序</item>
+        <item>性能排序</item>
+        <item>好评排序</item>
+        <item>易用排序</item>
+        <item>打分排序</item>
+    </string-array>
+</resources>

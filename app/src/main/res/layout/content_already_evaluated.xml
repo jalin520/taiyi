@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgLayout"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/common_margin_left_right"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_already_evaluated"
+    tools:context="com.t1_network.taiyi.controller.activity.AlreadyEvaluatedAct">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/card_margin"
+        android:layout_marginRight="@dimen/card_margin"
+        android:layout_marginTop="@dimen/card_margin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/act_evaluate_iv_icon"
+            android:layout_width="@dimen/evaluate_image_icon_width_height"
+            android:layout_height="@dimen/evaluate_image_icon_width_height"
+            android:src="@drawable/test_good" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/evaluate_title_text_name_margin_left"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/act_evaluate_text_good_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="鱼跃 制氧机 YU300鱼跃 制氧机 YU300鱼跃 制氧机 YU300鱼跃 制氧机 YU300"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_mid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/evaluate_title_text_name_margin_left"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="@dimen/common_margin_big"
+                    android:text="评价: "
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_mid" />
+
+                <RatingBar
+                    android:isIndicator="true"
+                    android:id="@+id/act_evaluate_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/btn_mid_height"
+                    android:layout_marginTop="@dimen/common_margin_big"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressDrawable="@drawable/bg_rating"
+                    android:stepSize="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/common_margin_top_bottom"
+        android:paddingLeft="@dimen/common_margin_left_right"
+        android:paddingRight="@dimen/common_margin_left_right"
+        android:paddingTop="@dimen/common_margin_top_bottom">
+
+        <ImageView
+            android:id="@+id/item_my_advice_iv_icon"
+            android:layout_width="@dimen/common_margin_top_bottom"
+            android:layout_height="@dimen/common_margin_top_bottom"
+            android:src="@drawable/ic_comment"/>
+
+        <TextView
+            android:textColor="@color/text_gray_deep"
+            android:id="@+id/item_my_advice_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin_left_right"
+            android:text="评论"
+            android:textSize="@dimen/text_mid"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/c_divide_line_horizontal_height"
+        android:layout_marginLeft="@dimen/common_margin_left_right"
+        android:layout_marginRight="@dimen/common_margin_left_right"
+        android:background="@color/bg_divide_line">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/common_margin_top_bottom"
+        android:paddingLeft="@dimen/common_margin_left_right"
+        android:paddingRight="@dimen/common_margin_left_right"
+        android:paddingTop="@dimen/common_margin_top_bottom">
+
+        <ImageView
+            android:layout_width="@dimen/common_margin_top_bottom"
+            android:layout_height="@dimen/common_margin_top_bottom"
+            android:src="@drawable/ic_customer_reply"/>
+
+        <TextView
+            android:id="@+id/item_my_advice_tv_ask"
+            android:textColor="@color/text_gray_deep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin_left_right"
+            android:text="客服回复"
+            android:textSize="@dimen/text_mid"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/c_divide_line_horizontal_height"
+        android:background="@color/bg_divide_line">
+
+    </View>
+
+</LinearLayout>

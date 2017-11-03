@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bgRoot"
+              android:orientation="vertical"
+              app:layout_behavior="@string/appbar_scrolling_view_behavior"
+              tools:context="com.t1_network.taiyi.controller.activity.ExpressInformationAct"
+              tools:showIn="@layout/activity_express_information">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.88dp"
+        android:background="@color/bg_layout"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/common_margin_big"
+        android:paddingLeft="@dimen/evaluate_add_padding_bottom"
+        android:paddingTop="@dimen/evaluate_add_padding_bottom">
+
+        <ImageView
+            android:layout_width="@dimen/act_express_info_content_item_icon_width_height"
+            android:layout_height="@dimen/act_express_info_content_item_icon_width_height"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/test_good"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/act_express_info_content_item_title_padding_left">
+
+            <TextView
+                android:id="@+id/express_info_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物流状态: 派送中"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="@dimen/text_small"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/act_express_information_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.88dp"
+                android:text="物流公司: 中通快递"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="@dimen/text_small"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/act_express_information_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.88dp"
+                android:text="货运单号: 123456789011"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="@dimen/text_small"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.88dp"
+                android:text="官方电话: 95311"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="@dimen/text_small"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/express_info_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bg_layout"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

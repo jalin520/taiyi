@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="error_mobile_can_no_be_enpty">手机号码不能为空</string>
+    <string name="error_mobile_must_be_11_length">手机号码必须为11位</string>
+    <string name="error_mobile_must_be_start_with_1">手机号码必须以1开头</string>
+
+    <string name="error_verify_code_can_no_be_enpty">验证码不能为空</string>
+
+    <string name="error_name_code_can_no_be_enpty">收货人姓名不能为空</string>
+
+
+    <string name="error_password_code_can_no_be_enpty">密码不能为空</string>
+    <string name="error_comfirm_password_code_can_no_be_enpty">密码不能为空</string>
+    <string name="error_password_is_no_same">两次输入密码不一致</string>
+
+</resources>

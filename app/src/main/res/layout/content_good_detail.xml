@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              app:layout_behavior="@string/appbar_scrolling_view_behavior"
+              tools:context="com.t1_network.taiyi.controller.activity.GoodDetailAct"
+              tools:showIn="@layout/act_good_detail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--<com.t1_network.taiyi.widget.VerticalViewPager.VerticalViewPager-->
+            <!--android:id="@+id/act_good_detail_view_pager"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="@dimen/act_good_detail_operator_bar_height"-->
+            <!--android:background="@color/bg_layout"/>-->
+
+        <com.markmao.pulltorefresh.widget.XScrollView
+            android:id="@+id/act_good_detail_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/act_good_detail_operator_bar_height"
+            android:background="@color/bg_layout"/>
+
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/act_good_detail_operator_bar_height"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/act_good_detail_image_is_collect"
+                    android:layout_width="@dimen/act_good_detail_operator_bar_icon"
+                    android:layout_height="@dimen/act_good_detail_operator_bar_icon"
+
+                    android:src="@drawable/ic_favourite_normal"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/act_good_detail_text_favorite"
+                    android:textColor="@color/text_gray_mid"
+                    android:textSize="@dimen/text_small"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="@dimen/act_good_detail_operator_bar_line_height"
+                android:layout_gravity="center_vertical"
+                android:background="@color/bg_divide_line"/>
+
+            <LinearLayout
+                android:id="@+id/act_good_detail_layout_customer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/act_good_detail_operator_bar_icon"
+                    android:layout_height="@dimen/act_good_detail_operator_bar_icon"
+                    android:src="@drawable/ic_customer"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/act_good_detail_text_comsuer"
+                    android:textColor="@color/text_gray_mid"
+                    android:textSize="@dimen/text_small"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="@dimen/act_good_detail_operator_bar_line_height"
+                android:layout_gravity="center_vertical"
+                android:background="@color/bg_divide_line"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:id="@+id/act_good_detail_layout_constract"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/act_good_detail_operator_bar_icon"
+                        android:layout_height="@dimen/act_good_detail_operator_bar_icon"
+                        android:src="@drawable/ic_constract"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/act_good_detail_text_constract"
+                        android:textColor="@color/text_gray_mid"
+                        android:textSize="@dimen/text_small"/>
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/act_good_detail_add_compare_number"
+                    android:layout_width="15.94dp"
+                    android:layout_height="15.94dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/bg_shop_cart_num_tip"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_little" />
+            </RelativeLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/act_good_detail_text_add_to_cart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/act_good_detail_text_add_to_shopcart"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_big"></TextView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

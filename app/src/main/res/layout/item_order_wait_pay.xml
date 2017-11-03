@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/common_margin_top_bottom"
+    android:background="@color/bgRoot"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/item_good_list_title_margin_bottom"
+        android:background="@color/bg_layout"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_order_wait_pay_layout_order_status_height"
+            android:layout_marginLeft="@dimen/common_margin_left_right"
+            android:layout_marginRight="@dimen/common_margin_left_right">
+
+            <TextView
+                android:id="@+id/orderId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/orderId_text"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_mid" />
+
+            <TextView
+                android:id="@+id/orderState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/order_pay_state"
+                android:textColor="@color/text_gray_mid"
+                android:textSize="@dimen/text_mid" />
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/item_good_in_order_view_line1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/c_divide_line_horizontal_height"
+            android:layout_marginLeft="@dimen/common_margin_left_right"
+            android:background="@color/common_gray_light" />
+
+        <LinearLayout
+            android:id="@+id/item_order_wait_pay_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_margin_top_bottom"
+            android:layout_marginLeft="@dimen/item_good_list_title_margin"
+            android:layout_marginRight="@dimen/item_good_list_title_margin"
+            android:layout_marginTop="@dimen/common_margin_top_bottom">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/order_freight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/item_good_list_order_freight_margin_right"
+                    android:text="@string/order_freight_text"
+                    android:textColor="@color/text_gray_mid"
+                    android:textSize="@dimen/text_little" />
+
+                <TextView
+                    android:id="@+id/orderMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_money_text"
+                    android:textColor="@color/text_green"
+                    android:textSize="@dimen/text_mid" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_margin_top_bottom">
+
+            <Button
+                android:clickable="true"
+                android:id="@+id/item_order_wait_pay_btn_pay"
+                android:layout_width="@dimen/btn_large_width"
+                android:layout_height="@dimen/btn_big_height"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/common_margin_left_right"
+                android:background="@drawable/bg_btn_ripple_1"
+                android:focusable="false"
+                android:text="@string/act_order_list_btn_pay"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_mid" />
+
+            <Button
+                android:clickable="true"
+                android:id="@+id/item_order_wait_pay_btn_cancel_order"
+                android:layout_width="@dimen/btn_large_width"
+                android:layout_height="@dimen/btn_big_height"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@id/item_order_wait_pay_btn_pay"
+                android:background="@drawable/bg_btn_ripple_3"
+                android:focusable="false"
+                android:text="@string/act_order_list_btn_cannel"
+                android:textColor="@color/text_gray_mid"
+                android:textSize="@dimen/text_mid" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

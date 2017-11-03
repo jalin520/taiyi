@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_root"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.t1_network.taiyi.controller.activity.GoodListAct"
+    tools:showIn="@layout/act_good_list">
+
+    <LinearLayout
+        android:id="@+id/act_good_list_layout_fitter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/act_good_list_layout_fitter_height"
+        android:orientation="horizontal"
+        android:weightSum="5.5">
+
+        <LinearLayout
+            android:id="@+id/act_good_list_ll_all_sort"
+            android:layout_width="@dimen/act_good_list_ll_all_sort_width"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/act_good_list_tv_all"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="@dimen/act_good_list_ll_all_sort_padding"
+                android:text="@string/act_good_list_text_fitter_all"
+                android:textColor="@color/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/act_good_list_iv_all"
+                android:layout_width="@dimen/act_good_list_ll_all_sort_image_height"
+                android:layout_height="@dimen/act_good_list_ll_all_sort_image_height"
+                android:src="@drawable/ic_drop_down_2x" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="@dimen/act_good_list_layout_fitter_line"
+            android:layout_gravity="center_vertical"
+            android:background="@color/bg_divide_line" />
+
+
+        <LinearLayout
+            android:id="@+id/act_good_list_layout_feature"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/act_good_list_ll_feature"
+                android:layout_width="@dimen/act_good_list_ll_all_sort_width"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/act_good_list_taiyi_feature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/act_good_list_ll_all_sort_padding"
+                    android:text="@string/act_good_list_text_feature"
+                    android:textColor="@color/text_gray_deep" />
+
+                <ImageView
+                    android:id="@+id/act_good_list_iv_feature"
+                    android:layout_width="@dimen/act_good_list_ll_all_sort_image_height"
+                    android:layout_height="@dimen/act_good_list_ll_all_sort_image_height"
+                    android:src="@drawable/ic_drop_down1_2x" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="@dimen/act_good_list_layout_fitter_line"
+                android:layout_gravity="center_vertical"
+                android:background="@color/bg_divide_line" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/good_list_style"
+            android:layout_width="@dimen/act_good_list_ll_all_title_width"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/item_good_list_title_height"
+                android:layout_height="@dimen/item_good_list_title_height"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_view_a2x" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/c_divide_line" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_root">
+
+        <com.markmao.pulltorefresh.widget.XListView
+            android:id="@+id/act_good_list_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"></com.markmao.pulltorefresh.widget.XListView>
+
+
+        <com.t1_network.taiyi.widget.TipView
+            android:id="@+id/tip_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"></com.t1_network.taiyi.widget.TipView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#eeffffff"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_good_list_all_sort"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/act_comfirm_order_act_btn_sumit_order_height"
+        android:gravity="center"
+        android:text="@string/item_good_list_all_sort_text"
+        android:textSize="@dimen/text_small"/>
+
+    <TextView
+        android:id="@+id/item_good_list_price_sort"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/act_comfirm_order_act_btn_sumit_order_height"
+        android:gravity="center"
+        android:text="@string/item_good_list_price_sort_text"
+        android:textSize="@dimen/text_small"/>
+
+    <TextView
+        android:id="@+id/item_good_list_property_sort"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/act_comfirm_order_act_btn_sumit_order_height"
+        android:gravity="center"
+        android:text="@string/item_good_list_property_sort_text"
+        android:textSize="@dimen/text_small"/>
+
+    <TextView
+        android:id="@+id/item_good_list_good_sort"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/act_comfirm_order_act_btn_sumit_order_height"
+        android:gravity="center"
+        android:text="@string/item_good_list_good_sort_text"
+        android:textSize="@dimen/text_small"/>
+
+    <TextView
+        android:id="@+id/item_good_list_easy_sort"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/act_comfirm_order_act_btn_sumit_order_height"
+        android:gravity="center"
+        android:text="@string/item_good_list_easy_sort_text"
+        android:textSize="@dimen/text_small"/>
+
+    <TextView
+        android:id="@+id/item_good_list_grade_sort"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/act_comfirm_order_act_btn_sumit_order_height"
+        android:gravity="center"
+        android:text="@string/item_good_list_grade_sort_text"
+        android:textSize="@dimen/text_small"/>
+
+
+</LinearLayout>

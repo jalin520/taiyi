@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgRoot"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/act_input_consult_root_margin_left"
+    android:paddingRight="@dimen/act_input_consult_root_margin_right"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.t1_network.taiyi.controller.activity.InputConsultAct"
+    tools:showIn="@layout/act_input_consult">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/act_input_consult_et_content_height"
+        android:layout_marginTop="@dimen/act_input_consult_et_name_margin_top"
+        android:background="@drawable/btn_in_suggest_list_full_info">
+
+        <EditText
+            android:id="@+id/act_input_consult_et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/act_input_consult_et_all_margin_"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="@string/act_input_consult_et_content_text"
+            android:inputType="textMultiLine"
+            android:maxLines="7"
+            android:minLines="6"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/text_gray_mid"
+            android:textSize="@dimen/text_mid"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/act_input_consult_ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="47.06dp"
+        android:layout_marginTop="17.65dp"
+        android:background="@drawable/btn_in_evaluate_info"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/act_input_consult_ll_input_text"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_big"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.t1_network.taiyi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    //ShareSDK权限
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    //ping++权限
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+
+    //JPUSH
+    <permission
+        android:name="com.t1_network.taiyi.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.t1_network.taiyi.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- 二维码 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 友盟 自动更新 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- OneApm -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 使用 Crash 快照功能  -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 使用基站定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <application
+        android:name="com.t1_network.core.app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- OneApm start -->
+        <meta-data
+            android:name="BluewareChannel"
+            android:value="wandoujia" />
+        <!-- OneApm end -->
+
+        <!-- 友盟自动更新 start -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5600b05f67e58e8bcd00147b" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${CHANNEL_VALUE}" />
+
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" />
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 友盟自动更新 end -->
+
+
+        <!-- ShareSDK begin -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent1105001502" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".share.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- ShareSDK end -->
+
+
+        <!--ping++ begin -->
+        <!-- Ping++ SDK -->
+        <activity
+            android:name="com.pingplusplus.android.PaymentActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信支付 -->
+        <activity-alias
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.pingplusplus.android.PaymentActivity" />
+
+        <!-- 支付宝 -->
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+
+            android:screenOrientation="behind"></activity>
+
+        <!-- 银联支付 -->
+        <activity android:name="com.unionpay.uppay.PayActivity" />
+
+
+        <!-- 百度钱包 -->
+        <!--<activity-->
+            <!--android:name="com.baidu.paysdk.login.LoginActivity"-->
+            <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="false"-->
+            <!--android:theme="@style/EbpayThemeActivityWelcome"-->
+            <!--android:windowSoftInputMode="stateHidden" />-->
+        <!--<activity-->
+            <!--android:name="com.baidu.paysdk.ui.WelcomeActivity"-->
+            <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="@bool/bd_wallet_switch_global_debug"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/EbpayThemeActivityWelcome"-->
+            <!--android:windowSoftInputMode="stateHidden" />-->
+        <!--<activity-->
+            <!--android:name="com.baidu.paysdk.ui.OrderHomeActivity"-->
+            <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="@bool/bd_wallet_switch_global_debug"-->
+            <!--android:hardwareAccelerated="false"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/EbpayThemeActivit"-->
+            <!--android:windowSoftInputMode="stateHidden" />-->
+        <!--<activity-->
+            <!--android:name="com.baidu.paysdk.ui.PayResultActivity"-->
+            <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="@bool/bd_wallet_switch_global_debug"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/EbpayThemeActivit"-->
+            <!--android:windowSoftInputMode="stateHidden" />-->
+        <!--<activity-->
+            <!--android:name="com.baidu.paysdk.ui.PcPwdCheckActivity"-->
+            <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="@bool/bd_wallet_switch_global_debug"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/EbpayThemeActivit"-->
+            <!--android:windowSoftInputMode="stateVisible" />-->
+        <!--<activity-->
+            <!--android:name="com.baidu.paysdk.ui.PwdCheckActivity"-->
+            <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="@bool/bd_wallet_switch_global_debug"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/EbpayThemeActivit"-->
+            <!--android:windowSoftInputMode="stateVisible" />-->
+        <!--<activity-->
+            <!--android:name="com.baidu.paysdk.ui.PwdSetAndConfirmActivity"-->
+            <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="@bool/bd_wallet_switch_global_debug"-->
+            <!--android:theme="@style/EbpayThemeActivit"-->
+            <!--android:windowSoftInputMode="stateVisible" />-->
+        <!--<activity-->
+            <!--android:name="com.baidu.paysdk.ui.PwdPayActivity"-->
+            <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="@bool/bd_wallet_switch_global_debug"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/EbpayThemeActivitTranslucent"-->
+            <!--android:windowSoftInputMode="stateVisible|adjustResize" />-->
+        <!--<activity-->
+            <!--android:name="com.baidu.paysdk.ui.PwdPaySmsActivity"-->
+            <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="@bool/bd_wallet_switch_global_debug"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/EbpayThemeActivitTranslucent"-->
+            <!--android:windowSoftInputMode="stateHidden" />-->
+        <!--<activity-->
+            <!--android:name="com.baidu.paysdk.ui.WebViewActivity"-->
+            <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="@bool/bd_wallet_switch_global_debug"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/EbpayThemeActivit"-->
+            <!--android:windowSoftInputMode="stateHidden" />-->
+        <!--<activity-->
+            <!--android:name="com.baidu.paysdk.ui.BindCardNoActivity"-->
+            <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="@bool/bd_wallet_switch_global_debug"-->
+            <!--android:launchMode="singleTask"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/EbpayThemeActivit"-->
+            <!--android:windowSoftInputMode="stateHidden" />-->
+        <!--<activity-->
+            <!--android:name="com.baidu.paysdk.ui.BindCardDetailActivity"-->
+            <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="@bool/bd_wallet_switch_global_debug"-->
+            <!--android:launchMode="singleTask"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/EbpayThemeActivit"-->
+            <!--android:windowSoftInputMode="stateVisible|adjustPan" />-->
+        <!--<activity-->
+            <!--android:name="com.baidu.paysdk.ui.BindCardDetailCredit2Activity"-->
+            <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="@bool/bd_wallet_switch_global_debug"-->
+            <!--android:launchMode="singleTask"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/EbpayThemeActivit"-->
+            <!--android:windowSoftInputMode="stateVisible|adjustPan" />-->
+        <!--<activity-->
+            <!--android:name="com.baidu.paysdk.ui.BindCardDetailCreditActivity"-->
+            <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="@bool/bd_wallet_switch_global_debug"-->
+            <!--android:launchMode="singleTask"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/EbpayThemeActivit"-->
+            <!--android:windowSoftInputMode="stateVisible|adjustPan" />-->
+        <!--<activity-->
+            <!--android:name="com.baidu.paysdk.ui.BindSmsActivity"-->
+            <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="@bool/bd_wallet_switch_global_debug"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/EbpayThemeActivit"-->
+            <!--android:windowSoftInputMode="adjustResize" />-->
+        <!--<activity-->
+            <!--android:name="com.baidu.paysdk.ui.SelectBindCardActivity"-->
+            <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="@bool/bd_wallet_switch_global_debug"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/EbpayThemeActivit"-->
+            <!--android:windowSoftInputMode="stateHidden" />-->
+        <!--<activity-->
+            <!--android:name="com.baidu.paysdk.ui.SignChannelListActivity"-->
+            <!--android:configChanges="keyboardHidden|navigation|orientation|screenSize"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="@bool/bd_wallet_switch_global_debug"-->
+            <!--android:hardwareAccelerated="false"-->
+            <!--android:theme="@style/EbpayThemeActivit"-->
+            <!--android:windowSoftInputMode="stateHidden" />-->
+
+        <!-- ping++ end -->
+
+
+        <!-- Jpush bengin -->
+
+
+        <!-- Required SDK 核心功能 -->
+        <!-- option since 2.0.5 可配置PushService，DaemonService,PushReceiver,AlarmReceiver的android:process参数 将JPush相关组件设置为一个独立进程 -->
+        <!-- 如：android:process=":remote" -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.t1_network.taiyi" />
+            </intent-filter>
+        </service>
+
+        <!-- 高德地图-定位 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="a65839d8185aa95f73fc7a9d121d6fe2" />
+
+        <!-- Required -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
+
+                <category android:name="com.t1_network.taiyi" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.t1_network.taiyi" />
+            </intent-filter>
+        </activity>
+        <!-- Required SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined. 用户自定义的广播接收器 -->
+        <receiver
+            android:name=".controller.reveiver.JPushReceiver"
+            android:enabled="true">
+            <intent-filter>
+
+                <!-- Required 用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <!-- Required 用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required 用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required 用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.t1_network.taiyi" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required. For publish channel feature -->
+        <!-- JPUSH_CHANNEL 是为了方便开发者统计APK分发渠道。 -->
+        <!-- 例如: -->
+        <!-- 发到 Google Play 的APK可以设置为 google-play; -->
+        <!-- 发到其他市场的 APK 可以设置为 xxx-market。 -->
+        <!-- 目前这个渠道统计功能的报表还未开放。 -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="${CHANNEL_VALUE}" />
+
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="520117c7e27bf55e3d51ce15" />
+
+        <!-- JPush end -->
+
+        <activity
+            android:name=".controller.activity.MainAct"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.LoginAndRegisterAct"
+            android:label="@string/title_activity_login_and_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.CollectAct"
+            android:label="@string/title_activity_collect"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.TokenAct"
+            android:label="@string/title_activity_token"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.FootPrintsAct"
+            android:label="@string/title_activity_foot_prints"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.OrderListAct"
+            android:label="@string/title_activity_order_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.OrderAllAct"
+            android:label="@string/title_activity_order_all"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.HealthRecordAct"
+            android:label="@string/title_activity_health_record"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.AddressAct"
+            android:label="@string/title_activity_address"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.CustomerAct"
+            android:label="@string/title_activity_customer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.SuggestAct"
+            android:label="@string/title_activity_suggest"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.SettingAct"
+            android:label="@string/title_activity_setting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.ExchangeTokenAct"
+            android:label="@string/title_activity_exchange_token"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.AddressEditAct"
+            android:label="@string/title_activity_address_edit"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.MsgCenterAct"
+            android:label="@string/title_activity_msg_center"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.LogisticsInfoAct"
+            android:label="@string/title_activity_logistics_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.SystemMessageAct"
+            android:label="@string/title_activity_system_message"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.EvaluateAct"
+            android:label="@string/title_activity_evaluate"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.SearchAct"
+            android:label="@string/title_activity_search"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.GoodListAct"
+            android:label="@string/title_activity_good_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.PayAct"
+            android:label="@string/title_activity_pay"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.OrderDetailAct"
+            android:label="@string/title_activity_order_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.ReturnSaleAct"
+            android:label="@string/title_activity_return_sale"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.GoodDetailAct"
+            android:label="@string/title_activity_good_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.ForgetPwdAct"
+            android:label="@string/title_activity_forget_pwd"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.LoginByVerifyAct"
+            android:label="@string/title_activity_login_by_verify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.AfterSaleAct"
+            android:label="@string/title_activity_after_sale"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.AfterSaleDetailAct"
+            android:label="@string/title_activity_after_sale_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.OrderComfirmAct"
+            android:label="@string/title_activity_order_comfirm"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.ExpressInformationAct"
+            android:label="@string/title_activity_express_information"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.CompareGoodAct"
+            android:label="@string/title_activity_compare_good"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.CompareGoodInfoAct"
+            android:label="@string/title_activity_compare_good_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.SelectProvinceAct"
+            android:label="@string/title_activity_select_province"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.SelectCityAct"
+            android:label="@string/title_activity_select_city"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.SelectDistrictAct"
+            android:label="@string/title_activity_select_district"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.SplashAct"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".controller.activity.SplashAct2"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".controller.activity.HomeSearchAct"
+            android:label="@string/title_activity_select_district"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.DeliverGoodsAct"
+            android:label="@string/act_deliver_goods_tb_title"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.InvoiceAct"
+            android:label="@string/act_title_activity_invoice"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.ShareAct"
+            android:label="@string/title_activity_share"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".controller.activity.CleanProgressAct"
+            android:label="@string/title_activity_clean_progress"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.InputConsultAct"
+            android:label="@string/title_activity_input_consult"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.TestAct"
+            android:label="@string/title_activity_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.WebAct"
+            android:label="@string/title_activity_web"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.ImageCropActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".controller.activity.ImagePreviewActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".controller.activity.ImagesGridActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".controller.activity.OrderTradeSuccessAct"
+            android:label="@string/title_activity_trade_success"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".controller.activity.UpdatePasswrodAct"
+            android:label="@string/title_activity_update_passwrod"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.CartAct"
+            android:label="@string/title_activity_cart"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.xys.libzxing.zxing.activity.CaptureActivity"
+            android:label="@string/title_activity_capture"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.InnerActMsg"
+            android:label="@string/title_activity_inner_act_msg"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controller.activity.MyAdviceAct"
+            android:label="@string/title_activity_my_advice"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".controller.activity.AlreadyEvaluatedAct"
+            android:label="@string/title_activity_already_evaluated"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <activity
+            android:name=".controller.activity.GoodDetailAct2"
+            android:label="@string/title_activity_good_detail_act2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <activity
+            android:name=".controller.activity.UserInfoAct"
+            android:label="@string/title_activity_already_user_info"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"></activity>
+
+    </application>
+
+</manifest>

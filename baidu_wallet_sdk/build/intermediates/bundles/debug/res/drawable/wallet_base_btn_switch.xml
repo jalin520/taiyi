@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/wallet_base_btn_pressed_on" android:state_checked="true"/>
+    <item android:drawable="@drawable/wallet_base_btn_default_off"/>
+
+</selector><!-- From: file:/G:/updateTaiyi/android/taiyi/baidu_wallet_sdk/src/main/res/drawable/wallet_base_btn_switch.xml -->

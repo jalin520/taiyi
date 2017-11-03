@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgRoot"
+    android:orientation="vertical">
+
+
+    <com.markmao.pulltorefresh.widget.XScrollView
+        android:id="@+id/xScollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <!--头部搜索-->
+    <RelativeLayout
+        android:id="@+id/frg_home_title_root"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/frg_home_title_scan"
+            android:layout_width="@dimen/ty_64px"
+            android:layout_height="@dimen/ty_64px"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingLeft="@dimen/toolbar_btn_back_padding_left_and_right"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_home_scan_2x" />
+
+        <RelativeLayout
+            android:id="@+id/frg_title_good_list_search_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ty_64px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ty_90px"
+            android:layout_marginRight="@dimen/ty_90px"
+            android:background="@drawable/btn_in_home_list_full_info">
+
+            <ImageView
+                android:id="@+id/frg_home_title_search_image"
+                android:layout_width="@dimen/ty_36px"
+                android:layout_height="@dimen/ty_36px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/act_good_list_title_image_margin"
+                android:src="@drawable/ic_search_2x" />
+
+            <TextView
+                android:id="@+id/frg_home_title_search_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/frg_home_title_search_image"
+                android:text="搜索商品/病种分类/分类"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="@dimen/ty_28sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/frg_home_title_message"
+            android:layout_width="@dimen/ty_64px"
+            android:layout_height="@dimen/ty_64px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/common_margin_left_right"
+            android:src="@drawable/ic_home_message_2x" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

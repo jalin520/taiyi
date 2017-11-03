@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:background="@color/bgLayout"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/item_message_center_image_avatar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_customer_msg" />
+
+        <TextView
+            android:id="@+id/item_message_center_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/item_message_center_image_avatar"
+            android:text="客服消息"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_big" />
+
+        <TextView
+            android:id="@+id/item_message_center_text_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/item_message_center_image_avatar"
+            android:maxLines="1"
+            android:paddingBottom="4dp"
+            android:singleLine="true"
+            android:text="您的快递已经出库，预计2015年12月23号到货"
+            android:textColor="@color/text_gray_mid"
+            android:textSize="@dimen/text_mid" />
+
+        <TextView
+            android:id="@+id/item_message_center_text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:text="16:30"
+            android:textColor="@color/text_gray_mid"
+            android:textSize="@dimen/text_mid" />
+    </RelativeLayout>
+
+
+</LinearLayout>

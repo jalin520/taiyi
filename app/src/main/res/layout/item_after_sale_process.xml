@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/bgLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/after_sale_process_relativelayout_height">
+        <TextView
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:id="@+id/after_sale_process_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的商品已发货，【圆通快递 单号：920399303】"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_small"
+            android:layout_marginTop="@dimen/after_sale_process_state_margin_top"
+            android:layout_marginLeft="@dimen/after_sale_process_state_margin_left"/>
+        <RelativeLayout
+            android:id="@+id/after_sale_process_views"
+            android:layout_width="@dimen/after_sale_process_views_width"
+            android:layout_height="match_parent">
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/after_sale_process_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/after_sale_process_state"
+            android:layout_marginTop="@dimen/after_sale_process_time_margin_top"
+            android:layout_alignLeft="@id/after_sale_process_state"
+            android:text="2015-11-11 10:23:12"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="@dimen/text_small"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/after_sale_process_line_divide"
+            android:layout_marginLeft="@dimen/after_sale_process_line_divide_margin_left"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_divide_line"></View>
+    </RelativeLayout>
+
+</LinearLayout>

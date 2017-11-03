@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:taiyi="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/item_good_list_auto_all_sort"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/act_comfirm_order_act_btn_sumit_order_height"
+        android:gravity="center"
+        android:text="@string/item_good_list_all_sort_text"
+        android:textSize="@dimen/text_small"/>
+
+
+</LinearLayout>

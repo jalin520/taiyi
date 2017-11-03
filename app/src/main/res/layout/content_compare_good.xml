@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_layout"
+
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.t1_network.taiyi.controller.activity.CompareGoodAct"
+                tools:showIn="@layout/act_compare_good">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/compar_good_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/compar_recycler_margin_bottom"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/compar_input_button_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_layout"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+            <TextView
+                android:id="@+id/compar_good_commit_btn"
+                android:layout_width="@dimen/compar_input_width"
+                android:layout_height="@dimen/compar_input_height"
+                android:background="@drawable/compar_input_selector_item"
+                android:gravity="center"
+                android:text="开始对比"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_big"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

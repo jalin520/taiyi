@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/item_good_list_title_search_rv_item_height"
+              android:background="@color/bgLayout"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/item_good_list_title_search_rv_item_padding"
+              android:paddingRight="@dimen/item_good_list_title_search_rv_item_padding"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_good_list_title_search_rv_item_height"
+        >
+
+        <TextView
+            android:id="@+id/act_search_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/act_search_tv_name_text"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:id="@+id/act_search_tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/act_search_tv_count_text"/>
+    </RelativeLayout>
+
+    <View
+        android:background="@color/bg_divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_good_list_title_search_rv_item_view_line"/>
+
+</LinearLayout>

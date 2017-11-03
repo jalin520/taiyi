@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/G:/updateTaiyi/android/taiyi/baidu_wallet_sdk/src/main/res/values-sw320dp/wallet_base_dimens.xml -->
+    <eat-comment/>
+    <dimen name="bd_wallet_contact_name_width">100dp</dimen>
+</resources>

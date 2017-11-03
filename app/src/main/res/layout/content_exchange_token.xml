@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bgRoot"
+              android:orientation="vertical"
+              app:layout_behavior="@string/appbar_scrolling_view_behavior"
+              tools:context="com.t1_network.taiyi.controller.activity.ExchangeTokenAct"
+              tools:showIn="@layout/act_exchange_token">
+
+    <RelativeLayout
+        android:id="@+id/act_exchange_token_layout_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/act_exchange_token_layout_exchange"
+        android:background="@color/bgLayout">
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="@dimen/act_exchange_token_btn_exchange_width"
+                android:layout_height="@dimen/act_exchange_token_btn_exchange_height"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_input_box"
+                android:paddingLeft="16dp">
+
+                <EditText
+                    android:textColor="@color/text_gray_deep"
+                    android:textColorHint="@color/text_gray_mid"
+                    android:id="@+id/act_exchange_token_hint_input_token"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="@string/act_exchange_token_hint_input_token"
+                    android:textSize="@dimen/text_big"/>
+            </RelativeLayout>
+
+            <Button
+                android:layout_marginLeft="@dimen/common_margin_big"
+                android:id="@+id/act_exchange_token_btn_exchange"
+                android:layout_width="@dimen/act_exchange_token_btn_exchange"
+                android:layout_height="@dimen/act_exchange_token_btn_exchange_height"
+                android:background="@drawable/bg_btn_ripple_1"
+                android:text="@string/act_exchange_token_btn_exchange"
+                android:textColor="@color/btnText_2"
+                android:textSize="@dimen/text_big"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/c_divide_line"/>
+
+
+</LinearLayout>

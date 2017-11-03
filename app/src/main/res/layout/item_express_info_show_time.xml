@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/act_express_info_content_item_height"
+    android:background="@color/bg_layout"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/act_express_info_content_item_left_height"
+        android:layout_height="match_parent">
+
+
+        <View
+            android:id="@+id/item_express_view_top"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/act_express_info_content_item_express_view_top"
+            android:layout_centerHorizontal="true"
+            android:background="@color/common_gray_light" />
+
+
+        <ImageView
+            android:id="@+id/item_express_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_express_view_top"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bg_box" />
+
+        <View
+            android:id="@+id/item_express_view_below"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/act_express_info_content_item_express_view_below"
+            android:layout_below="@+id/item_express_image"
+            android:layout_centerHorizontal="true"
+            android:background="@color/common_gray_light" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/act_express_info_content_item_margin"
+        android:layout_below="@+id/item_express_image"
+        android:layout_marginTop="@dimen/act_express_info_content_item_margin"
+        android:layout_toRightOf="@+id/item_express_image"
+       >
+
+
+        <TextView
+            android:maxLines="2"
+            android:id="@+id/item_express_text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxEms="7"
+            android:text="配送员[周杰伦]已发出, 联系电话:1231231231 感谢你的耐心等待"
+            android:textColor="@color/text_gray_mid"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/item_express_text_show_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_express_text_title"
+            android:layout_marginTop="@dimen/act_express_info_content_item_margin"
+            android:ellipsize="end"
+            android:maxEms="7"
+            android:text="2015-11-11 10:11:11"
+            android:textColor="@color/text_gray_mid"
+            android:textSize="@dimen/text_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/item_express_text_show_time"
+            android:layout_marginTop="@dimen/act_express_info_content_item_margin"
+
+            android:background="@color/common_gray_light" />
+    </RelativeLayout>
+
+</LinearLayout>

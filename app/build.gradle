@@ -1,0 +1,159 @@
+apply plugin: 'com.android.application'
+apply plugin: 'oneapm'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.t1_network.taiyi"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    signingConfigs {
+        debug {
+            // No debug config
+            storeFile file("../taiyi_key.jks")
+            storePassword "taiyi2015"
+            keyAlias "taiyi"
+            keyPassword "Taiyi2015@android"
+        }
+
+        release {
+            storeFile file("../taiyi_key.jks")
+            storePassword "taiyi2015"
+            keyAlias "taiyi"
+            keyPassword "Taiyi2015@android"
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            // No debug config
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    productFlavors {
+
+        MI {
+            manifestPlaceholders = [CHANNEL_VALUE: "MI"]
+        }
+        wandoujia {
+            manifestPlaceholders = [CHANNEL_VALUE: "wandoujia"]
+        }
+        baidu {
+            manifestPlaceholders = [CHANNEL_VALUE: "baidu"]
+        }
+        tencent {
+            manifestPlaceholders = [CHANNEL_VALUE: "tencent"]
+        }
+        anzhi {
+            manifestPlaceholders = [CHANNEL_VALUE: "anzhi"]
+        }
+        pp {
+            manifestPlaceholders = [CHANNEL_VALUE: "pp"]
+        }
+        _360 {
+            manifestPlaceholders = [CHANNEL_VALUE: "360"]
+        }
+        lenovomm {
+            manifestPlaceholders = [CHANNEL_VALUE: "lenovomm"]
+        }
+        //官网
+        taiyi { manifestPlaceholders = [CHANNEL_VALUE: "taiyi"] }
+
+    }
+
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.android.support:recyclerview-v7:25.0.1'
+    compile 'com.android.support:cardview-v7:25.0.1'
+    //网络请求框架
+    compile files('libs/volley.jar')
+    //图像处理框架
+    compile files('libs/universal-image-loader-1.9.3.jar')
+    //注解式框架
+    compile files('libs/butterknife-7.0.1.jar')
+    //json解析框架
+    compile files('libs/gson-2.2.4.jar')
+    //状态栏插件
+    compile files('libs/nineoldandroids-2.4.0.jar')
+
+    //ShareSDK(分享,第三方登录)
+    compile files('libs/MobCommons.jar')
+    compile files('libs/MobTools.jar')
+    //极光推送
+    compile files('libs/jpush-android-2.0.5.jar')
+    // 美洽客服,在下面的依赖中，如果你的项目已经依赖过其中的组件，则不需要重复依赖
+    compile 'com.meiqia:meiqiasdk:3.0.2@aar'
+    compile 'com.squareup.okhttp:okhttp:2.7.0'
+    compile 'org.java-websocket:Java-WebSocket:1.3.0'
+    compile 'com.commit451:PhotoView:1.2.4'
+    compile 'com.android.support:support-v4:25.1.1'
+    //高德定位
+    compile files('libs/AMap_Location_V2.2.0_20151222.jar')
+    compile project(':imagepickerModule')
+    //对话框
+    compile 'com.orhanobut:dialogplus:1.10@aar'
+    //二维码扫描
+    compile files('libs/zxing.jar')
+    //图表插件
+    compile 'com.github.PhilJay:MPAndroidChart:v2.2.0'
+    //EventBus 事件总线
+    compile 'de.greenrobot:eventbus:2.4.0'
+    //友盟自动更新
+    compile files('libs/umeng-update-v2.6.0.1.jar')
+    compile files('libs/ShareSDK-Core-2.6.6.jar')
+    compile files('libs/ShareSDK-QQ-2.6.6.jar')
+    compile files('libs/ShareSDK-QZone-2.6.6.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.6.6.jar')
+    compile files('libs/ShareSDK-Wechat-2.6.6.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.6.6.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-2.6.6.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.6.6.jar')
+    compile files('libs/imageviewtouch.jar')
+    //Image头像圆形
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+
+    //ping ++
+    compile project(':bdwallet_pay_sdk')
+    compile project(':pingpp')
+
+    //   OneApm
+    compile files('libs/oneapm-android-agent.jar')
+
+    compile 'com.android.support:multidex:1.0.1'
+
+}

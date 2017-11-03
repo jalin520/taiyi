@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/act_share_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/share_root_bg_layout"
+    android:visibility="visible"
+    tools:context="com.t1_network.taiyi.controller.activity.ShareAct">
+
+
+    <ImageView
+        android:id="@+id/share_iv_finish"
+        android:layout_width="@dimen/act_share_iv_finish_width"
+        android:layout_height="@dimen/act_share_iv_finish_width"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25.88dp"
+        android:src="@drawable/ic_finish_break"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <!-- 1 - 1 -->
+            <LinearLayout
+                android:id="@+id/act_share_ll_friend_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/act_share_icon_width_height"
+                    android:layout_height="@dimen/act_share_icon_width_height"
+                    android:background="@drawable/bg_friend_share">
+
+                    <ImageView
+                        android:layout_width="@dimen/act_share_iv_width_height"
+                        android:layout_height="@dimen/act_share_iv_width_height"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_share_friend_icon"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:text="朋友圈"
+                    android:textColor="@color/common_gray_mid"
+                    android:textSize="@dimen/text_less_mid"/>
+
+            </LinearLayout>
+
+            <!-- 1 - 2 -->
+            <LinearLayout
+                android:id="@+id/act_share_ll_wechat_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/act_share_icon_margin_right"
+                android:layout_marginRight="@dimen/act_share_icon_margin_right"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/act_share_icon_width_height"
+                    android:layout_height="@dimen/act_share_icon_width_height"
+                    android:background="@drawable/bg_friend_share">
+
+                    <ImageView
+                        android:layout_width="@dimen/act_share_iv_width_height"
+                        android:layout_height="@dimen/act_share_iv_width_height"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_wechat"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:text="微信"
+                    android:textColor="@color/common_gray_mid"
+                    android:textSize="@dimen/text_less_mid"/>
+
+            </LinearLayout>
+
+            <!-- 1 - 3 -->
+            <LinearLayout
+                android:id="@+id/act_share_ll_qzone_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/act_share_icon_width_height"
+                    android:layout_height="@dimen/act_share_icon_width_height"
+                    android:background="@drawable/bg_qq_zone_share">
+
+                    <ImageView
+                        android:layout_width="@dimen/act_share_iv_width_height"
+                        android:layout_height="@dimen/act_share_iv_width_height"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_qzone"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:text="QQ空间"
+                    android:textColor="@color/common_gray_mid"
+                    android:textSize="@dimen/text_less_mid"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22.35dp"
+            android:gravity="center_horizontal">
+            <!-- 1 - 1 -->
+            <LinearLayout
+                android:id="@+id/act_share_ll_qq_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/act_share_icon_width_height"
+                    android:layout_height="@dimen/act_share_icon_width_height"
+                    android:background="@drawable/bg_qq_zone_share">
+
+                    <ImageView
+                        android:layout_width="@dimen/act_share_iv_width_height"
+                        android:layout_height="@dimen/act_share_iv_width_height"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_qq"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:text="QQ"
+                    android:textColor="@color/common_gray_mid"
+                    android:textSize="@dimen/text_less_mid"/>
+
+            </LinearLayout>
+
+            <!-- 1 - 2 -->
+            <LinearLayout
+                android:id="@+id/act_share_ll_weibo_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/act_share_icon_margin_right"
+                android:layout_marginRight="@dimen/act_share_icon_margin_right"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/act_share_icon_width_height"
+                    android:layout_height="@dimen/act_share_icon_width_height"
+                    android:background="@drawable/bg_weibo_share">
+
+                    <ImageView
+                        android:layout_width="@dimen/act_share_iv_width_height"
+                        android:layout_height="@dimen/act_share_iv_width_height"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_weibo"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:text="微博"
+                    android:textColor="@color/common_gray_mid"
+                    android:textSize="@dimen/text_less_mid"/>
+
+            </LinearLayout>
+
+            <!-- 1 - 3 -->
+            <LinearLayout
+                android:id="@+id/act_share_ll_photo_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/act_share_icon_width_height"
+                    android:layout_height="@dimen/act_share_icon_width_height"
+                    android:background="@drawable/bg_photo_share">
+
+                    <ImageView
+                        android:layout_width="@dimen/act_share_iv_width_height"
+                        android:layout_height="@dimen/act_share_iv_width_height"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_photo"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:text="保存到相册"
+                    android:textColor="@color/common_gray_mid"
+                    android:textSize="@dimen/text_less_mid"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

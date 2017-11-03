@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_root"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.t1_network.taiyi.controller.activity.AddressEditAct"
+    tools:showIn="@layout/act_address_edit">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bgLayout"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/act_address_edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/act_address_edit_layout_height"
+                android:background="@null"
+                android:hint="@string/act_address_edit_name"
+                android:paddingLeft="@dimen/common_margin_left_right"
+                android:paddingRight="@dimen/common_margin_left_right"
+                android:textSize="@dimen/text_mid" />
+
+            <include layout="@layout/c_divide_line_with_left_pading" />
+
+
+            <EditText
+                android:id="@+id/act_address_edit_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/act_address_edit_layout_height"
+                android:background="@null"
+                android:hint="@string/act_address_edit_mobile"
+                android:inputType="phone"
+                android:paddingLeft="@dimen/common_margin_left_right"
+                android:paddingRight="@dimen/common_margin_left_right"
+                android:textSize="@dimen/text_mid" />
+
+            <include layout="@layout/c_divide_line_with_left_pading" />
+
+            <RelativeLayout
+                android:id="@+id/act_address_layout_province_city_district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bgLayout"
+                android:clickable="false"
+                android:focusable="false"
+                android:padding="@dimen/act_address_layout_province_city_district_padding">
+
+                <TextView
+                    android:id="@+id/act_address_text_province_city_district"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/act_address_edit_text_district"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_mid" />
+
+                <ImageView
+                    android:id="@+id/take_address_iv_icon"
+                    android:layout_width="@dimen/act_address_layout_province_city_district_icon_width_height"
+                    android:layout_height="@dimen/act_address_layout_province_city_district_icon_width_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:src="@drawable/ic_arrow_right" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/c_divide_line_with_left_pading" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/act_address_edit_layout_height"
+                android:background="@color/bgLayout"
+                android:clickable="false"
+                android:focusable="false">
+
+                <EditText
+                    android:id="@+id/act_address_edit_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/act_address_edit_layout_height"
+                    android:background="@null"
+                    android:hint="@string/act_address_edit_address"
+                    android:paddingBottom="@dimen/act_address_layout_province_city_district_padding"
+                    android:paddingLeft="@dimen/act_address_layout_province_city_district_padding"
+                    android:paddingRight="@dimen/act_address_layout_province_city_district_padding"
+                    android:paddingTop="@dimen/act_address_layout_province_city_district_padding"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_mid" />
+
+                <ImageView
+                    android:id="@+id/act_address_edit_locate"
+                    android:layout_width="@dimen/act_address_edit_layout_height"
+                    android:layout_height="@dimen/act_address_edit_layout_height"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/act_address_layout_province_city_district_padding"
+                    android:src="@drawable/ic_order_detail_locate" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/c_divide_line_with_left_pading" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/act_address_edit_layout_height"
+                android:background="@color/bgLayout"
+                android:clickable="false"
+                android:focusable="false">
+
+                <EditText
+                    android:id="@+id/act_address_edit_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="@string/act_address_edit_tip"
+                    android:paddingBottom="@dimen/act_address_layout_province_city_district_padding"
+                    android:paddingLeft="@dimen/act_address_layout_province_city_district_padding"
+                    android:paddingRight="@dimen/act_address_layout_province_city_district_padding"
+                    android:paddingTop="@dimen/act_address_layout_province_city_district_padding"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_mid" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/c_divide_line_with_left_pading" />
+
+        </LinearLayout>
+
+        <include layout="@layout/c_divide_line" />
+
+        <include
+            layout="@layout/c_divide_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/act_address_layout_province_city_district_padding" />
+
+        <RelativeLayout
+            android:id="@+id/pushSetting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/act_address_edit_layout_height"
+            android:background="@color/bgLayout"
+            android:clickable="false"
+            android:focusable="false">
+
+            <TextView
+                android:id="@+id/encoding_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/act_address_layout_province_city_district_padding"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="@string/act_address_edit_text_set_message_notify"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_mid" />
+
+            <com.t1_network.taiyi.widget.Switch.SwitchButton
+                android:id="@+id/act_address_edit_switch_default_address"
+                android:layout_width="@dimen/act_address_edit_switch_default_address_width"
+                android:layout_height="@dimen/act_address_edit_switch_default_address_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/act_address_layout_province_city_district_padding"
+                android:checked="true" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/c_divide_line" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bgRoot"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/check_pending_root_linearLayout_padding_bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/bg_layout"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/check_pending_id_margin_left"
+        android:paddingRight="@dimen/check_pending_id_margin_left">
+
+
+        <RelativeLayout
+            android:id="@+id/act_after_sale_rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_consignee_address_text_address_margin_right"
+            android:background="@color/bgLayout"
+            >
+
+            <TextView
+
+                android:id="@+id/after_sale_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:text="服务编号：982737383831"
+                android:textColor="@color/text_gray_mid"
+                android:textSize="@dimen/text_mid"/>
+
+            <LinearLayout
+                android:id="@+id/verification_pending_query"
+                android:layout_width="@dimen/check_pending_query_width"
+                android:layout_height="@dimen/check_pending_query_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_in_after_sale_full"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check_pending_query"
+                    android:textColor="@color/text_green"
+                    android:textSize="@dimen/text_small"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/check_pending_line_divide"
+            android:background="@color/bg_divide_line"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/item_order_wait_pay_layout_good_info_padding_top_bottom"
+            android:paddingLeft="@dimen/common_margin_left_right"
+            android:paddingRight="@dimen/common_margin_left_right"
+            android:paddingTop="@dimen/item_order_wait_pay_layout_good_info_padding_top_bottom">
+
+            <ImageView
+                android:id="@+id/good_image"
+                android:layout_width="@dimen/item_order_wait_pay_image_good"
+                android:layout_height="@dimen/item_order_wait_pay_image_good"
+                android:layout_marginRight="@dimen/item_order_wait_pay_image_good_padding_right"
+                android:background="@drawable/test_good"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/orderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/item_good_in_order_name_margin_right"
+                android:layout_marginTop="@dimen/item_good_in_order_name_margin_top"
+                android:layout_toRightOf="@id/good_image"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="鱼跃 制氧机 YU 300,鱼跃 制氧机 YU300月月制氧机Yu300月制氧机Yu300"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_mid"/>
+
+            <TextView
+                android:id="@+id/order_is_seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/orderName"
+                android:layout_below="@id/orderName"
+                android:paddingTop="@dimen/item_good_in_order_is_seven_margin_top"
+                android:text="￥1588.00"
+                android:textColor="@color/text_green"
+                android:textSize="@dimen/text_small"/>
+
+            <TextView
+                android:id="@+id/orderAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/order_is_seven"
+                android:layout_marginLeft="@dimen/item_good_in_order_amount_margin_top"
+                android:layout_toRightOf="@id/order_is_seven"
+                android:text="X1件"
+                android:textColor="@color/text_gray_mid"
+                android:textSize="@dimen/text_small"/>
+
+            <ImageView
+                android:layout_width="@dimen/item_order_wait_pay_image_arrow"
+                android:layout_height="@dimen/item_order_wait_pay_image_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_arrow_right"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/check_pending_line_divide"
+            android:background="@color/bg_divide_line"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/compar_recycler_margin_bottom"
+            android:background="@color/bg_layout"
+            >
+
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="状态:审核批过"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="审批时间:2015-11-12 20:03:30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/check_pending_cancel_width"
+                android:layout_height="@dimen/check_pending_edit_imformation_height"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_in_after_good_full_comment"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/check_pending_cancel"
+                    android:textColor="@color/text_gray_deep"
+                    android:textSize="@dimen/text_small"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

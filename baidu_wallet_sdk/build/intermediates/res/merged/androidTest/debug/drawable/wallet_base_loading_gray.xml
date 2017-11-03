@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/wallet_base_loading_img_gray"
+    android:pivotX="50%"
+    android:pivotY="50%" />
+<!-- From: file:/G:/updateTaiyi/android/taiyi/baidu_wallet_sdk/src/main/res/drawable/wallet_base_loading_gray.xml --><!-- From: file:/G:/updateTaiyi/android/taiyi/baidu_wallet_sdk/build/intermediates/bundles/debug/res/drawable/wallet_base_loading_gray.xml -->

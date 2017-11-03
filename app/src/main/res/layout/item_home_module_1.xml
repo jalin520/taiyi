@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.t1_network.taiyi.widget.XCRoundRectImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_home_module_1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/home_dotLayout_adv_height"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginTop="@dimen/home_dotLayout_adv_margin_top"
+    android:scaleType="fitXY"
+    android:src="@drawable/ic_3" />
+
+

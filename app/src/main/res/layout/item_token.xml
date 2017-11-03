@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgLayout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="11.76dp"
+
+            android:paddingLeft="@dimen/act_token_text_transaction_detail_margin_left">
+
+            <TextView
+                android:id="@+id/my_token_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11.76dp"
+                android:text="注册送代币"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="@dimen/text_mid"/>
+
+            <TextView
+                android:id="@+id/my_token_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_token_name"
+                android:layout_marginTop="11.76dp"
+                android:text="ssssss"
+                android:textColor="@color/textGray"
+                android:textSize="@dimen/text_small"/>
+
+            <TextView
+                android:id="@+id/my_token_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_token_name"
+                android:layout_marginTop="11.76dp"
+                android:layout_toRightOf="@id/my_token_time"
+                android:paddingLeft="@dimen/item_my_token_text_padding"
+                android:text="单号：22433434"
+                android:textColor="@color/textGray"
+                android:textSize="@dimen/text_small"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/my_token_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/item_my_token_padding_right"
+            android:text="+20"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textTokenCount"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/act_token_text_transaction_detail_margin_left"
+        android:background="@color/bg_divide_line"></View>
+</LinearLayout>

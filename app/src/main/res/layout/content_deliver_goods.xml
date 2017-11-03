@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:taiyi="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_root"
+              android:orientation="vertical"
+              taiyi:layout_behavior="@string/appbar_scrolling_view_behavior"
+              tools:context="com.t1_network.taiyi.controller.activity.SettingAct"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_layout"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/act_deliver_goods_root_margin_bottom"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/act_deliver_goods_content_height"
+
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/act_deliver_goods_padding_left"
+            android:text="填写发货信息"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_mid"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/c_divide_line_horizontal_height"
+            android:layout_marginLeft="@dimen/act_deliver_goods_padding_left"
+            android:background="@color/bg_divide_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/act_deliver_goods_padding_left">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/act_deliver_goods_content_height"
+
+                android:background="@null"
+                android:hint="请输入快递单号"
+                android:inputType="number"
+                android:textSize="@dimen/text_mid"/>
+
+            <include layout="@layout/c_divide_line"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/act_content_deliver_goods_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/act_deliver_goods_content_height"
+            android:paddingLeft="@dimen/act_deliver_goods_padding_left"
+            android:paddingRight="@dimen/common_margin_left_right">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/c_setting_view_image_icon"
+                android:text="请选择快递公司"
+                android:textColor="@color/textLight"
+                android:textSize="@dimen/text_mid"/>
+
+            <ImageView
+                android:layout_width="@dimen/act_deliver_goods_image_width"
+                android:layout_height="@dimen/act_deliver_goods_image_width"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:src="@drawable/ic_arrow_right"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/c_divide_line_horizontal_height"
+            android:layout_marginLeft="@dimen/act_deliver_goods_padding_left"
+            android:background="@color/bg_divide_line"/>
+
+        <GridLayout
+            android:id="@+id/act_content_deliver_goods_gl_disease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/common_gray_more_light"
+            android:columnCount="3"
+            android:paddingBottom="@dimen/item_my_token_text_padding"
+            android:paddingRight="@dimen/item_consignee_address_rootlayout_padding_top"
+            android:paddingTop="@dimen/item_my_token_text_padding"
+            android:visibility="gone">
+        </GridLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/c_divide_line_horizontal_height"
+            android:layout_marginLeft="@dimen/act_deliver_goods_padding_left"
+            android:background="@color/bg_divide_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/act_deliver_goods_content_height"
+
+            android:paddingLeft="@dimen/act_deliver_goods_padding_left"
+            android:paddingRight="@dimen/common_margin_left_right">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/c_setting_view_image_icon"
+                android:text="2015-11-09"
+                android:textColor="@color/textLight"
+                android:textSize="@dimen/text_mid"/>
+
+            <ImageView
+
+                android:layout_width="@dimen/act_deliver_goods_image_width"
+                android:layout_height="@dimen/act_deliver_goods_image_width"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:src="@drawable/ic_arrow_right"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/c_divide_line_horizontal_height"
+            android:layout_marginLeft="@dimen/act_deliver_goods_padding_left"
+            android:background="@color/bg_divide_line"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/act_deliver_goods_bottom_margin_top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/act_deliver_goods_bottom_cancel_width"
+            android:layout_height="@dimen/act_deliver_goods_bottom_cancel_height"
+            android:background="@drawable/btn_in_deliver_goods_full_cancel">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="取消"
+                android:textColor="@color/text_gray_deep"
+                android:textSize="@dimen/text_mid"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/act_deliver_goods_bottom_cancel_width"
+            android:layout_height="@dimen/act_deliver_goods_bottom_cancel_height"
+            android:layout_marginLeft="@dimen/act_deliver_goods_padding_left"
+            android:background="@drawable/btn_in_deliver_goods_full_comfirm">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="提交"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_mid"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

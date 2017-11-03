@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="error_mobile_can_no_be_enpty">手机号码不能为空</string>
+    <string name="error_mobile_must_be_11_length">手机号码必须为11位</string>
+    <string name="error_mobile_must_be_start_with_1">手机号码必须以1开头</string>
+
+    <string name="error_verify_code_can_no_be_enpty">验证码不能为空</string>
+
+    <string name="error_name_code_can_no_be_enpty">收货人姓名不能为空</string>
+    <string name="error_user_name_enpty">昵称不能为空</string>
+
+    <string name="error_password_code_can_no_be_enpty">密码不能为空</string>
+    <string name="error_comfirm_password_code_can_no_be_enpty">密码不能为空</string>
+    <string name="error_password_is_no_same">两次输入密码不一致</string>
+
+    <string name="error_get_data_error">获取失败，请稍后再试</string>
+
+
+    <!--地址管理-->
+    <string name="error_address_name_is_empty">名字不能为空</string>
+    <string name="error_address_phone_is_empty">手机号码不能为空</string>
+    <string name="error_address_district_is_empty">所在地区不能为空</string>
+    <string name="error_address_address_is_empty">详细地址不能为空</string>
+
+    <!--代币-->
+    <string name="error_exchange_token_is_empty">请填写您的兑换码</string>
+
+
+    <string name="error_content_is_empty">评论内容不能为空</string>
+    <string name="error_rating_is_empty">请为此商品打分</string>
+
+
+    <string name="error_user_is_unlogin">用户未登录</string>
+    <string name="error_login_by_other_failure">第三方登录失败,请稍后再试</string>
+    <string name="error_request_body_error">添加参数出错</string>
+    <string name="error_reslove">数据解析出错</string>
+
+    <string name="error_search_word_is_empty">请输入您要搜索的内容</string>
+
+</resources>

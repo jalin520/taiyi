@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/good_appraise_margin">
+
+    <!--<TextView-->
+    <!--android:id="@+id/logistics_state"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="14sp"-->
+    <!--android:textColor="@color/textTitle"/>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgLayout"
+        android:paddingBottom="@dimen/good_appraise_margin"
+        android:paddingLeft="@dimen/frg_class_fiction_item_btn_margin"
+        android:paddingTop="@dimen/frg_class_fiction_item_btn_margin">
+
+        <TextView
+            android:id="@+id/logistics_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_small" />
+
+        <ImageView
+            android:id="@+id/ic_arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/frg_class_fiction_item_btn_margin"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_arrow_right" />
+
+        <TextView
+            android:id="@+id/logistics_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logistics_state"
+            android:layout_toLeftOf="@id/ic_arrow_right"
+            android:paddingTop="@dimen/frg_class_fiction_item_btn_margin"
+            android:textSize="@dimen/text_small" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/logistics_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgRoot"
+        android:gravity="center"
+        android:paddingTop="@dimen/frg_class_fiction_item_btn_margin"
+        android:textColor="@color/text_gray_mid"
+        android:textSize="@dimen/text_little" />
+</LinearLayout>

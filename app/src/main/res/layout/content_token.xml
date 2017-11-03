@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgRoot"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.t1_network.taiyi.controller.activity.TokenAct"
+    tools:showIn="@layout/act_token">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/act_token_layout_trade_tip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/act_token_layout_transaction_detail_height"
+            android:background="@color/bgLayout"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/act_token_text_transaction_detail_margin_left"
+                android:text="@string/act_token_text_trade_detail"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/text_big" />
+
+            <View
+                android:id="@+id/item_good_in_order_view_line2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/c_divide_line_horizontal_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/act_token_text_transaction_detail_margin_left"
+                android:background="@color/bg_divide_line"></View>
+        </RelativeLayout>
+
+
+        <cn.walink.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pull_to_refresh_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ptr:ptrMode="both">
+
+        </cn.walink.pulltorefresh.library.PullToRefreshListView>
+
+    </LinearLayout>
+
+    <com.t1_network.taiyi.widget.TipView
+        android:id="@+id/c_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"></com.t1_network.taiyi.widget.TipView>
+
+</RelativeLayout>
+

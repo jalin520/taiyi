@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:background="@color/bg_layout"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/item_host_search_tip_padding_top_and_bottom"
+              android:paddingRight="@dimen/item_host_search_tip_padding_right"
+              android:paddingTop="@dimen/item_host_search_tip_padding_top_and_bottom">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_hot_search_tip_height"
+        android:background="@drawable/bg_hot_search_tip"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_hot_search_tip_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/good_appraise_margin"
+            android:layout_marginRight="@dimen/good_appraise_margin"
+            android:text="家庭护理"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_small"/>
+
+    </LinearLayout>
+</LinearLayout>

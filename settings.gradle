@@ -1,0 +1,1 @@
+include ':app', ':libzxing', ':imagepickerModule', ':bdwallet_pay_sdk', 'pingpp'

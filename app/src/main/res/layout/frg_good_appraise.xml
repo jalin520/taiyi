@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgRoot"
+    android:orientation="vertical">
+
+    <include layout="@layout/c_divide_line" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.markmao.pulltorefresh.widget.XListView
+            android:divider="@null"
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.t1_network.taiyi.widget.TipView
+            android:id="@+id/tip_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/ty_104px"
+            android:visibility="gone"></com.t1_network.taiyi.widget.TipView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
